@@ -3,7 +3,7 @@
 # Description
 To design and build an interactive ontology-driven application based on:
 - at least TWO open data-sets
-- Domain (e.g. Crime, Planning, Health, Finance, etc...)
+- domain (e.g. Crime, Planning, Health, Finance, etc...)
 
 Any dataset chosen:
 - **must not** already have an RDF version published
@@ -36,19 +36,46 @@ appropriate
 
 # Usage
 
-# Support
-
-# Roadmap
-
-# Contributing
-
 # Authors and acknowledgment
+
+- Finn
+- Oisin 
+- Sanil 
+- Yannick 
+- Liam
+- Declan
+
 
 # License
 
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Project status
 
-1. Demo :heavy_check_mark:
-2. 
-3. 
-4. 
+1. Demo ⏳
+2. Documentation ⏳
+    - OWL ontology model
+    - Documented R2RML mappings
+    - Documented SPARQL queries
+    - Application code for Application Query Interface
+    - Original and uplifted datasets
+    - Electronic versions – for a,b,c use WIDOCO https://dgarijo.github.io/Widoco/
+        - understand examples from WIDOCO github before attempting to use in your own project
+        - Note the html file generated with WIDOCO can be edited if needed with additional information (e.g. the SPARQL queries in a new section).
+3. Technical Report ⏳
+    - Approach to Ontology Modelling
+        - Description of Competency Questions that ontology answers
+        - Description of datasets selected for application
+        - Assumptions made
+        - References to sources used/reused e.g. SIOC, FOAF for people
+        - Discussion of your data mapping process
+        - Explanation of use of inverse, symmetric and transitive properties
+    - Overview of Design
+        - Description of Application Query Interface
+        - Description of Queries
+    - Discussion of challenges faced while ontology modelling or creating queries and mappings
+        - Report how you organised your project (e.g. meetings, common google doc ...).
+    - Conclusions: Self reflection of group on Strengths/weakness of ontology model, queries & interface
+4. Self Reflection Report ⏳
+    - What you contributed
+    - Reflection strengths and weaknesses of own contribution and of group work
