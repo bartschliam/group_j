@@ -19,10 +19,10 @@
 	rr:predicateObjectMap [
 		rr:predicate rdfs:label ;
 		rr:objectMap [
-			rr:column "NAME" ; rr:language "en" ;
+			rr:column "Name" ; rr:language "en" ;
 		] ; 
 		rr:objectMap [
-			rr:column "NAME" ;
+			rr:column "Name" ;
 		] ; 
 	] ;
  	
