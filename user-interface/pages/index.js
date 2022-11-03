@@ -3,6 +3,9 @@ import Head from "next/head";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import { blueGrey } from "@mui/material/colors";
 
 const queries = [
   { label: "Is there a correlation between new house prices and crime?" },
@@ -46,25 +49,43 @@ export default function Home() {
       <Head>
         <title>User Interface</title>
       </Head>
-      <Autocomplete
-        disablePortal
-        id="combo-box"
-        options={queries}
-        value={selectedQuery}
-        onChange={(event, newValue) => {
-          setSelectedQuery(newValue);
-        }}
-        sx={{ width: 300 }}
-        renderInput={(params) => <TextField {...params} label="Query" />}
-      />
-      <Button
-        variant="contained"
-        onClick={() => {
-          alert(`Selected Query: ${selectedQuery.label}`);
-        }}
-      >
-        Select Query
-      </Button>
+      <Box sx={{ width: "100%", maxWidth: 500 }} m={2} pb={3}>
+        <Typography variant="h4" gutterBottom fontWeight={800}>
+          Knowledge Engineering
+        </Typography>
+        <Typography variant="subtitle1" gutterBottom>
+          Use the following drop down to execute a query.
+        </Typography>
+        <Autocomplete
+          disablePortal
+          id="combo-box"
+          options={queries}
+          value={selectedQuery}
+          onChange={(event, newValue) => {
+            setSelectedQuery(newValue);
+          }}
+          sx={{ width: 300 }}
+          renderInput={(params) => <TextField {...params} label="Query" />}
+          fullWidth
+        />
+        <Button
+          variant="contained"
+          sx={{ mt: 1 }}
+          onClick={() => {
+            console.log(`Selected Query: ${selectedQuery.label}`);
+          }}
+        >
+          Select Query
+        </Button>
+        <Box bgcolor={blueGrey[50]} mt={2} p={2} borderRadius={1}>
+          <Typography variant="body1" gutterBottom fontWeight={800}>
+            Output:
+          </Typography>
+          <Typography variant="body1" gutterBottom>
+            {selectedQuery.label}
+          </Typography>
+        </Box>
+      </Box>
     </div>
   );
 }
