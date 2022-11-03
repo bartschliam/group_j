@@ -6,13 +6,56 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <#accommodation>
-    a rr:TriplesMap ;
-    rr:logicalTable [ rr:tableName "ACCOMMODATION" ] .
-    
-    
-    rr.subjectMap [
-        rr:template "http://data.example.org/ws/{NAME}" ;
-        rr:class geo:Feature ;
-        rr:class fcc:Accommodation ;
-    ] ;
-    .
+	a rr:TriplesMap ;
+	
+	rr:logicalTable [ rr:tableName "ACCOMMODATIONS" ] ;
+	
+	rr:subjectMap [
+		rr:template "http://data.example.org/ws/{NAME}" ;
+		rr:class geo:Feature ;
+		rr:class fcc:Accommodation ;
+	] ;
+	
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rr:column "Name" ; rr:language "en" ;
+		] ; 
+		rr:objectMap [
+			rr:column "Name" ;
+		] ; 
+	] ;
+ 	
+	rr:predicateObjectMap [
+		rr:predicate geo2:lat ;
+		rr:objectMap [ 
+			rr:column "Latitude" ; 
+			rr:datatype xsd:double ; 
+		] ; 
+	] ;
+	
+	rr:predicateObjectMap [
+		rr:predicate geo2:long ;
+		rr:objectMap [ 
+			rr:column "Longitude" ; 
+			rr:datatype xsd:double ; 
+		] ; 
+	] ;
+
+    rr:predicateObjectMap [
+		rr:predicate geo2:region ;
+		rr:objectMap [ 
+			rr:column "AddressRegion" ; 
+			rr:datatype xsd:string ; 
+		] ; 
+	] ;
+
+    rr:predicateObjectMap [
+		rr:predicate geo2:locality ;
+		rr:objectMap [ 
+			rr:column "AddressLocality" ; 
+			rr:datatype xsd:string ; 
+		] ; 
+	] ;
+	
+	.
