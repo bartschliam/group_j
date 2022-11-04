@@ -1,0 +1,37 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix fcc: <http://www.example.org/ont#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo2: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<#accommodation>
+	a rr:TriplesMap ;
+	
+	rr:logicalTable [ rr:tableName "PRICES" ] ;
+	
+	rr:subjectMap [
+		rr:template "http://data.example.org/ws/{NAME}" ;
+		rr:class geo:Feature ;
+		rr:class fcc:Value ;
+	] ;
+	
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rr:column "AREA" ; rr:language "en" ;
+		] ; 
+		rr:objectMap [
+			rr:column "AREA" ;
+		] ; 
+	] ;
+
+    rr:predicateObjectMap [
+		rr:predicate fcc:value ;
+		rr:objectMap [ 
+			rr:column "VALUE" ; 
+			rr:datatype xsd:integer ; 
+		] ; 
+	] ;
+	
+	.

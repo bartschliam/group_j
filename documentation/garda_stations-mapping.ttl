@@ -27,906 +27,106 @@
 	] ;
  	
 	rr:predicateObjectMap [
-		rr:predicate fcc:mah2004 ;
+		rr:predicate fcc:mah ;
 		rr:objectMap [ 
-			rr:column "Attempts or threats to murder, assaults, harassments and related offences 2004" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-	
-	rr:predicateObjectMap [
-		rr:predicate fcc:mah2005 ;
-		rr:objectMap [ 
-			rr:column "Attempts or threats to murder, assaults, harassments and related offences 2005" ; 
+			rr:column "Attempts or threats to murder, assaults, harassments and related offences" ; 
 			rr:datatype xsd:integer ; 
 		] ; 
 	] ;
 
 	rr:predicateObjectMap [
-		rr:predicate fcc:mah2006 ;
+		rr:predicate fcc:dn ;
 		rr:objectMap [ 
-			rr:column "Attempts or threats to murder, assaults, harassments and related offences 2006" ; 
+			rr:column "Dangerous or negligent acts" ; 
 			rr:datatype xsd:integer ; 
 		] ; 
 	] ;
 
 	rr:predicateObjectMap [
-		rr:predicate fcc:mah2007 ;
+		rr:predicate fcc:kr ;
 		rr:objectMap [ 
-			rr:column "Attempts or threats to murder, assaults, harassments and related offences 2007" ; 
+			rr:column "Kidnapping and related offences" ; 
+			rr:datatype xsd:integer ; 
+		] ; 
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate fcc:reh ;
+		rr:objectMap [ 
+			rr:column "Robbery, extortion and hijacking offences" ; 
+			rr:datatype xsd:integer ; 
+		] ; 
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate fcc:br ;
+		rr:objectMap [ 
+			rr:column "Burglary and related offences" ; 
+			rr:datatype xsd:integer ; 
+		] ; 
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate fcc:tr ;
+		rr:objectMap [ 
+			rr:column "Theft and related offences" ; 
+			rr:datatype xsd:integer ; 
+		] ; 
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate fcc:fdr ;
+		rr:objectMap [ 
+			rr:column "Fraud, deception and related offences" ; 
+			rr:datatype xsd:integer ; 
+		] ; 
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate fcc:cd ;
+		rr:objectMap [ 
+			rr:column "Controlled drug offences" ; 
+			rr:datatype xsd:integer ; 
+		] ; 
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate fcc:we ;
+		rr:objectMap [ 
+			rr:column "Weapons and Explosives Offences" ; 
+			rr:datatype xsd:integer ; 
+		] ; 
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate fcc:pe ;
+		rr:objectMap [ 
+			rr:column "Damage to property and to the environment" ; 
+			rr:datatype xsd:integer ; 
+		] ; 
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate fcc:po ;
+		rr:objectMap [ 
+			rr:column "Public order and other social code offences" ; 
+			rr:datatype xsd:integer ; 
+		] ; 
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate fcc:jp ;
+		rr:objectMap [ 
+			rr:column "Offences against government, justice procedures and organisation of crime" ; 
 			rr:datatype xsd:integer ; 
 		] ; 
 	] ;
 
     rr:predicateObjectMap [
-		rr:predicate fcc:mah2008 ;
+		rr:predicate geo2:year ;
 		rr:objectMap [ 
-			rr:column "Attempts or threats to murder, assaults, harassments and related offences 2008" ; 
+			rr:column "Year" ; 
 			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:mah2009 ;
-		rr:objectMap [ 
-			rr:column "Attempts or threats to murder, assaults, harassments and related offences 2009" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:mah2010 ;
-		rr:objectMap [ 
-			rr:column "Attempts or threats to murder, assaults, harassments and related offences 2010" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:mah2011 ;
-		rr:objectMap [ 
-			rr:column "Attempts or threats to murder, assaults, harassments and related offences 2011" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:mah2012 ;
-		rr:objectMap [ 
-			rr:column "Attempts or threats to murder, assaults, harassments and related offences 2012" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:mah2013 ;
-		rr:objectMap [ 
-			rr:column "Attempts or threats to murder, assaults, harassments and related offences 2013" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:mah2014 ;
-		rr:objectMap [ 
-			rr:column "Attempts or threats to murder, assaults, harassments and related offences 2014" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:mah2015 ;
-		rr:objectMap [ 
-			rr:column "Attempts or threats to murder, assaults, harassments and related offences 2015" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:mah2016 ;
-		rr:objectMap [ 
-			rr:column "Attempts or threats to murder, assaults, harassments and related offences 2016*" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:dn2003 ;
-		rr:objectMap [ 
-			rr:column "Dangerous or negligent acts 2003" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:dn2004 ;
-		rr:objectMap [ 
-			rr:column "Dangerous or negligent acts 2004" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:dn2005 ;
-		rr:objectMap [ 
-			rr:column "Dangerous or negligent acts 2005" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:dn2006 ;
-		rr:objectMap [ 
-			rr:column "Dangerous or negligent acts 2006" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:dn2007 ;
-		rr:objectMap [ 
-			rr:column "Dangerous or negligent acts 2007" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:dn2008 ;
-		rr:objectMap [ 
-			rr:column "Dangerous or negligent acts 2008" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:dn2009 ;
-		rr:objectMap [ 
-			rr:column "Dangerous or negligent acts 2009" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:dn2010 ;
-		rr:objectMap [ 
-			rr:column "Dangerous or negligent acts 2010" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:dn2011 ;
-		rr:objectMap [ 
-			rr:column "Dangerous or negligent acts 2011" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:dn2012 ;
-		rr:objectMap [ 
-			rr:column "Dangerous or negligent acts 2012" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:dn2013 ;
-		rr:objectMap [ 
-			rr:column "Dangerous or negligent acts 2013" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:dn2014 ;
-		rr:objectMap [ 
-			rr:column "Dangerous or negligent acts 2014" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:dn2015 ;
-		rr:objectMap [ 
-			rr:column "Dangerous or negligent acts 2015" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:dn2016 ;
-		rr:objectMap [ 
-			rr:column "Dangerous or negligent acts 2016*" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:kr2003 ;
-		rr:objectMap [ 
-			rr:column "Kidnapping and related offences 2003" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:kr2004 ;
-		rr:objectMap [ 
-			rr:column "Kidnapping and related offences 2004" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:kr2005 ;
-		rr:objectMap [ 
-			rr:column "Kidnapping and related offences 2005" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:kr2006 ;
-		rr:objectMap [ 
-			rr:column "Kidnapping and related offences 2006" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:kr2007 ;
-		rr:objectMap [ 
-			rr:column "Kidnapping and related offences 2007" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:kr2008 ;
-		rr:objectMap [ 
-			rr:column "Kidnapping and related offences 2008" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:kr2009 ;
-		rr:objectMap [ 
-			rr:column "Kidnapping and related offences 2009" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:kr2010 ;
-		rr:objectMap [ 
-			rr:column "Kidnapping and related offences 2010" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:kr2011 ;
-		rr:objectMap [ 
-			rr:column "Kidnapping and related offences 2011" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:kr2012 ;
-		rr:objectMap [ 
-			rr:column "Kidnapping and related offences 2012" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:kr2013 ;
-		rr:objectMap [ 
-			rr:column "Kidnapping and related offences 2013" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:kr2014 ;
-		rr:objectMap [ 
-			rr:column "Kidnapping and related offences 2014" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:kr2015 ;
-		rr:objectMap [ 
-			rr:column "Kidnapping and related offences 2015" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:kr2016 ;
-		rr:objectMap [ 
-			rr:column "Kidnapping and related offences 2016*" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:reh2003 ;
-		rr:objectMap [ 
-			rr:column "Robbery, extortion and hijacking offences 2003" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:reh2004 ;
-		rr:objectMap [ 
-			rr:column "Robbery, extortion and hijacking offences 2004" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:reh2005 ;
-		rr:objectMap [ 
-			rr:column "Robbery, extortion and hijacking offences 2005" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:reh2006 ;
-		rr:objectMap [ 
-			rr:column "Robbery, extortion and hijacking offences 2006" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:reh2007 ;
-		rr:objectMap [ 
-			rr:column "Robbery, extortion and hijacking offences 2007" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:reh2008 ;
-		rr:objectMap [ 
-			rr:column "Robbery, extortion and hijacking offences 2008" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:reh2009 ;
-		rr:objectMap [ 
-			rr:column "Robbery, extortion and hijacking offences 2009" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:reh2010 ;
-		rr:objectMap [ 
-			rr:column "Robbery, extortion and hijacking offences 2010" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:reh2011 ;
-		rr:objectMap [ 
-			rr:column "Robbery, extortion and hijacking offences 2011" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:reh2012 ;
-		rr:objectMap [ 
-			rr:column "Robbery, extortion and hijacking offences 2012" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:reh2013 ;
-		rr:objectMap [ 
-			rr:column "Robbery, extortion and hijacking offences 2013" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:reh2014 ;
-		rr:objectMap [ 
-			rr:column "Robbery, extortion and hijacking offences 2014" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:reh2015 ;
-		rr:objectMap [ 
-			rr:column "Robbery, extortion and hijacking offences 2015" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:reh2016 ;
-		rr:objectMap [ 
-			rr:column "Robbery, extortion and hijacking offences 2016*" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:br2003 ;
-		rr:objectMap [ 
-			rr:column "Burglary and related offences 2003" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:br2004 ;
-		rr:objectMap [ 
-			rr:column "Burglary and related offences 2004" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:br2005 ;
-		rr:objectMap [ 
-			rr:column "Burglary and related offences 2005" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:br2006 ;
-		rr:objectMap [ 
-			rr:column "Burglary and related offences 2006" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:br2007 ;
-		rr:objectMap [ 
-			rr:column "Burglary and related offences 2007" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:br2008 ;
-		rr:objectMap [ 
-			rr:column "Burglary and related offences 2008" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:br2009 ;
-		rr:objectMap [ 
-			rr:column "Burglary and related offences 2009" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:br2010 ;
-		rr:objectMap [ 
-			rr:column "Burglary and related offences 2010" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:br2011 ;
-		rr:objectMap [ 
-			rr:column "Burglary and related offences 2011" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:br2012 ;
-		rr:objectMap [ 
-			rr:column "Burglary and related offences 2012" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:br2013 ;
-		rr:objectMap [ 
-			rr:column "Burglary and related offences 2013" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:br2014 ;
-		rr:objectMap [ 
-			rr:column "Burglary and related offences 2014" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:br2015 ;
-		rr:objectMap [ 
-			rr:column "Burglary and related offences 2015" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:br2016 ;
-		rr:objectMap [ 
-			rr:column "Burglary and related offences 2016*" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:tr2003 ;
-		rr:objectMap [ 
-			rr:column "Theft and related offences 2003" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:tr2004 ;
-		rr:objectMap [ 
-			rr:column "Theft and related offences 2004" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:tr2005 ;
-		rr:objectMap [ 
-			rr:column "Theft and related offences 2005" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:tr2006 ;
-		rr:objectMap [ 
-			rr:column "Theft and related offences 2006" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:tr2007 ;
-		rr:objectMap [ 
-			rr:column "Theft and related offences 2007" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:tr2008 ;
-		rr:objectMap [ 
-			rr:column "Theft and related offences 2008" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:tr2009 ;
-		rr:objectMap [ 
-			rr:column "Theft and related offences 2009" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:tr2010 ;
-		rr:objectMap [ 
-			rr:column "Theft and related offences 2010" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:tr2011 ;
-		rr:objectMap [ 
-			rr:column "Theft and related offences 2011" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:tr2012 ;
-		rr:objectMap [ 
-			rr:column "Theft and related offences 2012" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:tr2013 ;
-		rr:objectMap [ 
-			rr:column "Theft and related offences 2013" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:tr2014 ;
-		rr:objectMap [ 
-			rr:column "Theft and related offences 2014" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:tr2015 ;
-		rr:objectMap [ 
-			rr:column "Theft and related offences 2015" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:tr2016 ;
-		rr:objectMap [ 
-			rr:column "Theft and related offences 2016*" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:fdr2003 ;
-		rr:objectMap [ 
-			rr:column "Fraud, deception and related offences 2003" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:fdr2004 ;
-		rr:objectMap [ 
-			rr:column "Fraud, deception and related offences 2004" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:fdr2005 ;
-		rr:objectMap [ 
-			rr:column "Fraud, deception and related offences 2005" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:fdr2006 ;
-		rr:objectMap [ 
-			rr:column "Fraud, deception and related offences 2006" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:fdr2007 ;
-		rr:objectMap [ 
-			rr:column "Fraud, deception and related offences 2007" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:fdr2008 ;
-		rr:objectMap [ 
-			rr:column "Fraud, deception and related offences 2008" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:fdr2009 ;
-		rr:objectMap [ 
-			rr:column "Fraud, deception and related offences 2009" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:fdr2010 ;
-		rr:objectMap [ 
-			rr:column "Fraud, deception and related offences 2010" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:fdr2011 ;
-		rr:objectMap [ 
-			rr:column "Fraud, deception and related offences 2011" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:fdr2012 ;
-		rr:objectMap [ 
-			rr:column "Fraud, deception and related offences 2012" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:fdr2013 ;
-		rr:objectMap [ 
-			rr:column "Fraud, deception and related offences 2013" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:fdr2014 ;
-		rr:objectMap [ 
-			rr:column "Fraud, deception and related offences 2014" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:fdr2015 ;
-		rr:objectMap [ 
-			rr:column "Fraud, deception and related offences 2015" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:fdr2016 ;
-		rr:objectMap [ 
-			rr:column "Fraud, deception and related offences 2016*" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd2003 ;
-		rr:objectMap [ 
-			rr:column "Controlled drug offences 2003" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd2004 ;
-		rr:objectMap [ 
-			rr:column "Controlled drug offences 2004" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd2005 ;
-		rr:objectMap [ 
-			rr:column "Controlled drug offences 2005" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd2006 ;
-		rr:objectMap [ 
-			rr:column "Controlled drug offences 2006" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd2007 ;
-		rr:objectMap [ 
-			rr:column "Controlled drug offences 2007" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd2008 ;
-		rr:objectMap [ 
-			rr:column "Controlled drug offences 2008" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd2009 ;
-		rr:objectMap [ 
-			rr:column "Controlled drug offences 2009" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd2010 ;
-		rr:objectMap [ 
-			rr:column "Controlled drug offences 2010" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd2011 ;
-		rr:objectMap [ 
-			rr:column "Controlled drug offences 2011" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd2012 ;
-		rr:objectMap [ 
-			rr:column "Controlled drug offences 2012" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd2013 ;
-		rr:objectMap [ 
-			rr:column "Controlled drug offences 2013" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd2014 ;
-		rr:objectMap [ 
-			rr:column "Controlled drug offences 2014" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd2015 ;
-		rr:objectMap [ 
-			rr:column "Controlled drug offences 2015" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd2016 ;
-		rr:objectMap [ 
-			rr:column "Controlled drug offences 2016*" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd201 ;
-		rr:objectMap [ 
-			rr:column "Weapons and Explosives Offences 2003" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-    rr:predicateObjectMap [
-		rr:predicate geo2:division ;
-		rr:objectMap [ 
-			rr:column "Divisions" ; 
-			rr:datatype xsd:string ; 
 		] ; 
 	] ;
 	
