@@ -77,6 +77,6 @@ appropriate
     - ⏳ Discussion of challenges faced while ontology modelling or creating queries and mappings 
         - ⏳ Report how you organised your project (e.g. meetings, common google doc ...). 
     - ⏳ Conclusions: Self reflection of group on Strengths/weakness of ontology model, queries & interface 
-4. ⏳ Self Reflection Report 
+4. ⏳ Self Reflection Report (`./reports`)
     - ⏳ What you contributed 
     - ⏳ Reflection strengths and weaknesses of own contribution and of group work 
