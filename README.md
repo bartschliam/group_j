@@ -63,7 +63,7 @@ appropriate
     - ⏳ Electronic versions – for a,b,c use WIDOCO https://dgarijo.github.io/Widoco/
         - ⏳ understand examples from WIDOCO github before attempting to use in your own project 
         - ⏳ Note the html file generated with WIDOCO can be edited if needed with additional information (e.g. the SPARQL queries in a new section). 
-3. ⏳ Technical Report 
+3. ⏳ [Technical Report](https://www.overleaf.com/8328128127kjhgzxphsrrq)
     - ⏳ Approach to Ontology Modelling 
         - ⏳ Description of Competency Questions that ontology answers 
         - ⏳ Description of datasets selected for application 
