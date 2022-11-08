@@ -1,133 +1,187 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
-@prefix fcc: <http://www.example.org/ont#> .
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix geo2: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
 
-<#garda_stations>
-	a rr:TriplesMap ;
+#Example
+@prefix ex: <http://data.example.org/>
+
+
+
+<#MapDetails>
+ 
+rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
+		
+	rr:subjectMap	[
+		rr:template "http://data.example.org/Station/{ID}";
+		rr:termType rr:IRI;
+		rr:class sosa:Sampler;
+	];		
 	
-	rr:logicalTable [ rr:tableName "GARDA STATIONS" ] ;
+	rr:predicateObjectMap [
+		rr:predicate geo:hasGeometry;
+		rr:objectMap	[
+			rr:template "http://data.example.org/Station/{ID}/{LONGITUDE}_{LATITUDE}";
+			rr:class geo:Geometry;
+			rr:termType rr:IRI;
+		];
+	];
 	
-	rr:subjectMap [
-		rr:template "http://data.example.org/ws/{NAME}" ;
-		rr:class geo:Feature ;
-		rr:class fcc:Division ;
-	] ;
+	rr:predicateObjectMap [
+		rr:predicate ex:Station;
+		rr:objectMap  [ 
+			rr:column "STATION";
+			rr:termType rr:Literal;
+			rr:datatype xsd:string;
+		];	
+	];
 	
 	rr:predicateObjectMap [
-		rr:predicate rdfs:label ;
-		rr:objectMap [
-			rr:column "Divisions" ; rr:language "en" ;
-		] ; 
-		rr:objectMap [
-			rr:column "Divisions" ;
-		] ; 
-	] ;
- 	
-	rr:predicateObjectMap [
-		rr:predicate fcc:mah ;
-		rr:objectMap [ 
-			rr:column "Attempts or threats to murder, assaults, harassments and related offences" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
+		rr:predicate ex:longitude;
+		rr:objectMap  [ 
+			rr:column "LONGITUDE";
+			rr:termType rr:Literal;
+			rr:datatype xsd:double;
+		];	
+	];
 
 	rr:predicateObjectMap [
-		rr:predicate fcc:dn ;
-		rr:objectMap [ 
-			rr:column "Dangerous or negligent acts" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:kr ;
-		rr:objectMap [ 
-			rr:column "Kidnapping and related offences" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:reh ;
-		rr:objectMap [ 
-			rr:column "Robbery, extortion and hijacking offences" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:br ;
-		rr:objectMap [ 
-			rr:column "Burglary and related offences" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:tr ;
-		rr:objectMap [ 
-			rr:column "Theft and related offences" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:fdr ;
-		rr:objectMap [ 
-			rr:column "Fraud, deception and related offences" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:cd ;
-		rr:objectMap [ 
-			rr:column "Controlled drug offences" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:we ;
-		rr:objectMap [ 
-			rr:column "Weapons and Explosives Offences" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:pe ;
-		rr:objectMap [ 
-			rr:column "Damage to property and to the environment" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:po ;
-		rr:objectMap [ 
-			rr:column "Public order and other social code offences" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate fcc:jp ;
-		rr:objectMap [ 
-			rr:column "Offences against government, justice procedures and organisation of crime" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
-
-    rr:predicateObjectMap [
-		rr:predicate geo2:year ;
-		rr:objectMap [ 
-			rr:column "Year" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
+		rr:predicate ex:latitude;
+		rr:objectMap  [ 
+			rr:column "LATITUDE";
+			rr:termType rr:Literal;
+			rr:datatype xsd:double;
+		];	
+	];
 	
-	.
+	rr:predicateObjectMap [
+		rr:predicate ex:latitude;
+		rr:objectMap  [ 
+			rr:column "Attempts or threats to murder, assaults, harassments and related offences";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];	
+
+	rr:predicateObjectMap [
+		rr:predicate ex:latitude;
+		rr:objectMap  [ 
+			rr:column "Dangerous or negligent acts";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];	
+	
+	rr:predicateObjectMap [
+		rr:predicate ex:latitude;
+		rr:objectMap  [ 
+			rr:column "Kidnapping and related offences";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];	
+
+	rr:predicateObjectMap [
+		rr:predicate ex:latitude;
+		rr:objectMap  [ 
+			rr:column "Robbery, extortion and hijacking offences";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];	
+
+	rr:predicateObjectMap [
+		rr:predicate ex:latitude;
+		rr:objectMap  [ 
+			rr:column "Burglary and related offences";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];	
+
+	rr:predicateObjectMap [
+		rr:predicate ex:latitude;
+		rr:objectMap  [ 
+			rr:column "Theft and related offences";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];	
+
+	rr:predicateObjectMap [
+		rr:predicate ex:latitude;
+		rr:objectMap  [ 
+			rr:column "Fraud, deception and related offences";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];	
+
+	rr:predicateObjectMap [
+		rr:predicate ex:latitude;
+		rr:objectMap  [ 
+			rr:column "Controlled drug offences";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];	
+
+	rr:predicateObjectMap [
+		rr:predicate ex:latitude;
+		rr:objectMap  [ 
+			rr:column "Weapons and Explosives Offences";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];	
+
+	rr:predicateObjectMap [
+		rr:predicate ex:latitude;
+		rr:objectMap  [ 
+			rr:column "Damage to property and to the environment";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];	
+
+	rr:predicateObjectMap [
+		rr:predicate ex:latitude;
+		rr:objectMap  [ 
+			rr:column "Offences against government, justice procedures and organisation of crime";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];	
+
+	rr:predicateObjectMap [
+		rr:predicate ex:latitude;
+		rr:objectMap  [ 
+			rr:column "Public order and other social code offences";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];		
+ .
+ 
+ <#MapStationsGeo>
+
+rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
+
+	rr:subjectMap	[
+		rr:template "http://data.example.org/MetEireann/{ID}/{LONGITUDE}_{LATITUDE}";
+		rr:class geo:Geometry;
+		rr:termType rr:IRI;
+	];
+
+	rr:predicateObjectMap [
+	rr:predicate geo:asWKT;
+	rr:objectMap [ 
+		rr:template "POINT({LONGITUDE} {LATITUDE})";
+		rr:termType rr:Literal;
+		rr:datatype geo:wktLiteral;
+		];		
+	];
+
+.

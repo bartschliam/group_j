@@ -1,37 +1,89 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
-@prefix fcc: <http://www.example.org/ont#> .
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix geo2: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
 
-<#accommodation>
-	a rr:TriplesMap ;
-	
-	rr:logicalTable [ rr:tableName "PRICES" ] ;
-	
-	rr:subjectMap [
-		rr:template "http://data.example.org/ws/{NAME}" ;
-		rr:class geo:Feature ;
-		rr:class fcc:Value ;
-	] ;
+#Example
+@prefix ex: <http://data.example.org/>
+
+
+
+<#MapDetails>
+ 
+rr:logicalTable [ rr:tableName "HOUSEDATA"];
+		
+	rr:subjectMap	[
+		rr:template "http://data.example.org/House/{STATISTIC CODE}";
+		rr:termType rr:IRI;
+		rr:class sosa:Sampler;
+	];		
 	
 	rr:predicateObjectMap [
-		rr:predicate rdfs:label ;
-		rr:objectMap [
-			rr:column "AREA" ; rr:language "en" ;
-		] ; 
-		rr:objectMap [
-			rr:column "AREA" ;
-		] ; 
-	] ;
+		rr:predicate geo:hasGeometry;
+		rr:objectMap	[
+			rr:template "http://data.example.org/House/{STATISTIC CODE}/{AREA}";
+			rr:class geo:Geometry;
+			rr:termType rr:IRI;
+		];
+	];
 
-    rr:predicateObjectMap [
-		rr:predicate fcc:value ;
-		rr:objectMap [ 
-			rr:column "VALUE" ; 
-			rr:datatype xsd:integer ; 
-		] ; 
-	] ;
+	rr:predicateObjectMap [
+		rr:predicate ex:Statistic;
+		rr:objectMap  [ 
+			rr:column "STATISTIC";
+			rr:termType rr:Literal;
+			rr:datatype xsd:string;
+		];	
+	];
 	
-	.
+	rr:predicateObjectMap [
+		rr:predicate ex:Year;
+		rr:objectMap  [ 
+			rr:column "YEAR";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate ex:Value;
+		rr:objectMap  [ 
+			rr:column "VALUE";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate ex:Area;
+		rr:objectMap  [ 
+			rr:column "AREA";
+			rr:termType rr:Literal;
+			rr:datatype xsd:string;
+		];	
+	];
+	
+ .
+ 
+ <#MapDetailsGeo>
+
+rr:logicalTable [ rr:tableName "HOUSEDATA"];
+
+	rr:subjectMap	[
+		rr:template "http://data.example.org/House/{STATISTIC CODE}/{AREA}";
+		rr:class geo:Geometry;
+		rr:termType rr:IRI;
+	];
+
+	rr:predicateObjectMap [
+	rr:predicate geo:asWKT;
+	rr:objectMap [ 
+		rr:template "POINT({AREA})";
+		rr:termType rr:Literal;
+		rr:datatype geo:wktLiteral;
+		];		
+	];
+
+.

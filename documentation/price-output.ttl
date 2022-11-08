@@ -1,0 +1,91 @@
+<http://data.example.org/House/HSA06C1/Dublin>
+        a       <http://www.opengis.net/ont/geosparql#Geometry> ;
+        <http://www.opengis.net/ont/geosparql#asWKT>
+                "POINT(Dublin)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.example.org/House/HSA06C1>
+        a                               <http://www.w3.org/ns/sosa/Sampler> ;
+        <http://data.example.org/Area>  "Dublin" , "Waterford" , "Other areas" , "Cork" , "Limerick" , "National" , "Galway" ;
+        <http://data.example.org/Statistic>
+                "New House Prices" ;
+        <http://data.example.org/Value>
+                47531 , 249191 , 239409 , 397676 , 13900 , 50864 , 313483 , 18754 , 227444 , 228057 , 53904 , 83281 , 206456 , 13137 , 41105 , 58178 , 246378 , 42132 , 68019 , 179936 , 23077 , 58645 , 52656 , 91608 , 12636 , 122036 , 148521 , 86671 , 13254 , 54732 , 29387 , 405957 , 314276 , 35464 , 50891 , 138928 , 66829 , 45740 , 187607 , 30538 , 13594 , 239024 , 68238 , 291646 , 47222 , 242033 , 274905 , 230303 , 305269 , 68393 , 57994 , 154050 , 61074 , 74761 , 39729 , 333720 , 300466 , 47380 , 65107 , 37822 , 71829 , 34967 , 49804 , 112133 , 48151 , 251629 , 282677 , 216307 , 152205 , 243095 , 51355 , 44456 , 75417 , 265633 , 44060 , 271521 , 13833 , 68172 , 42738 , 276570 , 96046 , 241502 , 235473 , 125302 , 251437 , 292777 , 154051 , 49605 , 61341 , 121880 , 254006 , 64651 , 26244 , 260170 , 49166 , 33839 , 197672 , 76608 , 219459 , 77994 , 55729 , 44511 , 219233 , 39223 , 91077 , 104248 , 21715 , 34617 , 116589 , 40167 , 325453 , 29064 , 218097 , 45650 , 242218 , 377741 , 207573 , 15279 , 214404 , 228268 , 69883 , 62433 , 107954 , 79784 , 272290 , 220286 , 237858 , 19992 , 97058 , 14420 , 81993 , 48162 , 69950 , 288478 , 177122 , 141007 , 160699 , 24082 , 22460 , 205598 , 305015 , 166834 , 262215 , 60184 , 166557 , 48819 , 50506 , 15564 , 240063 , 46486 , 17842 , 322628 , 145713 , 167272 , 48886 , 41741 , 184369 , 65025 , 132050 , 216400 , 43844 , 224021 , 42944 , 232791 , 218308 , 43501 , 290668 , 54670 , 350891 , 221724 , 41520 , 18652 , 30466 , 45058 , 43741 , 85351 , 66784 , 82091 , 168574 , 93050 , 72732 , 44448 , 69264 , 79200 , 256109 , 25745 , 231739 , 73348 , 207957 , 155488 , 171161 , 208442 , 193526 , 77375 , 292057 , 300750 , 224567 , 69185 , 64598 , 244333 , 46542 , 145834 , 48256 , 75539 , 66825 , 37857 , 80749 , 87202 , 275411 , 38213 , 19055 , 53296 , 46966 , 109905 , 48169 , 45419 , 118738 , 12921 , 15361 , 218016 , 15347 , 213506 , 65541 , 212902 , 47928 , 17296 , 71378 , 260684 , 34340 , 286176 , 211980 , 416225 , 179716 , 45846 , 78715 , 281432 , 46946 , 32005 , 32663 , 276221 , 49004 , 52450 , 276719 , 163824 , 305637 , 241058 , 66914 , 228216 , 102222 , 252011 , 41430 , 293343 , 226393 , 57936 , 296605 , 21295 , 370495 , 53366 , 223388 , 169191 , 45460 , 15342 , 42889 , 34638 , 27137 , 45774 , 203125 , 87783 , 236113 , 220415 , 246914 , 40195 , 174550 , 44115 , 22839 , 210868 , 195173 , 198087 , 288202 , 242099 , 182863 , 229558 , 94664 , 32136 , 18025 , 255010 , 43654 , 322634 , 224778 , 62258 , 136970 , 27164 , 52238 , 265644 ;
+        <http://data.example.org/Year>  1996 , 1982 , 1988 , 2015 , 1997 , 1979 , 1992 , 2012 , 1989 , 1980 , 1993 , 1975 , 2004 , 2013 , 2008 , 1985 , 1976 , 2005 , 2009 , 1983 , 1999 , 2001 , 2016 , 1998 , 1984 , 1990 , 1981 , 1994 , 2014 , 1986 , 1995 , 1977 , 2006 , 2010 , 1987 , 1978 , 1991 , 2000 , 2002 , 2011 , 2003 , 2007 ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://data.example.org/House/HSA06C1/Dublin> , <http://data.example.org/House/HSA06C1/Galway> , <http://data.example.org/House/HSA06C1/Other%20areas> , <http://data.example.org/House/HSA06C1/Waterford> , <http://data.example.org/House/HSA06C1/Cork> , <http://data.example.org/House/HSA06C1/Limerick> , <http://data.example.org/House/HSA06C1/National> .
+
+<http://data.example.org/House/HSA06C1/Galway>
+        a       <http://www.opengis.net/ont/geosparql#Geometry> ;
+        <http://www.opengis.net/ont/geosparql#asWKT>
+                "POINT(Galway)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.example.org/House/HSA06C2/Dublin>
+        a       <http://www.opengis.net/ont/geosparql#Geometry> ;
+        <http://www.opengis.net/ont/geosparql#asWKT>
+                "POINT(Dublin)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.example.org/House/HSA06C2/Waterford>
+        a       <http://www.opengis.net/ont/geosparql#Geometry> ;
+        <http://www.opengis.net/ont/geosparql#asWKT>
+                "POINT(Waterford)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.example.org/House/HSA06C2/Limerick>
+        a       <http://www.opengis.net/ont/geosparql#Geometry> ;
+        <http://www.opengis.net/ont/geosparql#asWKT>
+                "POINT(Limerick)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.example.org/House/HSA06C2/Cork>
+        a       <http://www.opengis.net/ont/geosparql#Geometry> ;
+        <http://www.opengis.net/ont/geosparql#asWKT>
+                "POINT(Cork)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.example.org/House/HSA06C2/National>
+        a       <http://www.opengis.net/ont/geosparql#Geometry> ;
+        <http://www.opengis.net/ont/geosparql#asWKT>
+                "POINT(National)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.example.org/House/HSA06C1/National>
+        a       <http://www.opengis.net/ont/geosparql#Geometry> ;
+        <http://www.opengis.net/ont/geosparql#asWKT>
+                "POINT(National)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.example.org/House/HSA06C2>
+        a                               <http://www.w3.org/ns/sosa/Sampler> ;
+        <http://data.example.org/Area>  "Galway" , "Cork" , "Limerick" , "National" , "Dublin" , "Waterford" , "Other areas" ;
+        <http://data.example.org/Statistic>
+                "Second Hand House Prices" ;
+        <http://data.example.org/Value>
+                190321 , 110432 , 350239 , 320947 , 307007 , 73308 , 235829 , 294021 , 147152 , 170383 , 259285 , 64170 , 46427 , 168446 , 49767 , 34129 , 111878 , 183699 , 61099 , 210723 , 267939 , 135096 , 170342 , 205530 , 48188 , 201272 , 51450 , 227799 , 42577 , 12478 , 12774 , 50132 , 119072 , 169064 , 48220 , 86347 , 344891 , 20136 , 46400 , 33706 , 21427 , 54077 , 179687 , 344958 , 198208 , 62226 , 42243 , 38473 , 35282 , 209926 , 221723 , 47385 , 15303 , 42275 , 36836 , 23711 , 172273 , ""^^<http://www.w3.org/2001/XMLSchema#integer> , 40920 , 40262 , 22920 , 155242 , 66736 , 39866 , 198869 , 160263 , 348804 , 201477 , 64122 , 216748 , 173914 , 287483 , 330399 , 62956 , 55347 , 88535 , 104431 , 206571 , 340467 , 32025 , 126914 , 20381 , 212769 , 43491 , 210610 , 14161 , 27734 , 199241 , 377850 , 42021 , 14545 , 70796 , 330894 , 220029 , 55838 , 263653 , 56496 , 157176 , 63883 , 47900 , 58672 , 102712 , 29994 , 46965 , 96791 , 189713 , 76814 , 76075 , 45608 , 16681 , 42640 , 190550 , 200155 , 38022 , 217874 , 298235 , 389791 , 56866 , 59816 , 275250 , 57908 , 40308 , 14018 , 45208 , 175592 , 58405 , 251756 , 54088 , 45912 , 37032 , 131258 , 249132 , 77490 , 355451 , 276272 , 163316 , 139473 , 71066 , 249404 , 228763 , 115768 , 50382 , 50936 , 240683 , 56959 , 353104 , 351354 , 184000 , 252765 , 214645 , 43204 , 19736 , 54586 , 77152 , 20792 , 218061 , 175978 , 37630 , 297424 , 282998 , 198186 , 192721 , 274125 , 495576 , 44088 , 34777 , 63148 , 240444 , 74833 , 264898 , 46330 , 71298 , 273640 , 158442 , 29539 , 142188 , 368523 , 17898 , 43318 , 218869 , 134529 , 317811 , 335013 , 61567 , 52270 , 69877 , 313487 , 30092 , 42193 , 171203 , 50501 , 62874 , 347700 , 278813 , 15139 , 32978 , 74254 , 255912 , 88020 , 438790 , 39397 , 141662 , 34591 , 47752 , 264565 , 17925 , 294667 , 47082 , 56979 , 43873 , 42079 , 22565 , 49041 , 93948 , 30927 , 61413 , 27598 , 26046 , 52885 , 169142 , 16858 , 199224 , 25966 , 215023 , 40333 , 15850 , 31957 , 18778 , 59669 , 35437 , 257958 , 54591 , 205611 , 69258 , 512461 , 206117 , 25847 , 371447 , 261634 , 222641 , 236695 , 166145 , 51032 , 192301 , 260387 , 44225 , 74313 , 65331 , 46048 , 49139 , 336948 , 247039 , 333778 , 59409 , 176420 , 54985 , 245224 , 201805 , 42943 , 42784 , 444207 , 62387 , 37394 , 78370 , 16505 , 100791 , 345444 , 82772 , 259997 , 85629 , 15980 , 54803 , 179609 , 88939 , 286310 , 190315 , 21895 , 40210 , 167364 , 48249 , 273605 , 55615 , 27862 , 232271 , 78256 , 32387 , 197234 , 219544 , 29656 , 201871 ;
+        <http://data.example.org/Year>  1983 , 2006 , 1999 , 1987 , 2016 , 1998 , 1991 , 1984 , 2002 , 1981 , 1994 , 2003 , 2014 , 2007 , 1995 , 1977 , 2010 , 1978 , 2000 , 2011 , 1988 , 1992 , 1989 , 1975 , 2004 , 2008 , 1985 , 1976 , 1996 , 1982 , 2005 , 2015 , 1997 , 1979 , 2001 , 2012 , 1980 , 1993 , 2013 , 1990 , 2009 , 1986 ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://data.example.org/House/HSA06C2/Waterford> , <http://data.example.org/House/HSA06C2/Cork> , <http://data.example.org/House/HSA06C2/National> , <http://data.example.org/House/HSA06C2/Galway> , <http://data.example.org/House/HSA06C2/Dublin> , <http://data.example.org/House/HSA06C2/Limerick> , <http://data.example.org/House/HSA06C2/Other%20areas> .
+
+<http://data.example.org/House/HSA06C2/Other%20areas>
+        a       <http://www.opengis.net/ont/geosparql#Geometry> ;
+        <http://www.opengis.net/ont/geosparql#asWKT>
+                "POINT(Other areas)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.example.org/House/HSA06C1/Cork>
+        a       <http://www.opengis.net/ont/geosparql#Geometry> ;
+        <http://www.opengis.net/ont/geosparql#asWKT>
+                "POINT(Cork)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.example.org/House/HSA06C2/Galway>
+        a       <http://www.opengis.net/ont/geosparql#Geometry> ;
+        <http://www.opengis.net/ont/geosparql#asWKT>
+                "POINT(Galway)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.example.org/House/HSA06C1/Other%20areas>
+        a       <http://www.opengis.net/ont/geosparql#Geometry> ;
+        <http://www.opengis.net/ont/geosparql#asWKT>
+                "POINT(Other areas)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.example.org/House/HSA06C1/Limerick>
+        a       <http://www.opengis.net/ont/geosparql#Geometry> ;
+        <http://www.opengis.net/ont/geosparql#asWKT>
+                "POINT(Limerick)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+<http://data.example.org/House/HSA06C1/Waterford>
+        a       <http://www.opengis.net/ont/geosparql#Geometry> ;
+        <http://www.opengis.net/ont/geosparql#asWKT>
+                "POINT(Waterford)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .

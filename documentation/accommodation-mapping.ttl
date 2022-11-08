@@ -1,61 +1,70 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
-@prefix fcc: <http://www.example.org/ont#> .
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix geo2: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
 
-<#accommodation>
-	a rr:TriplesMap ;
-	
-	rr:logicalTable [ rr:tableName "ACCOMMODATIONS" ] ;
-	
-	rr:subjectMap [
-		rr:template "http://data.example.org/ws/{NAME}" ;
-		rr:class geo:Feature ;
-		rr:class fcc:Accommodation ;
-	] ;
+#Example
+@prefix ex: <http://data.example.org/>
+
+
+
+<#MapDetails>
+ 
+rr:logicalTable [ rr:tableName "ACCOMMODATION"];
+		
+	rr:subjectMap	[
+		rr:template "http://data.example.org/Accommodation/{NAME}";
+		rr:termType rr:IRI;
+		rr:class sosa:Sampler;
+	];		
 	
 	rr:predicateObjectMap [
-		rr:predicate rdfs:label ;
-		rr:objectMap [
-			rr:column "Name" ; rr:language "en" ;
-		] ; 
-		rr:objectMap [
-			rr:column "Name" ;
-		] ; 
-	] ;
- 	
-	rr:predicateObjectMap [
-		rr:predicate geo2:lat ;
-		rr:objectMap [ 
-			rr:column "Latitude" ; 
-			rr:datatype xsd:double ; 
-		] ; 
-	] ;
+		rr:predicate geo:hasGeometry;
+		rr:objectMap	[
+			rr:template "http://data.example.org/Accommodation/{NAME}/{LONGITUDE}_{LATITUDE}";
+			rr:class geo:Geometry;
+			rr:termType rr:IRI;
+		];
+	];
 	
 	rr:predicateObjectMap [
-		rr:predicate geo2:long ;
-		rr:objectMap [ 
-			rr:column "Longitude" ; 
-			rr:datatype xsd:double ; 
-		] ; 
-	] ;
-
-    rr:predicateObjectMap [
-		rr:predicate geo2:region ;
-		rr:objectMap [ 
-			rr:column "AddressRegion" ; 
-			rr:datatype xsd:string ; 
-		] ; 
-	] ;
-
-    rr:predicateObjectMap [
-		rr:predicate geo2:locality ;
-		rr:objectMap [ 
-			rr:column "AddressLocality" ; 
-			rr:datatype xsd:string ; 
-		] ; 
-	] ;
+		rr:predicate ex:AddressRegion;
+		rr:objectMap  [ 
+			rr:column "ADDRESSREGION";
+			rr:termType rr:Literal;
+			rr:datatype xsd:float;
+		];	
+	];
 	
-	.
+	rr:predicateObjectMap [
+		rr:predicate ex:AddressLocality;
+		rr:objectMap  [ 
+			rr:column "ADDRESSLOCALITY";
+			rr:termType rr:Literal;
+		];	
+	];
+	
+ .
+ 
+ <#MapDetailsGeo>
+
+rr:logicalTable [ rr:tableName "ACCOMMODATION"];
+
+	rr:subjectMap	[
+		rr:template "http://data.example.org/Accommodation/{NAME}/{LONGITUDE}_{LATITUDE}";
+		rr:class geo:Geometry;
+		rr:termType rr:IRI;
+	];
+
+	rr:predicateObjectMap [
+	rr:predicate geo:asWKT;
+	rr:objectMap [ 
+		rr:template "POINT({LONGITUDE} {LATITUDE})";
+		rr:termType rr:Literal;
+		rr:datatype geo:wktLiteral;
+		];		
+	];
+
+.
