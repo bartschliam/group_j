@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+     <!ENTITY house  "http://www.w3.org/TR/2003/PR-owl-guide-20031209/house#" >
+     <!ENTITY accommodation "http://www.w3.org/TR/2003/PR-owl-guide-20031209/accommodation#" >
+	 <!ENTITY station "http://www.w3.org/TR/2003/PR-owl-guide-20031209/station#" >
+	 <!ENTITY person "http://www.w3.org/TR/2003/PR-owl-guide-20031209/person#" >
+     <!ENTITY owl  "http://www.w3.org/2002/07/owl#" >
+     <!ENTITY xsd  "http://www.w3.org/2001/XMLSchema#" >
+   ]>
+
+<rdf:RDF
+  xmlns     = "&house;"
+  xmlns:accommodation = "&accommodation;"
+  xml:base  = "http://www.w3.org/TR/2003/PR-owl-guide-20031209/#"
+  xmlns:house = "&house;"
+  xmlns:station = "&station;"
+  xmlns:person = "&person;"
+  xmlns:owl = "&owl;"
+  xmlns:rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs= "http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:xsd = "&xsd;">
+  
+  <owl:Ontology rdf:about="">
+    <rdfs:comment>Group J OWL Ontology</rdfs:comment>
+	<rdfs:comment>Some classes/properties have been ommitted to keep the document concise for the convienince of the reader. </rdfs:comment>
+    <rdfs:label>Group J Ontology</rdfs:label>
+  </owl:Ontology>
+
+  
+  <!-- Object Properties -->
+  <owl:ObjectProperty rdf:about="http://www.example.org/group/#worksAt"/>
+  
+  <!-- Functional Properties -->
+  <owl:ObjectProperty rdf:ID="hasYear">
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&house;" />
+    <rdfs:range  rdf:resource="&xsd;gYear" />
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:ID="hasPrice">
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&house;" />
+    <rdfs:range  rdf:resource="&xsd;positiveInteger" />
+  </owl:ObjectProperty>
+  
+  <!-- Symmetric Properties -->
+  <owl:ObjectProperty rdf:ID="adjacentLocation">
+    <rdf:type rdf:resource="&owl;SymmetricProperty" />
+    <rdfs:domain rdf:resource="#Location" />
+    <rdfs:range rdf:resource="#Location" />
+  </owl:ObjectProperty>
+  
+  <!-- Inverse Properties -->
+  <owl:ObjectProperty rdf:about="http://www.example.org/group/#arrests"/>
+  <owl:ObjectProperty rdf:about="http://www.example.org/group/#isArrestedBy">
+	<owl:inversePropertyOf rdf:about="http://www.example.org/group/#arrests" />
+  </owl:ObjectProperty>
+  
+  <!-- Transitive Property & Example -->
+  <owl:ObjectProperty rdf:ID="locatedIn">
+    <rdf:type rdf:resource="&owl;TransitiveProperty" />
+    <rdfs:domain rdf:resource="&owl;Thing" />
+    <rdfs:range rdf:resource="#Location" />
+  </owl:ObjectProperty>
+  
+  <Location rdf:ID="Donnybrook">
+    <locatedIn rdf:resource="#DublinRegion" />
+  </Location>
+
+   <Location rdf:ID="DublinRegion">
+     <locatedIn rdf:resource="#LeinsterRegion" />
+   </Location>
+   
+   <Location rdf:ID="LeinsterRegion"/>
+  
+  
+  <!-- Classes -->
+  <owl:Class rdf:ID="GardaStation"/>
+  
+  <!-- Disjoint -->
+  <owl:Class rdf:ID="Second-Hand-House">
+	<rdfs:subClassOf rdf:resource="&house;"/>
+	<owl:disjointWith rdf:resource="#New-House"/>
+  </owl:Class>
+  
+  <!-- Subclass -->
+  <owl:Class rdf:ID="New-House">
+	<rdfs:subClassOf rdf:resource="&house;"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Hotel">
+	<rdfs:subClassOf rdf:resource="&accommodation;"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Garda">
+	<rdfs:subClassOf rdf:resource="&person;"/>
+	<owl:disjointWith rdf:resource="#Criminal"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Criminal">
+	<rdfs:subClassOf rdf:resource="&person;"/>
+  </owl:Class>
+  
+  <!-- Equivelant Class (allValuesFrom & onProperty) -->
+  <owl:Class rdf:ID="Location">
+	<owl:equivalentClass>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="http://www.semanticweb.org/vinu/ontologies/2014/2/untitled-ontology-55#locatedIn"/>
+			<owl:allValuesFrom rdf:resource="&house;"/>
+		</owl:Restriction>
+    </owl:equivalentClass>
+	<owl:equivalentClass>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="http://www.semanticweb.org/vinu/ontologies/2014/2/untitled-ontology-55#locatedIn"/>
+			<owl:allValuesFrom rdf:resource="&station;"/>
+		</owl:Restriction>
+    </owl:equivalentClass>
+	<owl:equivalentClass>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="http://www.semanticweb.org/vinu/ontologies/2014/2/untitled-ontology-55#locatedIn"/>
+			<owl:allValuesFrom rdf:resource="&accommodation;"/>
+		</owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  
+  
+   <!-- Adjacency (Syymety Example) -->
+   <Location rdf:ID="Lucan">
+      <locatedIn rdf:resource="#DublinRegion" />
+      <adjacentRegion rdf:resource="#Ballyfermot" />
+   </Location>
+   
+   <Location rdf:ID="Ballyfermot"/>
+   
+   
+   <!-- Example Individuals -->
+   <House rdf:ID="ExampleHouse">
+		<locatedIn rdf:resource="#Donnybrook" />
+		<hasYear rdf:resource="1985"/>
+		<hasPrice rdf:resource="100,000"/>
+   </House>
+   
+   <GardaStation rdf:ID="DonnybrookGardaStation"/>
+   
+   <Garda rdf:ID="ExampleGarda">
+		<worksAt rdf:resource="#DonnybrookGardaStation"/>
+		<arrests rdf:resource="#ExampleCriminal"/>
+   </Garda>
+   
+   <Criminal rdf:ID="ExampleCriminal">
+		<commitsCrime rdf:resource="#AttemptedMuder"/>
+		<isArrestedBy rdf:resource="#EampleGarda"/>
+		<affectsPriceOf rdf:resource="#ExampleHouse"/>
+   </Criminal>
+  
+</rdf:RDF>
