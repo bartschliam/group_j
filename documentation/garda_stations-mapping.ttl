@@ -2,7 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#>.
 
 #Example
@@ -15,9 +15,9 @@
 rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 		
 	rr:subjectMap	[
-		rr:template "http://data.example.org/Station/{ID}";
+		rr:template "http://data.example.org/Station/{ID}/{YEAR}";
 		rr:termType rr:IRI;
-		rr:class sosa:Sampler;
+		rr:class foaf:GardaStation;
 	];		
 	
 	rr:predicateObjectMap [
@@ -27,6 +27,15 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 			rr:class geo:Geometry;
 			rr:termType rr:IRI;
 		];
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate ex:Year;
+		rr:objectMap  [ 
+			rr:column "YEAR";
+			rr:termType rr:Literal;
+			rr:datatype xsd:gYear;
+		];	
 	];
 	
 	rr:predicateObjectMap [
@@ -57,7 +66,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];
 	
 	rr:predicateObjectMap [
-		rr:predicate ex:latitude;
+		rr:predicate ex:Attempted-Murder-Assaults-Harrasments;
 		rr:objectMap  [ 
 			rr:column "Attempts or threats to murder, assaults, harassments and related offences";
 			rr:termType rr:Literal;
@@ -66,7 +75,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate ex:latitude;
+		rr:predicate ex:Dangerous-Negligent-Acts;
 		rr:objectMap  [ 
 			rr:column "Dangerous or negligent acts";
 			rr:termType rr:Literal;
@@ -75,7 +84,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 	
 	rr:predicateObjectMap [
-		rr:predicate ex:latitude;
+		rr:predicate ex:Kidnapping;
 		rr:objectMap  [ 
 			rr:column "Kidnapping and related offences";
 			rr:termType rr:Literal;
@@ -84,7 +93,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate ex:latitude;
+		rr:predicate ex:Robbery;
 		rr:objectMap  [ 
 			rr:column "Robbery, extortion and hijacking offences";
 			rr:termType rr:Literal;
@@ -93,7 +102,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate ex:latitude;
+		rr:predicate ex:Burglary;
 		rr:objectMap  [ 
 			rr:column "Burglary and related offences";
 			rr:termType rr:Literal;
@@ -102,7 +111,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate ex:latitude;
+		rr:predicate ex:Theft;
 		rr:objectMap  [ 
 			rr:column "Theft and related offences";
 			rr:termType rr:Literal;
@@ -111,7 +120,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate ex:latitude;
+		rr:predicate ex:Fraud;
 		rr:objectMap  [ 
 			rr:column "Fraud, deception and related offences";
 			rr:termType rr:Literal;
@@ -120,7 +129,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate ex:latitude;
+		rr:predicate ex:Controlled-Drug-Offences;
 		rr:objectMap  [ 
 			rr:column "Controlled drug offences";
 			rr:termType rr:Literal;
@@ -129,7 +138,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate ex:latitude;
+		rr:predicate ex:Weapons-Explosives;
 		rr:objectMap  [ 
 			rr:column "Weapons and Explosives Offences";
 			rr:termType rr:Literal;
@@ -138,7 +147,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate ex:latitude;
+		rr:predicate ex:Damage-Property;
 		rr:objectMap  [ 
 			rr:column "Damage to property and to the environment";
 			rr:termType rr:Literal;
@@ -147,7 +156,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate ex:latitude;
+		rr:predicate ex:Offenses-Against-Government;
 		rr:objectMap  [ 
 			rr:column "Offences against government, justice procedures and organisation of crime";
 			rr:termType rr:Literal;
@@ -156,7 +165,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate ex:latitude;
+		rr:predicate ex:Public-Order;
 		rr:objectMap  [ 
 			rr:column "Public order and other social code offences";
 			rr:termType rr:Literal;
@@ -170,7 +179,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 
 	rr:subjectMap	[
-		rr:template "http://data.example.org/MetEireann/{ID}/{LONGITUDE}_{LATITUDE}";
+		rr:template "http://data.example.org/Station/{ID}/{LONGITUDE}_{LATITUDE}";
 		rr:class geo:Geometry;
 		rr:termType rr:IRI;
 	];
