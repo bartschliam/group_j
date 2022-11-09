@@ -10,36 +10,18 @@
 rr:logicalTable [ rr:tableName "ACCOMMODATION"];
 		
 	rr:subjectMap	[
-		rr:template "http://foo.example.org/Accommodation/{NAME}";
-		#rr:termType rr:IRI;
+		rr:template "http://data.example.org/Accommodation/{NAME}";
+		rr:termType rr:IRI;
 		rr:class foaf:Accommodation;
 	];		
 	
 	rr:predicateObjectMap [
 		rr:predicate geo:hasGeometry;
 		rr:objectMap	[
-			rr:template "http://foo.example.org/Accommodation/{NAME}/{LONGITUDE}_{LATITUDE}";
+			rr:template "http://data.example.org/Accommodation/{NAME}/{LONGITUDE}_{LATITUDE}";
 			rr:class geo:Geometry;
-			#rr:termType rr:IRI;
+			rr:termType rr:IRI;
 		];
-	];
-	
-	rr:predicateObjectMap [
-		rr:predicate foaf:AddressRegion;
-		rr:objectMap  [ 
-			rr:column "ADDRESSREGION";
-			rr:termType rr:Literal;
-			rr:datatype xsd:string;
-		];	
-	];
-	
-	rr:predicateObjectMap [
-		rr:predicate foaf:AddressLocality;
-		rr:objectMap  [ 
-			rr:column "ADDRESSLOCALITY";
-			rr:termType rr:Literal;
-			rr:datatype xsd:string;
-		];	
 	];
 
 	rr:predicateObjectMap [
@@ -60,5 +42,21 @@ rr:logicalTable [ rr:tableName "ACCOMMODATION"];
 		];	
 	];
 	
- .
+	rr:predicateObjectMap [
+		rr:predicate foaf:AddressLocality;
+		rr:objectMap  [ 
+			rr:column "ADDRESSLOCALITY";
+			rr:termType rr:Literal;
+			rr:datatype xsd:string;
+		];	
+	];	
 
+	rr:predicateObjectMap [
+		rr:predicate foaf:AddressRegion;
+		rr:objectMap  [ 
+			rr:column "ADDRESSREGION";
+			rr:termType rr:Literal;
+			rr:datatype xsd:string;
+		];	
+	];	
+ .

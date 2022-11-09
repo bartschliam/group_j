@@ -5,11 +5,6 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#>.
 
-#Example
-@prefix ex: <http://data.example.org/>
-
-
-
 <#MapDetails>
  
 rr:logicalTable [ rr:tableName "HOUSEDATA"];
@@ -30,7 +25,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	];
 
 	rr:predicateObjectMap [
-		rr:predicate ex:Statistic;
+		rr:predicate foaf:Statistic;
 		rr:objectMap  [ 
 			rr:column "STATISTIC";
 			rr:termType rr:Literal;
@@ -39,7 +34,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	];
 	
 	rr:predicateObjectMap [
-		rr:predicate ex:Year;
+		rr:predicate foaf:Year;
 		rr:objectMap  [ 
 			rr:column "YEAR";
 			rr:termType rr:Literal;
@@ -48,7 +43,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	];
 
 	rr:predicateObjectMap [
-		rr:predicate ex:Value;
+		rr:predicate foaf:Value;
 		rr:objectMap  [ 
 			rr:column "VALUE";
 			rr:termType rr:Literal;
@@ -57,7 +52,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	];
 
 	rr:predicateObjectMap [
-		rr:predicate ex:Area;
+		rr:predicate foaf:Area;
 		rr:objectMap  [ 
 			rr:column "AREA";
 			rr:termType rr:Literal;
