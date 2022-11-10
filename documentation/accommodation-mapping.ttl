@@ -7,18 +7,18 @@
 
 <#MapDetails>
  
-rr:logicalTable [ rr:tableName "ACCOMMODATION"];
+rr:logicalTable [ rr:tableName "ACCOMMODATIONNEW"];
 		
 	rr:subjectMap	[
-		rr:template "http://data.example.org/Accommodation/{NAME}";
+		rr:template "http://foo.example.org/Accommodation/{NAME}";
 		rr:termType rr:IRI;
-		rr:class foaf:Accommodation;
+		rr:class foaf:Accom;
 	];		
 	
 	rr:predicateObjectMap [
 		rr:predicate geo:hasGeometry;
 		rr:objectMap	[
-			rr:template "http://data.example.org/Accommodation/{NAME}/{LONGITUDE}_{LATITUDE}";
+			rr:template "http://foo.example.org/Accommodation/{NAME}/{LONGITUDE}_{LATITUDE}";
 			rr:class geo:Geometry;
 			rr:termType rr:IRI;
 		];

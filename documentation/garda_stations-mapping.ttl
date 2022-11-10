@@ -10,7 +10,7 @@
 rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 		
 	rr:subjectMap	[
-		rr:template "http://data.example.org/Station/{ID}/{YEAR}";
+		rr:template "http://foo.example.org/Station/{ID}/{YEAR}";
 		rr:termType rr:IRI;
 		rr:class foaf:GardaStation;
 	];		
@@ -18,7 +18,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate geo:hasGeometry;
 		rr:objectMap	[
-			rr:template "http://data.example.org/Station/{ID}/{LONGITUDE}_{LATITUDE}";
+			rr:template "http://foo.example.org/Station/{ID}/{LONGITUDE}_{LATITUDE}";
 			rr:class geo:Geometry;
 			rr:termType rr:IRI;
 		];
@@ -168,24 +168,3 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 		];	
 	];		
  .
- 
- <#MapStationsGeo>
-
-rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
-
-	rr:subjectMap	[
-		rr:template "http://data.example.org/Station/{ID}/{LONGITUDE}_{LATITUDE}";
-		rr:class geo:Geometry;
-		rr:termType rr:IRI;
-	];
-
-	rr:predicateObjectMap [
-	rr:predicate geo:asWKT;
-	rr:objectMap [ 
-		rr:template "POINT({LONGITUDE} {LATITUDE})";
-		rr:termType rr:Literal;
-		rr:datatype geo:wktLiteral;
-		];		
-	];
-
-.
