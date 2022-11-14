@@ -51,9 +51,9 @@
   </owl:ObjectProperty>
   
   <!-- Inverse Properties -->
-  <owl:ObjectProperty rdf:about="http://www.example.org/group/#arrests"/>
-  <owl:ObjectProperty rdf:about="http://www.example.org/group/#isArrestedBy">
-	<owl:inversePropertyOf rdf:about="http://www.example.org/group/#arrests" />
+  <owl:ObjectProperty rdf:about="http://www.example.org/group/#affectsPriceOf"/>
+  <owl:ObjectProperty rdf:about="http://www.example.org/group/#priceIsEffectedBy">
+	<owl:inversePropertyOf rdf:about="http://www.example.org/group/#affectsPriceOf" />
   </owl:ObjectProperty>
   
   <!-- Transitive Property & Example -->
@@ -124,7 +124,7 @@
   </owl:Class>
   
   
-   <!-- Adjacency (Syymety Example) -->
+   <!-- Adjacency (Syymetry Example) -->
    <Location rdf:ID="Lucan">
       <locatedIn rdf:resource="#DublinRegion" />
       <adjacentRegion rdf:resource="#Ballyfermot" />
@@ -132,25 +132,5 @@
    
    <Location rdf:ID="Ballyfermot"/>
    
-   
-   <!-- Example Individuals -->
-   <House rdf:ID="ExampleHouse">
-		<locatedIn rdf:resource="#Donnybrook" />
-		<hasYear rdf:resource="1985"/>
-		<hasPrice rdf:resource="100,000"/>
-   </House>
-   
-   <GardaStation rdf:ID="DonnybrookGardaStation"/>
-   
-   <Garda rdf:ID="ExampleGarda">
-		<worksAt rdf:resource="#DonnybrookGardaStation"/>
-		<arrests rdf:resource="#ExampleCriminal"/>
-   </Garda>
-   
-   <Criminal rdf:ID="ExampleCriminal">
-		<commitsCrime rdf:resource="#AttemptedMuder"/>
-		<isArrestedBy rdf:resource="#EampleGarda"/>
-		<affectsPriceOf rdf:resource="#ExampleHouse"/>
-   </Criminal>
   
 </rdf:RDF>
