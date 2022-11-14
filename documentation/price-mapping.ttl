@@ -10,7 +10,7 @@
 rr:logicalTable [ rr:tableName "HOUSEDATA"];
 		
 	rr:subjectMap	[
-		rr:template "http://data.example.org/House/{STATISTIC}/{YEAR}/{AREA}";
+		rr:template "http://foo.example.org/House/{STATISTIC}/{YEAR}/{AREA}";
 		rr:termType rr:IRI;
 		rr:class foaf:HousePrice;
 	];		
@@ -18,7 +18,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	rr:predicateObjectMap [
 		rr:predicate geo:hasGeometry;
 		rr:objectMap	[
-			rr:template "http://data.example.org/House/{STATISTIC CODE}/{AREA}";
+			rr:template "http://foo.example.org/House/{STATISTIC}/{AREA}";
 			rr:class geo:Geometry;
 			rr:termType rr:IRI;
 		];
@@ -61,24 +61,3 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	];
 	
  .
- 
- <#MapDetailsGeo>
-
-rr:logicalTable [ rr:tableName "HOUSEDATA"];
-
-	rr:subjectMap	[
-		rr:template "http://data.example.org/House/{STATISTIC CODE}/{AREA}";
-		rr:class geo:Geometry;
-		rr:termType rr:IRI;
-	];
-
-	rr:predicateObjectMap [
-	rr:predicate geo:asWKT;
-	rr:objectMap [ 
-		rr:template "POINT({AREA})";
-		rr:termType rr:Literal;
-		rr:datatype geo:wktLiteral;
-		];		
-	];
-
-.
