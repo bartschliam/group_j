@@ -1,6 +1,7 @@
 import * as React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import axios from "axios";
 
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
@@ -10,6 +11,17 @@ import Box from "@mui/material/Box";
 import { blueGrey } from "@mui/material/colors";
 
 const queries = [
+  {
+    label: "WORKING EXAMPLE: Count the number of Hostels in Ireland",
+    query: `PREFIX accom:<http://foo.example.org/Accommodation/>
+  PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+  
+  select (count (distinct ?names) as ?count)
+  where { 
+    accom:Hostel foaf:AddressLocality ?names .
+  }
+  `,
+  },
   { label: "Is there a correlation between new house prices and crime?" },
   {
     label: "Is there a correlation between second hand house prices and crime?",
@@ -45,6 +57,7 @@ const queries = [
 
 export default function Home() {
   const [selectedQuery, setSelectedQuery] = React.useState("");
+  const [queryResult, setQueryResult] = React.useState({});
 
   const Map = React.useMemo(
     () =>
@@ -56,6 +69,15 @@ export default function Home() {
       /* list variables which should trigger a re-render here */
     ]
   );
+
+  // TODO: Process the returned data
+  const handleQuerySubmit = async (e) => {
+    axios
+      .get("/api/sparql", {
+        params: { sparqlQuery: selectedQuery.query },
+      })
+      .then((result) => setQueryResult(result.data));
+  };
 
   return (
     <div>
@@ -81,23 +103,24 @@ export default function Home() {
           renderInput={(params) => <TextField {...params} label="Query" />}
           fullWidth
         />
-        <Button
-          variant="contained"
-          sx={{ mt: 1 }}
-          onClick={() => {
-            console.log(`Selected Query: ${selectedQuery.label}`);
-          }}
-        >
+        <Button variant="contained" sx={{ mt: 1 }} onClick={handleQuerySubmit}>
           Select Query
         </Button>
         <Box bgcolor={blueGrey[50]} mt={2} p={2} borderRadius={1}>
           <Typography variant="body1" gutterBottom fontWeight={800}>
+            SPARQL:
+          </Typography>
+          <Typography variant="body1" gutterBottom>
+            {selectedQuery.query}
+          </Typography>
+          <Typography variant="body1" gutterBottom fontWeight={800}>
             Output:
           </Typography>
           <Typography variant="body1" gutterBottom>
-            {selectedQuery.label}
+            {JSON.stringify(queryResult, null, 2)}
           </Typography>
         </Box>
+        <br />
         <Map />
       </Box>
     </div>
