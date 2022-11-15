@@ -10,7 +10,7 @@
 rr:logicalTable [ rr:tableName "HOUSEDATA"];
 		
 	rr:subjectMap	[
-		rr:template "http://foo.example.org/House/{STATISTIC}/{YEAR}/{AREA}";
+		rr:template "http://foo.example.org/House/{AREA}/{YEAR}/{STATISTIC}";
 		rr:termType rr:IRI;
 		rr:class foaf:HousePrice;
 	];		
@@ -18,7 +18,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	rr:predicateObjectMap [
 		rr:predicate geo:hasGeometry;
 		rr:objectMap	[
-			rr:template "http://foo.example.org/House/{STATISTIC}/{YEAR}/{AREA}";
+			rr:template "http://foo.example.org/House/{AREA}";
 			rr:class geo:Geometry;
 			rr:termType rr:IRI;
 		];
@@ -27,7 +27,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Statistic;
 		rr:objectMap  [ 
-			rr:template "http://foo.example.org/House/{STATISTIC}/{YEAR}/{AREA}/{STATISTIC}";
+			rr:column "STATISTIC";
 			rr:termType rr:Literal;
 			rr:datatype xsd:string;
 		];	
@@ -36,7 +36,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Year;
 		rr:objectMap  [ 
-			rr:template "http://foo.example.org/House/{STATISTIC}/{YEAR}/{AREA}/{YEAR}";
+			rr:column "YEAR";
 			rr:termType rr:Literal;
 			rr:datatype xsd:integer;
 		];	
@@ -45,7 +45,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Value;
 		rr:objectMap  [ 
-			rr:template "http://foo.example.org/House/{STATISTIC}/{YEAR}/{AREA}/{VALUE}";
+			rr:column "VALUE";
 			rr:termType rr:Literal;
 			rr:datatype xsd:integer;
 		];	
@@ -54,7 +54,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Area;
 		rr:objectMap  [ 
-			rr:template "http://foo.example.org/House/{STATISTIC}/{YEAR}/{AREA}";
+			rr:column "AREA";
 			rr:termType rr:Literal;
 			rr:datatype xsd:string;
 		];	
