@@ -18,7 +18,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate geo:hasGeometry;
 		rr:objectMap	[
-			rr:template "http://foo.example.org/Station/{ID}/{LONGITUDE}_{LATITUDE}";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{LONGITUDE}_{LATITUDE}";
 			rr:class geo:Geometry;
 			rr:termType rr:IRI;
 		];
@@ -27,7 +27,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Year;
 		rr:objectMap  [ 
-			rr:column "YEAR";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:gYear;
 		];	
@@ -36,7 +36,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Station;
 		rr:objectMap  [ 
-			rr:column "STATION";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{STATION}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:string;
 		];	
@@ -45,7 +45,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:longitude;
 		rr:objectMap  [ 
-			rr:column "LONGITUDE";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{LONGITUDE}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:double;
 		];	
@@ -54,7 +54,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:latitude;
 		rr:objectMap  [ 
-			rr:column "LATITUDE";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{LATITUDE}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:double;
 		];	
@@ -63,7 +63,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Attempted-Murder-Assaults-Harrasments;
 		rr:objectMap  [ 
-			rr:column "Attempts or threats to murder, assaults, harassments and related offences";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{Attempts or threats to murder, assaults, harassments and related offences}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:integer;
 		];	
@@ -72,7 +72,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Dangerous-Negligent-Acts;
 		rr:objectMap  [ 
-			rr:column "Dangerous or negligent acts";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{Attempts or threats to murder, assaults, harassments and related offences}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:integer;
 		];	
@@ -81,7 +81,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Kidnapping;
 		rr:objectMap  [ 
-			rr:column "Kidnapping and related offences";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{Kidnapping and related offences}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:integer;
 		];	
@@ -90,7 +90,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Robbery;
 		rr:objectMap  [ 
-			rr:column "Robbery, extortion and hijacking offences";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{Robbery, extortion and hijacking offences}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:integer;
 		];	
@@ -99,7 +99,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Burglary;
 		rr:objectMap  [ 
-			rr:column "Burglary and related offences";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{Burglary and related offences}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:integer;
 		];	
@@ -108,7 +108,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Theft;
 		rr:objectMap  [ 
-			rr:column "Theft and related offences";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{Theft and related offences}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:integer;
 		];	
@@ -117,7 +117,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Fraud;
 		rr:objectMap  [ 
-			rr:column "Fraud, deception and related offences";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{Fraud, deception and related offences}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:integer;
 		];	
@@ -126,7 +126,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Controlled-Drug-Offences;
 		rr:objectMap  [ 
-			rr:column "Controlled drug offences";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{Controlled drug offences}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:integer;
 		];	
@@ -135,7 +135,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Weapons-Explosives;
 		rr:objectMap  [ 
-			rr:column "Weapons and Explosives Offences";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{Weapons and Explosives Offences}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:integer;
 		];	
@@ -144,16 +144,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Damage-Property;
 		rr:objectMap  [ 
-			rr:column "Damage to property and to the environment";
-			rr:termType rr:Literal;
-			rr:datatype xsd:integer;
-		];	
-	];	
-
-	rr:predicateObjectMap [
-		rr:predicate foaf:Offenses-Against-Government;
-		rr:objectMap  [ 
-			rr:column "Offences against government, justice procedures and organisation of crime";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{Damage to property and to the environment}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:integer;
 		];	
@@ -162,9 +153,18 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:Public-Order;
 		rr:objectMap  [ 
-			rr:column "Public order and other social code offences";
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{Public order and other social code offences}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:integer;
 		];	
-	];		
+	];	
+
+	rr:predicateObjectMap [
+		rr:predicate foaf:Offenses-Against-Government;
+		rr:objectMap  [ 
+			rr:template "http://foo.example.org/Station/{ID}/{YEAR}/{Offences against government, justice procedures and organisation of crime}";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];			
  .
