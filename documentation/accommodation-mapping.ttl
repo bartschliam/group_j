@@ -7,7 +7,7 @@
 
 <#MapDetails>
  
-rr:logicalTable [ rr:tableName "ACCOMMODATIONNEW"];
+rr:logicalTable [ rr:tableName "ACCOMMODATION"];
 		
 	rr:subjectMap	[
 		rr:template "http://foo.example.org/Accommodation/{NAME}";
@@ -25,27 +25,18 @@ rr:logicalTable [ rr:tableName "ACCOMMODATIONNEW"];
 	];
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:longitude;
+		rr:predicate foaf:name;
 		rr:objectMap  [ 
-			rr:column "LONGITUDE";
+			rr:template "http://foo.example.org/Accommodation/{NAME}/{TAGS}";
 			rr:termType rr:Literal;
-			rr:datatype xsd:double;
-		];	
-	];
-
-	rr:predicateObjectMap [
-		rr:predicate foaf:latitude;
-		rr:objectMap  [ 
-			rr:column "LATITUDE";
-			rr:termType rr:Literal;
-			rr:datatype xsd:double;
+			rr:datatype xsd:string;
 		];	
 	];
 	
 	rr:predicateObjectMap [
 		rr:predicate foaf:AddressLocality;
 		rr:objectMap  [ 
-			rr:column "ADDRESSLOCALITY";
+			rr:template "http://foo.example.org/Accommodation/{NAME}/{ADDRESSLOCALITY}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:string;
 		];	
@@ -54,7 +45,7 @@ rr:logicalTable [ rr:tableName "ACCOMMODATIONNEW"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:AddressRegion;
 		rr:objectMap  [ 
-			rr:column "ADDRESSREGION";
+			rr:template "http://foo.example.org/Accommodation/{NAME}/{ADDRESSREGION}";
 			rr:termType rr:Literal;
 			rr:datatype xsd:string;
 		];	
