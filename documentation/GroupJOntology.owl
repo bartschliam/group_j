@@ -2,8 +2,8 @@
 <!DOCTYPE rdf:RDF [
      <!ENTITY house  "http://www.w3.org/TR/2003/PR-owl-guide-20031209/house#" >
      <!ENTITY accommodation "http://www.w3.org/TR/2003/PR-owl-guide-20031209/accommodation#" >
-	 <!ENTITY station "http://www.w3.org/TR/2003/PR-owl-guide-20031209/station#" >
-	 <!ENTITY person "http://www.w3.org/TR/2003/PR-owl-guide-20031209/person#" >
+	   <!ENTITY station "http://www.w3.org/TR/2003/PR-owl-guide-20031209/station#" >
+	   <!ENTITY person "http://www.w3.org/TR/2003/PR-owl-guide-20031209/person#" >
      <!ENTITY owl  "http://www.w3.org/2002/07/owl#" >
      <!ENTITY xsd  "http://www.w3.org/2001/XMLSchema#" >
    ]>
