@@ -1,80 +1,34 @@
-1.
+1. Number of Hostels
+PREFIX accom:<http://foo.example.org/Accommodation/>
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 
-PREFIX acc:<http://example.org#accomodation>
-PREFIX crime:<http://example#crime>
-PREFIX 
-SELECT (MAX(?price) AS ?max_price) AND (MIN(?crime) AS ?min_crime)
-    WHERE {
-        ?area ex:hasPrice ?price
-        ?area ex:hasCrime ?crime
-    } 
-
-2.
-
-SELECT (MIN(?price) AS ?min_price) AND (MAX(?crime) AS ?max_crime)
-    WHERE {
-        ?area ex:hasPrice ?price
-        ?area ex:hasCrime ?crime
-    } 
-
-3.
-
-SELECT (MAX(?crime) AS ?max_crime) ?accomodations
-WHERE {
-    ex:area "Dublin" ?available
-    ?available > ?max_crime
+select (count (distinct ?names) as ?count)
+where { 
+	accom:Hostel foaf:AddressLocality ?names .
 }
 
-4. 
-
-SELECT (MIN(?crime) AS ?min_crime) AND (MIN(?accomodations) AS ?min_accomodations)
-WHERE {
-    ex:area ?city ?min_accomodations
-    ex:area ?city ?min_crime
+2. Min Max of Housing Prices
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+SELECT * WHERE
+{
+{
+select ?house ?value ?area ?year 
+where {
+    ?house foaf:Value ?value .
+    ?house foaf:Area ?area .
+    ?house foaf:Year ?year .
+} order by desc (?value)
+limit 1
 }
-
-5.
-
-SELECT (MAX(?crime) AS ?type) ?accomodations
-WHERE {
-    ex:area "Cork" ?type
-    ex:area "Cork" ?accomodations
+UNION
+{
+select ?house ?value ?area ?year 
+where {
+    ?house foaf:Value ?value .
+            filter(?value > 0)
+    ?house foaf:Area ?area .
+    ?house foaf:Year ?year .
+} order by asc (?value)
+limit 1
 }
-
-6. 
-
-SELECT (MIN(?crime) AS ?type) ?accomodations
-WHERE {
-    ex:area "Galway" ?type
-    ex:area "Galway" ?accomodations
-}
-
-7. 
-
-SELECT (SUM(?amount_of_crime))
-WHERE {
-    ex:area ?cities ?amount_of_crime
-    ex:area ?country ?accomodations
-}
-
-8. 
-
-SELECT (MIN(?cheap) AS ?min)
-WHERE {
-    ex:area ?name ?amount_of_crime
-    ex:area ?year ?min
-}
-
-9.
-
-SELECT (MAX(?price) AS ?max)
-WHERE {
-    ex:area ?city ?accomodations
-}
-
-10.
-
-SELECT (MAX(?crime) AS ?max)
-WHERE {
-    ex:area ?city ?accomodations
 }
