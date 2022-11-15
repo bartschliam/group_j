@@ -70,6 +70,12 @@ where {
 ORDER BY DESC(?b)
 
 ---
-
 ### testing
 ---
+PREFIX station:<http://foo.example.org/Station/>
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+
+select ?station SUM(?kidnapping)
+where { 
+	?station foaf:Kidnapping ?kidnapping.
+}
