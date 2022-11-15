@@ -8,7 +8,6 @@ import Autocomplete from "@mui/material/Autocomplete";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { blueGrey } from "@mui/material/colors";
-import RoomIcon from "@mui/icons-material/Room";
 
 const queries = [
   { label: "Is there a correlation between new house prices and crime?" },
@@ -100,7 +99,6 @@ export default function Home() {
           </Typography>
         </Box>
         <Map />
-        <RoomIcon />
       </Box>
     </div>
   );

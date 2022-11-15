@@ -7,7 +7,8 @@ import { renderToStaticMarkup } from "react-dom/server";
 
 const myIcon = new divIcon({
     html: renderToStaticMarkup(<RoomIcon size="small" variant="extended"/>),
-    iconSize: [0, 0]
+    className: "divIcon",
+    iconSize: [25, 25]
    })
 
 const Map = () => {
