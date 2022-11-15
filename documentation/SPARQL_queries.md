@@ -1,3 +1,7 @@
+- [Query 1](#query-1-number-of-hostels)
+- [Query 2](#query-2-min-max-of-housing-prices)
+- [Testing](#testing)
+
 ### Query 1. Number of Hostels
 ---
 PREFIX accom:<http://foo.example.org/Accommodation/>
