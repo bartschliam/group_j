@@ -70,7 +70,7 @@ where {
 ORDER BY DESC(?b)
 
 ---
-### testing
+### testing how many X crimes reported per station
 ---
 PREFIX station:<http://foo.example.org/Station/>
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
@@ -79,3 +79,9 @@ select ?station SUM(?kidnapping)
 where { 
 	?station foaf:Kidnapping ?kidnapping.
 }
+
+---
+### testing ranked list for house prices, amount of accomm and crime
+---
+https://stackoverflow.com/questions/17313730/how-to-rank-values-in-sparql
+this might be handy but website currently down
