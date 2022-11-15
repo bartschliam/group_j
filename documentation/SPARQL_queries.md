@@ -1,4 +1,5 @@
-1. Number of Hostels
+### Query 1. Number of Hostels
+---
 PREFIX accom:<http://foo.example.org/Accommodation/>
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 
@@ -7,7 +8,9 @@ where {
 	accom:Hostel foaf:AddressLocality ?names .
 }
 
-2. Min Max of Housing Prices
+---
+### Query 2. Min Max of Housing Prices
+---
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 SELECT * WHERE
 {
@@ -32,3 +35,21 @@ where {
 limit 1
 }
 }
+
+---
+### testing
+---
+PREFIX accom:<http://foo.example.org/Accommodation/>
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX crime:<http://foo.example.org/Station/20646/>
+
+select *
+where { 
+    ?a foaf:Attempted-Murder-Assaults-Harrasments ?b.
+    ?a foaf:Burglary ?b.
+    ?a foaf:Controlled-Drug-Offences ?b.
+    ?a foaf:Damage-Property ?b
+}
+ORDER BY DESC(?b)
+
+---
