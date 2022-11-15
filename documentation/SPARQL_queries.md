@@ -40,6 +40,19 @@ limit 1
 }
 }
 
+PREFIX station: <http://foo.example.org/Station/>
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+
+select ?station ?division ?murder ?neglect ?kidnapping where {  
+    {
+        ?station foaf:Attempted-Murder-Assaults-Harrasments ?murder.
+        ?station foaf:Dangerous-Negligent-Acts ?neglect.
+        ?station foaf:Kidnapping ?kidnapping.
+        ?station foaf:Kidnapping ?kidnapping.
+        ?station foaf:Division ?division.
+    }
+}order by desc (?kidnapping)
+
 ---
 ### testing
 ---
