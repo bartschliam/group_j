@@ -1,11 +1,19 @@
 - [Query 1](#query-1-number-of-hostels)
 - [Query 2](#query-2-min-max-of-housing-prices)
-- [Testing](#testing)
+- [Query 3](#query-3-in-progress)
+- [Query 4](#query-4-in-progress)
+- [Query 5](#query-5-in-progress-testing-how-many-x-crimes-reported-per-station)
+- [Query 6](#query-6-in-progress-testing-ranked-list-for-house-prices-amount-of-accomm-and-crime)
+- [Query 7](#query-7-to-do)
+- [Query 8](#query-8-to-do)
+- [Query 9](#query-9-to-do)
+- [Query 10](#query-10-to-do)
 
 ### Query 1. Number of Hostels TODO: Should replace
 
 ---
 
+```
 PREFIX accom:<http://foo.example.org/Accommodation/>
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 
@@ -13,6 +21,7 @@ select (count (distinct ?names) as ?count)
 where {
 accom:Hostel foaf:AddressLocality ?names .
 }
+```
 
 ---
 
@@ -20,6 +29,7 @@ accom:Hostel foaf:AddressLocality ?names .
 
 ---
 
+```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 SELECT \* WHERE {
 {
@@ -43,7 +53,15 @@ filter(?value > 0)
 limit 1
 }
 }
+```
 
+---
+
+### Query 3 (in progress)
+
+---
+
+```
 ### Query 3: In areas where there's an increase in new housing sale value, what trends are there in crime over time?
 
 ### Query 4: In high crime areas, what types of accomodation is there? (Do people go camping where there is crime?)
@@ -56,14 +74,24 @@ limit 1
 
 - @yannickgloster
 
-### Query 8: Year and location with the largest damage to property and to the environment, how did house sale value compare to the year with the least.
+select ?station ?division ?murder ?neglect ?kidnapping where {
+    {
+        ?station foaf:Attempted-Murder-Assaults-Harrasments ?murder.
+        ?station foaf:Dangerous-Negligent-Acts ?neglect.
+        ?station foaf:Kidnapping ?kidnapping.
+        ?station foaf:Kidnapping ?kidnapping.
+        ?station foaf:Division ?division.
+    }
+}order by desc (?kidnapping)
+```
 
 ---
 
-### testing
+### Query 4 (in progress)
 
 ---
 
+```
 PREFIX accom:<http://foo.example.org/Accommodation/>
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX crime:<http://foo.example.org/Station/20646/>
@@ -76,13 +104,17 @@ where {
 ?a foaf:Damage-Property ?b
 }
 ORDER BY DESC(?b)
+```
 
 ---
 
-### testing how many X crimes reported per station
+### Query 5 (in progress)
+
+#### testing how many X crimes reported per station
 
 ---
 
+```
 PREFIX station:<http://foo.example.org/Station/>
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 
@@ -90,13 +122,17 @@ select ?station SUM(?kidnapping)
 where {
 ?station foaf:Kidnapping ?kidnapping.
 }
+```
 
 ---
 
-### testing ranked list for house prices, amount of accomm and crime
+### Query 6 (in progress)
+
+#### testing ranked list for house prices, amount of accomm and crime
 
 ---
 
+```
 https://stackoverflow.com/questions/17313730/how-to-rank-values-in-sparql
 this might be handy but website currently down
 
@@ -105,7 +141,7 @@ this might be handy but website currently down
 PREFIX station: <http://foo.example.org/Station/>
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 
-select ?station ?division ?murder ?neglect ?kidnapping where {  
+select ?station ?division ?murder ?neglect ?kidnapping where {
  {
 ?station foaf:Attempted-Murder-Assaults-Harrasments ?murder.
 ?station foaf:Dangerous-Negligent-Acts ?neglect.
@@ -114,3 +150,45 @@ select ?station ?division ?murder ?neglect ?kidnapping where {
 ?station foaf:Division ?division.
 }
 }order by desc (?kidnapping)
+
+```
+
+---
+
+### Query 7 (to do)
+
+---
+
+```
+
+```
+
+---
+
+### Query 8 (to do)
+
+---
+
+```
+
+```
+
+---
+
+### Query 9 (to do)
+
+---
+
+```
+
+```
+
+---
+
+### Query 10 (to do)
+
+---
+
+```
+
+```
