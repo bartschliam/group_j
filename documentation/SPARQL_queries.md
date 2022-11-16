@@ -19,7 +19,7 @@ PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 
 select (count (distinct ?names) as ?count)
 where {
-accom:Hostel foaf:AddressLocality ?names .
+accom:Hostel foaf:hasAddressLocality ?names .
 }
 ```
 
@@ -31,13 +31,13 @@ accom:Hostel foaf:AddressLocality ?names .
 
 ```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
-SELECT \* WHERE {
+SELECT * WHERE {
     {
         select ?house ?value ?area ?year
         where {
-            ?house foaf:Value ?value .
-            ?house foaf:Area ?area .
-            ?house foaf:Year ?year .
+            ?house foaf:hasValue ?value .
+            ?house foaf:hasArea ?area .
+            ?house foaf:hasYear ?year .
         } order by desc (?value)
         limit 1
     }
@@ -45,10 +45,10 @@ SELECT \* WHERE {
     {
         select ?house ?value ?area ?year
         where {
-            ?house foaf:Value ?value .
+            ?house foaf:hasValue ?value .
             filter(?value > 0)
-            ?house foaf:Area ?area .
-            ?house foaf:Year ?year .
+            ?house foaf:hasArea ?area .
+            ?house foaf:hasYear ?year .
         } order by asc (?value)
         limit 1
     }
@@ -58,6 +58,7 @@ SELECT \* WHERE {
 ---
 
 ### Query 3 (in progress) In areas where there's an increase in new housing sale value, what trends are there in crime over time?
+
 ## Find the difference or % increase from past year for crimes and for prices per year
 
 ---
@@ -77,12 +78,12 @@ PREFIX accom:<http://foo.example.org/Accommodation/>
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX crime:<http://foo.example.org/Station/20646/>
 
-select \*
+select *
 where {
-    ?a foaf:Attempted-Murder-Assaults-Harrasments ?b.
-    ?a foaf:Burglary ?b.
-    ?a foaf:Controlled-Drug-Offences ?b.
-    ?a foaf:Damage-Property ?b
+    ?a foaf:hasMurders ?b.
+    ?a foaf:hasBurglary ?b.
+    ?a foaf:hasDrugOffenses ?b.
+    ?a foaf:hasDamagedPropertyOffenses ?b
 }
 ORDER BY DESC(?b)
 ```
@@ -101,19 +102,20 @@ PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 
 select ?station (sum(?kidnapping + ?neglect + ?robbery + ?burglary + ?theft + ?drugoffences + ?weaponsexplosives + ?damageproperty + ?offensesagainstgovernment + ?publicorder ) AS ?total)
 where {
-	?station foaf:Kidnapping ?kidnapping.
-	?station foaf:Dangerous-Negligent-Acts ?neglect.
-	?station foaf:Robbery ?robbery.
-	?station foaf:Burglary ?burglary.
-	?station foaf:Theft ?theft.
-    ?station foaf:Fraud ?fraud.
-    ?station foaf:Controlled-Drug-Offences ?drugoffences.
-    ?station foaf:Weapons-Explosives ?weaponsexplosives.
-    ?station foaf:Damage-Property ?damageproperty.
-    ?station foaf:Offenses-Against-Government ?offensesagainstgovernment.
-    ?station foaf:Public-Order ?publicorder.
+	?station foaf:hasKidnapping ?kidnapping.
+	?station foaf:hasNeglect ?neglect.
+	?station foaf:hasRobbery ?robbery.
+	?station foaf:hasBurglary ?burglary.
+	?station foaf:hasTheft ?theft.
+    ?station foaf:hasFraud ?fraud.
+    ?station foaf:hasDrugOffenses ?drugoffences.
+    ?station foaf:hasWeaponsOffenses ?weaponsexplosives.
+    ?station foaf:hasDamagedPropertyOffenses ?damageproperty.
+    ?station foaf:hasOffensesAgainstGovernment ?offensesagainstgovernment.
+    ?station foaf:hasPublicOrderOffenses ?publicorder.
 }
 GROUP BY ?station
+
 ```
 
 ---
@@ -135,13 +137,14 @@ PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 
 select ?station ?division ?murder ?neglect ?kidnapping where {
  {
-?station foaf:Attempted-Murder-Assaults-Harrasments ?murder.
-?station foaf:Dangerous-Negligent-Acts ?neglect.
-?station foaf:Kidnapping ?kidnapping.
-?station foaf:Kidnapping ?kidnapping.
-?station foaf:Division ?division.
+?station foaf:hasMurders ?murder.
+?station foaf:hasNeglect ?neglect.
+?station foaf:hasKidnapping ?kidnapping.
+?station foaf:hasKidnapping ?kidnapping.
+?station foaf:hasDivision ?division.
 }
 }order by desc (?kidnapping)
+
 
 ```
 
@@ -159,31 +162,31 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select ?gardaStation ?totalCrime ?statistic ?value
 where {
     ?housing rdf:type foaf:HousePrice .
-    ?housing foaf:Year ?year .
-    ?housing foaf:Value ?value .
+    ?housing foaf:hasYear ?year .
+    ?housing foaf:hasValue ?value .
     filter(year(?year) = 2016) .
-    ?housing foaf:Area ?division .
-    ?housing foaf:Statistic ?statistic .
+    ?housing foaf:hasArea ?division .
+    ?housing foaf:hasStatistic ?statistic .
 
     {
     select ?gardaStation ?totalCrime ?division
     where {
-        ?gardaStation foaf:Year ?year .
+        ?gardaStation foaf:hasYear ?year .
         filter(year(?year) = 2016) .
         ?gardaStation rdf:type foaf:GardaStation .
         ?gardaStation foaf:hasDivision ?division .
-        ?gardaStation foaf:Attempted-Murder-Assaults-Harrasments  ?numMurders .
-        ?gardaStation foaf:Burglary ?numBurglary .
-        ?gardaStation foaf:Controlled-Drug-Offences ?numDrugs .
-        ?gardaStation foaf:Damage-Property ?numPropertyDamage .
-        ?gardaStation foaf:Dangerous-Negligent-Acts ?numDangerousActs .
-        ?gardaStation foaf:Fraud ?numFraud .
-        ?gardaStation foaf:Kidnapping ?numKidnapping .
-        ?gardaStation foaf:Offenses-Against-Government ?numOffensesGov .
-        ?gardaStation foaf:Public-Order ?numPublicOrder .
-        ?gardaStation foaf:Robbery ?numRobbery .
-        ?gardaStation foaf:Theft ?numTheft .
-        ?gardaStation foaf:Weapons-Explosives ?numWeapons .
+        ?gardaStation foaf:hasMurders  ?numMurders .
+        ?gardaStation foaf:hasBurglary ?numBurglary .
+        ?gardaStation foaf:hasDrugOffenses ?numDrugs .
+        ?gardaStation foaf:hasDamagedPropertyOffenses ?numPropertyDamage .
+        ?gardaStation foaf:hasNeglect ?numDangerousActs .
+        ?gardaStation foaf:hasFraud ?numFraud .
+        ?gardaStation foaf:hasKidnapping ?numKidnapping .
+        ?gardaStation foaf:hasOffensesAgainstGovernment ?numOffensesGov .
+        ?gardaStation foaf:hasPublicOrderOffenses ?numPublicOrder .
+        ?gardaStation foaf:hasRobbery ?numRobbery .
+        ?gardaStation foaf:hasTheft ?numTheft .
+        ?gardaStation foaf:hasWeaponsOffenses ?numWeapons .
         bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
     } order by desc (?totalCrime)
     limit 1
@@ -285,8 +288,11 @@ where {
 ---
 
 ### Query 10 (to do) Do areas with a large amount of accomodation have a high house prices?
+
 ## FYI: There are only 5 named counties in the housing prices set, the others are national and other areas.
+
 ---
+
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX ex:<http://foo.example.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -295,10 +301,10 @@ PREFIX accom:<http://foo.example.org/Accommodation/>
 select distinct ?reigon (count(?accomms) as ?totalaccom)
 where
 {
-    ?x foaf:hasAddressRegion ?reigon .
-    ?x foaf:hasName ?accomms .
-    ?y foaf:hasArea ?reigon .
-    ?y foaf:hasValue ?price .
+?x foaf:hasAddressRegion ?reigon .
+?x foaf:hasName ?accomms .
+?y foaf:hasArea ?reigon .
+?y foaf:hasValue ?price .
 }
 group by ?reigon
 
