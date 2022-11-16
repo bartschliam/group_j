@@ -38,7 +38,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 		rr:objectMap  [ 
 			rr:column "YEAR";
 			rr:termType rr:Literal;
-			rr:datatype xsd:integer;
+			rr:datatype xsd:gYear;
 		];	
 	];
 
