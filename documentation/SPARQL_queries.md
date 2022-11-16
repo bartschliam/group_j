@@ -4,6 +4,10 @@
 - [Query 4](#query-4-in-progress)
 - [Query 5](#query-5-in-progress-testing-how-many-x-crimes-reported-per-station)
 - [Query 6](#query-6-in-progress-testing-ranked-list-for-house-prices-amount-of-accomm-and-crime)
+- [Query 7](#query-7-to-do)
+- [Query 8](#query-8-to-do)
+- [Query 9](#query-9-to-do)
+- [Query 10](#query-10-to-do)
 
 ### Query 1. Number of Hostels
 ---
