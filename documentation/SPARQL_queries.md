@@ -32,57 +32,37 @@ accom:Hostel foaf:AddressLocality ?names .
 ```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 SELECT \* WHERE {
-{
-select ?house ?value ?area ?year
-where {
-?house foaf:Value ?value .
-?house foaf:Area ?area .
-?house foaf:Year ?year .
-} order by desc (?value)
-limit 1
-}
-UNION
-{
-select ?house ?value ?area ?year
-where {
-?house foaf:Value ?value .
-filter(?value > 0)
-?house foaf:Area ?area .
-?house foaf:Year ?year .
-} order by asc (?value)
-limit 1
-}
-}
-```
-
----
-
-### Query 3 (in progress)
-
----
-
-```
-### Query 3: In areas where there's an increase in new housing sale value, what trends are there in crime over time?
-
-### Query 4: In high crime areas, what types of accomodation is there? (Do people go camping where there is crime?)
-
-### Query 5: In low crime areas, are new houses sold for more than old houses?
-
-### Query 6: Do areas with a large amount of accomodation have a high house prices?
-
-### Query 7: In 2016, in the top crime location, what was the volume of housing sales and what other types of accomodation existed.
-
-- @yannickgloster
-
-select ?station ?division ?murder ?neglect ?kidnapping where {
     {
-        ?station foaf:Attempted-Murder-Assaults-Harrasments ?murder.
-        ?station foaf:Dangerous-Negligent-Acts ?neglect.
-        ?station foaf:Kidnapping ?kidnapping.
-        ?station foaf:Kidnapping ?kidnapping.
-        ?station foaf:Division ?division.
+        select ?house ?value ?area ?year
+        where {
+            ?house foaf:Value ?value .
+            ?house foaf:Area ?area .
+            ?house foaf:Year ?year .
+        } order by desc (?value)
+        limit 1
     }
-}order by desc (?kidnapping)
+        UNION
+    {
+        select ?house ?value ?area ?year
+        where {
+            ?house foaf:Value ?value .
+            filter(?value > 0)
+            ?house foaf:Area ?area .
+            ?house foaf:Year ?year .
+        } order by asc (?value)
+        limit 1
+    }
+}
+```
+
+---
+
+### Query 3 (in progress) In areas where there's an increase in new housing sale value, what trends are there in crime over time?
+
+---
+
+```
+
 ```
 
 ---
@@ -98,10 +78,10 @@ PREFIX crime:<http://foo.example.org/Station/20646/>
 
 select \*
 where {
-?a foaf:Attempted-Murder-Assaults-Harrasments ?b.
-?a foaf:Burglary ?b.
-?a foaf:Controlled-Drug-Offences ?b.
-?a foaf:Damage-Property ?b
+    ?a foaf:Attempted-Murder-Assaults-Harrasments ?b.
+    ?a foaf:Burglary ?b.
+    ?a foaf:Controlled-Drug-Offences ?b.
+    ?a foaf:Damage-Property ?b
 }
 ORDER BY DESC(?b)
 ```
@@ -155,7 +135,53 @@ select ?station ?division ?murder ?neglect ?kidnapping where {
 
 ---
 
-### Query 7 (to do)
+### Query 7 (to do) In 2016, in the top crime location, what was the volume of housing sales and what other types of accomodation existed.
+
+---
+
+```
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX ex:<http://foo.example.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select ?gardaStation ?totalCrime ?statistic ?value
+where {
+    ?housing rdf:type foaf:HousePrice .
+    ?housing foaf:Year ?year .
+    ?housing foaf:Value ?value .
+    filter(year(?year) = 2016) .
+    ?housing foaf:Area ?division .
+    ?housing foaf:Statistic ?statistic .
+
+    {
+    select ?gardaStation ?totalCrime ?division
+    where {
+        ?gardaStation foaf:Year ?year .
+        filter(year(?year) = 2016) .
+        ?gardaStation rdf:type foaf:GardaStation .
+        ?gardaStation foaf:Division ?division .
+        ?gardaStation foaf:Attempted-Murder-Assaults-Harrasments  ?numMurders .
+        ?gardaStation foaf:Burglary ?numBurglary .
+        ?gardaStation foaf:Controlled-Drug-Offences ?numDrugs .
+        ?gardaStation foaf:Damage-Property ?numPropertyDamage .
+        ?gardaStation foaf:Dangerous-Negligent-Acts ?numDangerousActs .
+        ?gardaStation foaf:Fraud ?numFraud .
+        ?gardaStation foaf:Kidnapping ?numKidnapping .
+        ?gardaStation foaf:Offenses-Against-Government ?numOffensesGov .
+        ?gardaStation foaf:Public-Order ?numPublicOrder .
+        ?gardaStation foaf:Robbery ?numRobbery .
+        ?gardaStation foaf:Theft ?numTheft .
+        ?gardaStation foaf:Weapons-Explosives ?numWeapons .
+        bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
+    } order by desc (?totalCrime)
+    limit 1
+    }
+}
+```
+
+---
+
+### Query 8 (to do) In high crime areas, what types of accomodation is there? (Do people go camping where there is crime?)
 
 ---
 
@@ -165,7 +191,7 @@ select ?station ?division ?murder ?neglect ?kidnapping where {
 
 ---
 
-### Query 8 (to do)
+### Query 9 (to do) In low crime areas, are new houses sold for more than old houses?
 
 ---
 
@@ -175,17 +201,7 @@ select ?station ?division ?murder ?neglect ?kidnapping where {
 
 ---
 
-### Query 9 (to do)
-
----
-
-```
-
-```
-
----
-
-### Query 10 (to do)
+### Query 10 (to do) Do areas with a large amount of accomodation have a high house prices?
 
 ---
 
