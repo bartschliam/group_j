@@ -34,6 +34,15 @@ rr:logicalTable [ rr:tableName "ACCOMMODATION"];
 	];
 
 	rr:predicateObjectMap [
+		rr:predicate foaf:type;
+		rr:objectMap  [ 
+			rr:column "TAGS";
+			rr:termType rr:Literal;
+			rr:datatype xsd:string;
+		];	
+	];
+
+	rr:predicateObjectMap [
 		rr:predicate foaf:longitude;
 		rr:objectMap  [ 
 			rr:column "LONGITUDE";
