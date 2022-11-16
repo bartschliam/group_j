@@ -58,6 +58,7 @@ SELECT \* WHERE {
 ---
 
 ### Query 3 (in progress) In areas where there's an increase in new housing sale value, what trends are there in crime over time?
+## Find the difference or % increase from past year for crimes and for prices per year
 
 ---
 
@@ -88,7 +89,7 @@ ORDER BY DESC(?b)
 
 ---
 
-### Query 5 (in progress)
+### Query 5 (Done but maybe can be made more presentable?)
 
 #### testing how many X crimes reported per station
 
@@ -286,6 +287,16 @@ where {
 ### Query 10 (to do) Do areas with a large amount of accomodation have a high house prices?
 
 ---
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX ex:<http://foo.example.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX accom:<http://foo.example.org/Accommodation/>
+
+select ?reigon
+where
+{
+    ?x foaf:hasAddressRegion ?reigon .
+}
 
 ```
 
