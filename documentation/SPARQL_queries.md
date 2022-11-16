@@ -159,7 +159,7 @@ where {
         ?gardaStation foaf:Year ?year .
         filter(year(?year) = 2016) .
         ?gardaStation rdf:type foaf:GardaStation .
-        ?gardaStation foaf:Division ?division .
+        ?gardaStation foaf:hasDivision ?division .
         ?gardaStation foaf:Attempted-Murder-Assaults-Harrasments  ?numMurders .
         ?gardaStation foaf:Burglary ?numBurglary .
         ?gardaStation foaf:Controlled-Drug-Offences ?numDrugs .
@@ -193,9 +193,49 @@ where {
 
 ### Query 9 (to do) In low crime areas, are new houses sold for more than old houses?
 
----
+Not perfect but it gets the job done. Can be improved later
 
 ```
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX ex:<http://foo.example.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select ?gardaStation ?totalCrime ?division ?newHousing ?secondHousing
+where {
+    {
+    select ?gardaStation ?totalCrime ?division ?year
+    where {
+        ?gardaStation foaf:Year ?year .
+        ?gardaStation rdf:type foaf:GardaStation .
+        ?gardaStation foaf:hasDivision ?division .
+
+        ?gardaStation foaf:Attempted-Murder-Assaults-Harrasments  ?numMurders .
+        ?gardaStation foaf:Burglary ?numBurglary .
+        ?gardaStation foaf:Controlled-Drug-Offences ?numDrugs .
+        ?gardaStation foaf:Damage-Property ?numPropertyDamage .
+        ?gardaStation foaf:Dangerous-Negligent-Acts ?numDangerousActs .
+        ?gardaStation foaf:Fraud ?numFraud .
+        ?gardaStation foaf:Kidnapping ?numKidnapping .
+        ?gardaStation foaf:Offenses-Against-Government ?numOffensesGov .
+        ?gardaStation foaf:Public-Order ?numPublicOrder .
+        ?gardaStation foaf:Robbery ?numRobbery .
+        ?gardaStation foaf:Theft ?numTheft .
+        ?gardaStation foaf:Weapons-Explosives ?numWeapons .
+        filter(?totalCrime = 0) .
+        bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
+    } order by asc (?totalCrime)
+    } OPTIONAL {
+      	?newHousing rdf:type foaf:HousePrice .
+        ?newHousing foaf:Year ?year .
+        ?newHousing foaf:Area ?division .
+        ?newHousing foaf:Statistic "New House Prices"
+    } OPTIONAL {
+      	?secondHousing rdf:type foaf:HousePrice .
+        ?secondHousing foaf:Year ?year .
+        ?secondHousing foaf:Area ?division .
+        ?secondHousing foaf:Statistic "Second Hand House Prices"
+    }
+}
 
 ```
 
