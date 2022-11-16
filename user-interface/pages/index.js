@@ -25,28 +25,27 @@ const queries = [
   {
     label: "Min Max Housing",
     query: `PREFIX foaf:<http://xmlns.com/foaf/0.1/>
-    SELECT * WHERE
-    {
-    {
-    select ?house ?value ?area ?year 
-    where {
-        ?house foaf:Value ?value .
-        ?house foaf:Area ?area .
-        ?house foaf:Year ?year .
-    } order by desc (?value)
-    limit 1
-    }
+    SELECT * WHERE {
+        {
+        select ?house ?value ?area ?year 
+        where {
+            ?house foaf:Value ?value .
+            ?house foaf:Area ?area .
+            ?house foaf:Year ?year .
+        } order by desc (?value)
+        limit 1
+        }
     UNION
-    {
-    select ?house ?value ?area ?year 
-    where {
-        ?house foaf:Value ?value .
-                filter(?value > 0)
-        ?house foaf:Area ?area .
-        ?house foaf:Year ?year .
-    } order by asc (?value)
-    limit 1
-    }
+        {
+        select ?house ?value ?area ?year 
+        where {
+            ?house foaf:Value ?value .
+                    filter(?value > 0)
+            ?house foaf:Area ?area .
+            ?house foaf:Year ?year .
+        } order by asc (?value)
+        limit 1
+        }
     }
   `,
   },
@@ -138,13 +137,22 @@ export default function Home() {
           <Typography variant="body1" gutterBottom fontWeight={800}>
             SPARQL:
           </Typography>
-          <Typography variant="body1" gutterBottom>
+          <Typography
+            variant="body1"
+            gutterBottom
+            sx={{ whiteSpace: "pre-wrap" }}
+          >
             {selectedQuery.query}
           </Typography>
           <Typography variant="body1" gutterBottom fontWeight={800}>
             Output:
           </Typography>
-          <Typography variant="body1" gutterBottom>
+          <Typography
+            variant="body1"
+            compnent="pre"
+            gutterBottom
+            sx={{ whiteSpace: "pre-wrap" }}
+          >
             {JSON.stringify(queryResult, null, 2)}
           </Typography>
         </Box>
