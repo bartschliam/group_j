@@ -25,7 +25,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:Division;
+		rr:predicate foaf:hasDivision;
 		rr:objectMap  [ 
 			rr:column "DIVISIONS";
 			rr:termType rr:Literal;
@@ -34,7 +34,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:Year;
+		rr:predicate foaf:hasYear;
 		rr:objectMap  [ 
 			rr:column "YEAR";
 			rr:termType rr:Literal;
