@@ -98,10 +98,21 @@ ORDER BY DESC(?b)
 PREFIX station:<http://foo.example.org/Station/>
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 
-select ?station SUM(?kidnapping)
+select ?station (sum(?kidnapping + ?neglect + ?robbery + ?burglary + ?theft + ?drugoffences + ?weaponsexplosives + ?damageproperty + ?offensesagainstgovernment + ?publicorder ) AS ?total)
 where {
-?station foaf:Kidnapping ?kidnapping.
+	?station foaf:Kidnapping ?kidnapping.
+	?station foaf:Dangerous-Negligent-Acts ?neglect.
+	?station foaf:Robbery ?robbery.
+	?station foaf:Burglary ?burglary.
+	?station foaf:Theft ?theft.
+    ?station foaf:Fraud ?fraud.
+    ?station foaf:Controlled-Drug-Offences ?drugoffences.
+    ?station foaf:Weapons-Explosives ?weaponsexplosives.
+    ?station foaf:Damage-Property ?damageproperty.
+    ?station foaf:Offenses-Against-Government ?offensesagainstgovernment.
+    ?station foaf:Public-Order ?publicorder.
 }
+GROUP BY ?station
 ```
 
 ---
