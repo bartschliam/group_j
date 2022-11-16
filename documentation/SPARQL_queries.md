@@ -183,9 +183,40 @@ where {
 
 ### Query 8 (to do) In high crime areas, what types of accomodation is there? (Do people go camping where there is crime?)
 
+IN PROGRESS NOT DONE BECAUSE IT STILL IS BIT BROKEY
+
 ---
 
 ```
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX ex:<http://foo.example.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select ?housing ?name ?division where {
+    ?housing rdf:type foaf:Accom .
+	?housing foaf:type ?type .
+    ?housing foaf:name ?name .
+    ?housing foaf:AddressRegion ?region .
+
+    ?gardaStation foaf:Year ?year .
+    filter(year(?year) = 2016) .
+    ?gardaStation rdf:type foaf:GardaStation .
+    ?gardaStation foaf:hasDivision ?region.
+    ?gardaStation foaf:Attempted-Murder-Assaults-Harrasments  ?numMurders .
+    ?gardaStation foaf:Burglary ?numBurglary .
+    ?gardaStation foaf:Controlled-Drug-Offences ?numDrugs .
+    ?gardaStation foaf:Damage-Property ?numPropertyDamage .
+    ?gardaStation foaf:Dangerous-Negligent-Acts ?numDangerousActs .
+    ?gardaStation foaf:Fraud ?numFraud .
+    ?gardaStation foaf:Kidnapping ?numKidnapping .
+    ?gardaStation foaf:Offenses-Against-Government ?numOffensesGov .
+    ?gardaStation foaf:Public-Order ?numPublicOrder .
+    ?gardaStation foaf:Robbery ?numRobbery .
+    ?gardaStation foaf:Theft ?numTheft .
+    ?gardaStation foaf:Weapons-Explosives ?numWeapons .
+    bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
+}
+
 
 ```
 
