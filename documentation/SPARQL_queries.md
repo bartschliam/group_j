@@ -209,26 +209,26 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 select ?housing ?name ?division where {
     ?housing rdf:type foaf:Accom .
-	?housing foaf:type ?type .
-    ?housing foaf:name ?name .
-    ?housing foaf:AddressRegion ?region .
+	?housing foaf:hasType ?type .
+    ?housing foaf:hasName ?name .
+    ?housing foaf:hasAddressRegion ?region .
 
-    ?gardaStation foaf:Year ?year .
+    ?gardaStation foaf:hasYear ?year .
     filter(year(?year) = 2016) .
     ?gardaStation rdf:type foaf:GardaStation .
     ?gardaStation foaf:hasDivision ?region.
-    ?gardaStation foaf:Attempted-Murder-Assaults-Harrasments  ?numMurders .
-    ?gardaStation foaf:Burglary ?numBurglary .
-    ?gardaStation foaf:Controlled-Drug-Offences ?numDrugs .
-    ?gardaStation foaf:Damage-Property ?numPropertyDamage .
-    ?gardaStation foaf:Dangerous-Negligent-Acts ?numDangerousActs .
-    ?gardaStation foaf:Fraud ?numFraud .
-    ?gardaStation foaf:Kidnapping ?numKidnapping .
-    ?gardaStation foaf:Offenses-Against-Government ?numOffensesGov .
-    ?gardaStation foaf:Public-Order ?numPublicOrder .
-    ?gardaStation foaf:Robbery ?numRobbery .
-    ?gardaStation foaf:Theft ?numTheft .
-    ?gardaStation foaf:Weapons-Explosives ?numWeapons .
+    ?gardaStation foaf:hasMurders  ?numMurders .
+    ?gardaStation foaf:hasBurglary ?numBurglary .
+    ?gardaStation foaf:hasDrugOffenses ?numDrugs .
+    ?gardaStation foaf:hasDamagedPropertyOffenses ?numPropertyDamage .
+    ?gardaStation foaf:hasNeglect ?numDangerousActs .
+    ?gardaStation foaf:hasFraud ?numFraud .
+    ?gardaStation foaf:hasKidnapping ?numKidnapping .
+    ?gardaStation foaf:hasOffensesAgainstGovernment ?numOffensesGov .
+    ?gardaStation foaf:hasPublicOrderOffenses ?numPublicOrder .
+    ?gardaStation foaf:hasRobbery ?numRobbery .
+    ?gardaStation foaf:hasTheft ?numTheft .
+    ?gardaStation foaf:hasWeaponsOffenses ?numWeapons .
     bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
 }
 
