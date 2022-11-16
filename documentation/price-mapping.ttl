@@ -25,7 +25,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	];
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:Statistic;
+		rr:predicate foaf:hasStatistic;
 		rr:objectMap  [ 
 			rr:column "STATISTIC";
 			rr:termType rr:Literal;
@@ -34,7 +34,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	];
 	
 	rr:predicateObjectMap [
-		rr:predicate foaf:Year;
+		rr:predicate foaf:hasYear;
 		rr:objectMap  [ 
 			rr:column "YEAR";
 			rr:termType rr:Literal;
@@ -43,7 +43,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	];
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:Value;
+		rr:predicate foaf:hasValue;
 		rr:objectMap  [ 
 			rr:column "VALUE";
 			rr:termType rr:Literal;
@@ -52,7 +52,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	];
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:Area;
+		rr:predicate foaf:hasArea;
 		rr:objectMap  [ 
 			rr:column "AREA";
 			rr:termType rr:Literal;
