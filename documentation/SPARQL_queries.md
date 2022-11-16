@@ -285,18 +285,22 @@ where {
 ---
 
 ### Query 10 (to do) Do areas with a large amount of accomodation have a high house prices?
-
+## FYI: There are only 5 named counties in the housing prices set, the others are national and other areas.
 ---
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX ex:<http://foo.example.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX accom:<http://foo.example.org/Accommodation/>
 
-select ?reigon
+select distinct ?reigon (count(?accomms) as ?totalaccom)
 where
 {
     ?x foaf:hasAddressRegion ?reigon .
+    ?x foaf:hasName ?accomms .
+    ?y foaf:hasArea ?reigon .
+    ?y foaf:hasValue ?price .
 }
+group by ?reigon
 
 ```
 
