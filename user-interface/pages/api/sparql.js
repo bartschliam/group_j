@@ -14,13 +14,19 @@ export default async function handler(req, res) {
     }?query=${encodeURI(sparqlQuery)}`
   );
 
-  // Create a better object to process in the front end
-  const result = query.data.head.vars.map((variable) => {
-    return {
-      [variable]: query.data.results.bindings.map(
-        (binding) => binding[variable]
-      ),
-    };
+  const result = query.data.results.bindings.map((column) => {
+    Object.keys(column).forEach((key, index) => {
+      if (column[key].datatype === "http://www.w3.org/2001/XMLSchema#integer") {
+        column[key].value = parseInt(column[key].value);
+      }
+
+      if (column[key].datatype === "http://www.w3.org/2001/XMLSchema#gYear") {
+        column[key].value = parseInt(column[key].value); // Date.parse
+      }
+    });
+    return column;
   });
+
+  console.log(result);
   res.status(200).json(result);
 }

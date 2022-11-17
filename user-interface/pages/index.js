@@ -9,9 +9,26 @@ import Autocomplete from "@mui/material/Autocomplete";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { blueGrey } from "@mui/material/colors";
+import Switch from "@mui/material/Switch";
+import FormGroup from "@mui/material/FormGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
 
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
+
+import {
+  BarChart,
+  Bar,
+  Cell,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+  LineChart,
+  Line,
+} from "recharts";
 
 const queries = [
   {
@@ -87,8 +104,12 @@ const queries = [
 
 export default function Home() {
   const [selectedQuery, setSelectedQuery] = React.useState("");
-  const [queryResult, setQueryResult] = React.useState({});
+  const [queryResult, setQueryResult] = React.useState([]);
   const [error, setError] = React.useState({ text: "", enabled: false });
+  const [chartStatus, setChartStatus] = React.useState({
+    bar: true,
+    map: true,
+  });
 
   const Map = React.useMemo(
     () =>
@@ -107,10 +128,17 @@ export default function Home() {
       .get("/api/sparql", {
         params: { sparqlQuery: selectedQuery.query },
       })
-      .then((result) => setQueryResult(result.data))
-      .catch((error) =>
-        setError({ text: "Error fetching results.", enabled: true })
-      );
+      .then((result) => {
+        setQueryResult(result.data);
+      })
+      .catch((error) => {
+        setError({ text: "Error fetching results.", enabled: true });
+      });
+  };
+
+  const clearQuery = () => {
+    setQueryResult([]);
+    setSelectedQuery("");
   };
 
   const handleCloseError = (event, reason) => {
@@ -119,6 +147,10 @@ export default function Home() {
     }
 
     setError({ text: "", enabled: false });
+  };
+
+  const handleSwitch = (event, type) => {
+    setChartStatus({ ...chartStatus, [type]: event.target.checked });
   };
 
   return (
@@ -145,8 +177,61 @@ export default function Home() {
           fullWidth
         />
         <Button variant="contained" sx={{ mt: 1 }} onClick={handleQuerySubmit}>
-          Rum Query
+          Run Query
         </Button>
+        <Button variant="contained" sx={{ mt: 1 }} onClick={clearQuery}>
+          Clear Query
+        </Button>
+        <FormGroup>
+          <FormControlLabel
+            control={
+              <Switch
+                checked={chartStatus.map}
+                onChange={(e) => handleSwitch(e, "map")}
+              />
+            }
+            label="Map"
+          />
+          <FormControlLabel
+            control={
+              <Switch
+                checked={chartStatus.bar}
+                onChange={(e) => handleSwitch(e, "bar")}
+              />
+            }
+            label="Bar"
+          />
+        </FormGroup>
+        {chartStatus.bar && (
+          <ResponsiveContainer width={"100%"} height={300}>
+            <BarChart
+              data={queryResult}
+              margin={{ top: 25, right: 20, bottom: 5, left: 20 }}
+            >
+              <Tooltip />
+              <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+
+              <YAxis />
+              {queryResult[0]?.value && (
+                <>
+                  <Bar dataKey="value.value" fill="#8884d8" />
+                  <XAxis dataKey="area.value" />
+                </>
+              )}
+              {queryResult[0]?.count && (
+                <>
+                  <Bar dataKey="count.value" fill="#8884d8" />
+                  <XAxis dataKey="count" label="Count" />
+                </>
+              )}
+            </BarChart>
+          </ResponsiveContainer>
+        )}
+        {chartStatus.map && (
+          <Box mt={2}>
+            <Map />
+          </Box>
+        )}
         <Box bgcolor={blueGrey[50]} mt={2} p={2} borderRadius={1}>
           <Typography variant="body1" gutterBottom fontWeight={800}>
             SPARQL:
@@ -158,20 +243,7 @@ export default function Home() {
           >
             {selectedQuery.query}
           </Typography>
-          <Typography variant="body1" gutterBottom fontWeight={800}>
-            Output:
-          </Typography>
-          <Typography
-            variant="body1"
-            compnent="pre"
-            gutterBottom
-            sx={{ whiteSpace: "pre-wrap" }}
-          >
-            {JSON.stringify(queryResult, null, 2)}
-          </Typography>
         </Box>
-        <br />
-        <Map />
         <Snackbar
           open={error.enabled}
           autoHideDuration={6000}
