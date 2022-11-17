@@ -311,6 +311,39 @@ where
 }
 group by ?reigon
 
+## For handling the other areas, but how to make work?
+
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX ex:<http://foo.example.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX accom:<http://foo.example.org/Accommodation/>
+
+select *
+where
+{
+    {
+        select distinct ("Other areas" as ?reigon) (count(?accomms) as ?totalaccom)
+        where
+        {
+            ?x foaf:hasAddressRegion ?place .
+            ?x foaf:hasName ?accomms .
+            FILTER (?place NOT IN ("Cork","Dublin","Galway","Waterford","Limerick")).
+        }
+    }
+    UNION
+    {
+      select distinct ?reigon (count(?accomms) as ?totalaccom)
+        where
+        {
+        ?x foaf:hasAddressRegion ?reigon .
+        ?x foaf:hasName ?accomms .
+        ?y foaf:hasArea ?reigon .
+        ?y foaf:hasValue ?price .
+        }
+        GROUP BY(?reigon)
+    }
+}
+
 ```
 
 ```
