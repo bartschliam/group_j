@@ -57,14 +57,49 @@ SELECT * WHERE {
 
 ---
 
-### Query 3 (in progress) In areas where there's an increase in new housing sale value, what trends are there in crime over time?
+### Query 3 In areas where there's an increase in new housing sale value, what trends are there in crime over time?
 
 ## Find the difference or % increase from past year for crimes and for prices per year
 
 ---
 
 ```
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX ex:<http://foo.example.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
+select ?area ?year ?housingValue ?totalCrimes where {
+	?housing rdf:type foaf:HousePrice .
+    ?housing foaf:hasYear ?year .
+    ?housing foaf:hasArea ?area .
+    ?housing foaf:hasStatistic "New House Prices" .
+    ?housing foaf:hasValue ?housingValue .
+    filter(?area != "National")
+    filter(?area != "Other areas")
+    {
+        select  ?area (SUM(?totalCrime) as ?totalCrimes) ?year
+        where {
+            ?gardaStation foaf:hasYear ?year .
+            ?gardaStation rdf:type foaf:GardaStation .
+            ?gardaStation foaf:hasDivision ?area .
+            ?gardaStation foaf:hasStation ?station .
+
+            ?gardaStation foaf:hasMurderOffences  ?numMurders .
+            ?gardaStation foaf:hasBurglaryOffences ?numBurglary .
+            ?gardaStation foaf:hasDrugOffences ?numDrugs .
+            ?gardaStation foaf:hasDamagedPropertyOffences ?numPropertyDamage .
+            ?gardaStation foaf:hasNeglectOffences ?numDangerousActs .
+            ?gardaStation foaf:hasFraudOffences ?numFraud .
+            ?gardaStation foaf:hasKidnappingOffences ?numKidnapping .
+            ?gardaStation foaf:hasOffencesAgainstGovernment ?numOffensesGov .
+            ?gardaStation foaf:hasPublicOrderOffences ?numPublicOrder .
+            ?gardaStation foaf:hasRobberyOffences ?numRobbery .
+            ?gardaStation foaf:hasTheftOffences ?numTheft .
+            ?gardaStation foaf:hasWeaponsOffences ?numWeapons .
+            bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
+        } groupby ?area ?year
+    }
+} order by ?year
 ```
 
 ---
@@ -310,30 +345,30 @@ PREFIX ex:<http://foo.example.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX accom:<http://foo.example.org/Accommodation/>
 
-select *
+select \*
 where
 {
-    {
-        select distinct ("Other areas" as ?reigon) (count(?accomms) as ?totalaccom)
-        where
-        {
-            ?x foaf:hasAddressRegion ?place .
-            ?x foaf:hasName ?accomms .
-            FILTER (?place NOT IN ("Cork","Dublin","Galway","Waterford","Limerick")).
-        }
-    }
-    UNION
-    {
-      select distinct ?reigon (count(?accomms) as ?totalaccom)
-        where
-        {
-        ?x foaf:hasAddressRegion ?reigon .
-        ?x foaf:hasName ?accomms .
-        ?y foaf:hasArea ?reigon .
-        ?y foaf:hasValue ?price .
-        }
-        GROUP BY(?reigon)
-    }
+{
+select distinct ("Other areas" as ?reigon) (count(?accomms) as ?totalaccom)
+where
+{
+?x foaf:hasAddressRegion ?place .
+?x foaf:hasName ?accomms .
+FILTER (?place NOT IN ("Cork","Dublin","Galway","Waterford","Limerick")).
+}
+}
+UNION
+{
+select distinct ?reigon (count(?accomms) as ?totalaccom)
+where
+{
+?x foaf:hasAddressRegion ?reigon .
+?x foaf:hasName ?accomms .
+?y foaf:hasArea ?reigon .
+?y foaf:hasValue ?price .
+}
+GROUP BY(?reigon)
+}
 }
 
 ```
