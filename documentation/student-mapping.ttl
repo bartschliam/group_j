@@ -9,7 +9,7 @@
 rr:logicalTable [ rr:tableName "STUDENTDATA"];
 		
 	rr:subjectMap	[
-		rr:template "http://foo.example.org/StudentData/{TLIST(A1)}/{Level%of%Education}";
+		rr:template "http://foo.example.org/StudentData/{YEAR}/{LEVEL}";
 		rr:termType rr:IRI;
 		rr:class foaf:StudentData;
 	];		
@@ -17,7 +17,7 @@ rr:logicalTable [ rr:tableName "STUDENTDATA"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:hasYear;
 		rr:objectMap  [ 
-			rr:column "TLIST(A1)";
+			rr:column "YEAR";
 			rr:termType rr:Literal;
 			rr:datatype xsd:gYear;
 		];	
@@ -26,7 +26,7 @@ rr:logicalTable [ rr:tableName "STUDENTDATA"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:hasAcademicYear;
 		rr:objectMap  [ 
-			rr:column "ACADEMIC%YEAR";
+			rr:column "ACADEMICYEAR";
 			rr:termType rr:Literal;
 			rr:datatype xsd:string;
 		];	
@@ -35,7 +35,7 @@ rr:logicalTable [ rr:tableName "STUDENTDATA"];
 	rr:predicateObjectMap [
 		rr:predicate foaf:hasLevelOfEducation;
 		rr:objectMap  [ 
-			rr:column "LEVEL%OF%EDUCATION";
+			rr:column "LEVEL";
 			rr:termType rr:Literal;
 			rr:datatype xsd:string;
 		];	

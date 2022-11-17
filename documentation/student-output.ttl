@@ -1,0 +1,2807 @@
+<http://foo.example.org/StudentData/1974/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1973-1974" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                786541 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1974"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1970/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1969-1970" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                193914 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1970"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1970/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1969-1970" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                712928 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1970"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1970/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1969-1970" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                496429 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1970"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1983/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1982-1983" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1983"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1972/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1971-1972" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1972"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2005/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2004-2005" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                133691 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1988/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1987-1988" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                57221 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1988"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1978/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1977-1978" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                541687 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1978"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2002/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2001-2002" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                441065 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2002"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1985/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1984-1985" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                566289 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1985"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2007/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2006-2007" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                303920 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2015/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2014-2015" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                1090641 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2015"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1979/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1978-1979" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1979"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1984/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1983-1984" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                321812 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1984"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2010/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2009-2010" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                505998 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1993/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1992-1993" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                521531 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1993"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2010/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2009-2010" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                312159 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1968/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1967-1968" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1968"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1967/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1966-1967" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                19101 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1967"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2009/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2008-2009" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                986294 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2011/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2010-2011" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                38680 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2017/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2016-2017" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                558314 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2017"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1999/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1998-1999" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                924049 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1999"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2005/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2004-2005" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                919233 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2016/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2015-2016" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                32453 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2016"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2000/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1999-2000" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                24337 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1982/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1981-1982" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                43231 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1982"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2005/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2004-2005" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                29354 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2013/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2012-2013" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                1054132 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2013"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1968/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1967-1968" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                166544 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1968"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1991/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1990-1991" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1991"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1972/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1971-1972" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                509157 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1972"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1987/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1986-1987" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                339154 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1987"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1989/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1988-1989" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                960190 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1989"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2013/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2012-2013" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                327323 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2013"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2007/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2006-2007" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                138362 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2014/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2013-2014" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                169254 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2014"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2003/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2002-2003" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                913368 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2003"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1997/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1996-1997" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                100204 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1997"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1997/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1996-1997" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                942170 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1997"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1990/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1989-1990" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                339649 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1990"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1979/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1978-1979" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                545218 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1979"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1998/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1997-1998" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                21287 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1998"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1993/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1992-1993" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                961567 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1993"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2004/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2003-2004" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                446029 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1987/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1986-1987" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                567567 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1987"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1987/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1986-1987" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1987"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2011/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2010-2011" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                509652 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1979/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1978-1979" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                870089 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1979"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1994/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1993-1994" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                505883 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1994"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1976/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1975-1976" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1976"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1969/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1968-1969" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                21003 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1969"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1983/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1982-1983" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                921451 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1983"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1974/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1973-1974" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                238227 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1974"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1976/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1975-1976" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                31730 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1976"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2016/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2015-2016" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                345550 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2016"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1969/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1968-1969" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                692860 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1969"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1993/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1992-1993" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                342472 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1993"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2001/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2000-2001" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                119991 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2001"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1984/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1983-1984" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                48411 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1984"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1966/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1965-1966" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                481095 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1966"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1991/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1990-1991" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                68165 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1991"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1973/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1972-1973" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                768789 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1973"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2015/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2014-2015" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                33089 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2015"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2008/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2007-2008" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                139134 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1981/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1980-1981" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                551319 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1981"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2004/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2003-2004" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                29533 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2016/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2015-2016" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                179850 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2016"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1999/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1998-1999" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                108509 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1999"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2009/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2008-2009" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                33368 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1990/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1989-1990" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1990"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1977/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1976-1977" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                277978 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1977"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1995/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1994-1995" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                17644 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1995"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2003/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2002-2003" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                311716 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2003"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1996/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1995-1996" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                352910 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1996"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1970/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1969-1970" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                22585 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1970"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1984/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1983-1984" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1984"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2013/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2012-2013" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                526422 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2013"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1996/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1995-1996" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                478692 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1996"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1973/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1972-1973" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1973"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1978/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1977-1978" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                35237 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1978"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2008/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2007-2008" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                960701 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1985/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1984-1985" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                50836 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1985"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1998/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1997-1998" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                934469 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1998"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2004/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2003-2004" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                918681 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1968/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1967-1968" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                484212 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1968"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2010/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2009-2010" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                156973 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1993/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1992-1993" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                81050 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1993"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1975/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1974-1975" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                520164 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1975"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2006/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2005-2006" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                303821 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1969/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1968-1969" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1969"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2012/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2011-2012" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                1038573 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2012"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1999/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1998-1999" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                339184 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1999"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1983/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1982-1983" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                314393 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1983"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2000/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1999-2000" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                444310 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1983/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1982-1983" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                560723 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1983"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2012/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2011-2012" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                36528 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2012"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1990/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1989-1990" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                552182 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1990"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2017/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2016-2017" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                31980 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2017"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1988/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1987-1988" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                962898 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1988"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2001/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2000-2001" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                25410 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2001"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2006/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2005-2006" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                29376 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2007/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2006-2007" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                471519 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1996/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1995-1996" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                944686 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1996"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2002/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2001-2002" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                906753 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2002"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1992/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1991-1992" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                15212 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1972/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1971-1972" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                25482 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1972"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1992/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1991-1992" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                958264 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2015/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2014-2015" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                544696 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2015"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1998/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1997-1998" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                460845 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1998"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1981/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1980-1981" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1981"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1967/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1966-1967" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                147648 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1967"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2009/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2008-2009" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                307944 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1978/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1977-1978" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                861185 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1978"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1986/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1985-1986" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                335743 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1986"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1986/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1985-1986" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                956280 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1986"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2012/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2011-2012" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                322519 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2012"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1999/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1998-1999" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                23823 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1999"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1982/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1981-1982" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                906304 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1982"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2004/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2003-2004" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                133887 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1987/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1986-1987" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                55016 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1987"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1969/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1968-1969" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                489559 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1969"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1988/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1987-1988" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1988"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1968/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1967-1968" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                670382 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1968"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1977/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1976-1977" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1977"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2012/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2011-2012" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                163068 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2012"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1995/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1994-1995" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                89693 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1995"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1977/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1976-1977" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                536476 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1977"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2001/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2000-2001" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                439560 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2001"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1966/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1965-1966" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1966"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1984/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1983-1984" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                563509 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1984"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1972/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1971-1972" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                750979 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1972"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1992/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1991-1992" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                534269 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1989/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1988-1989" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                339327 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1989"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1973/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1972-1973" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                227587 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1973"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1966/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1965-1966" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                18449 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1966"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2015/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2014-2015" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                339207 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2015"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2009/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2008-2009" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                498914 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1992/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1991-1992" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                334334 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1999/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1998-1999" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                452533 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1999"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1974/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1973-1974" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                27135 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1974"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1981/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1980-1981" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                40613 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1981"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2017/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2016-2017" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                1123590 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2017"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1971/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1970-1971" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                502664 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1971"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1996/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1995-1996" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                17985 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1996"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1980/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1979-1980" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1980"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2006/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2005-2006" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                136719 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1989/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1988-1989" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                60747 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1989"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2013/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2012-2013" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                164863 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2013"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2007/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2006-2007" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                943992 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1985/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1984-1985" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1985"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1976/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1975-1976" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                267891 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1976"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1996/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1995-1996" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                95099 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1996"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2002/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2001-2002" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                314414 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2002"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1974/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1973-1974" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1974"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1995/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1994-1995" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                354313 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1995"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2003/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2002-2003" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                443720 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2003"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1986/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1985-1986" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                567064 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1986"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2011/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2010-2011" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                1027406 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1968/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1967-1968" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                19626 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1968"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1987/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1986-1987" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                961737 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1987"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1975/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1974-1975" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                29911 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1975"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1995/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1994-1995" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                952906 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1995"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2001/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2000-2001" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                905954 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2001"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1979/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1978-1979" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                289196 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1979"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2000/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1999-2000" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                115696 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1983/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1982-1983" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                46335 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1983"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1991/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1990-1991" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                954954 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1991"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2005/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2004-2005" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                306890 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2013/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2012-2013" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                35524 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2013"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1998/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1997-1998" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                347898 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1998"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1990/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1989-1990" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                64137 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1990"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1982/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1981-1982" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                307039 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1982"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2002/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2001-2002" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                26685 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2002"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1977/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1976-1977" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                848025 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1977"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1973/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1972-1973" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                514712 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1973"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1971/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1970-1971" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                205136 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1971"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2007/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2006-2007" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                30191 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1980/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1979-1980" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                547431 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1980"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1985/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1984-1985" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                947124 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1985"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1993/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1992-1993" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                16514 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1993"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2015/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2014-2015" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                173649 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2015"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1981/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1980-1981" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                889679 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1981"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1998/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1997-1998" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                104439 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1998"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1982/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1981-1982" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1982"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1971/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1970-1971" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1971"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1967/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1966-1967" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                652844 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1967"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2005/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2004-2005" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                449298 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1988/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1987-1988" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                565487 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1988"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2012/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2011-2012" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                516458 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2012"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1966/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1965-1966" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                138754 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1966"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2008/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2007-2008" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                305156 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1995/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1994-1995" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                491256 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1995"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1975/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1974-1975" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                803503 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1975"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1985/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1984-1985" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                329999 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1985"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1971/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1970-1971" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                732214 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1971"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1989/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1988-1989" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1989"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2011/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2010-2011" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                317427 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1978/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1977-1978" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1978"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2000/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1999-2000" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                330482 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1977/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1976-1977" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                33571 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1977"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1967/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1966-1967" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1967"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2002/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2001-2002" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                124589 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2002"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1967/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1966-1967" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                486095 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1967"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2010/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2009-2010" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                38528 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1992/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1991-1992" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                74449 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1992"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1974/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1973-1974" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                521179 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1974"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2016/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2015-2016" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                1111233 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2016"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1969/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1968-1969" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                182298 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1969"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2009/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2008-2009" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                146068 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1982/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1981-1982" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                556034 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1982"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1988/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1987-1988" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                340190 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1988"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1972/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1971-1972" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                216340 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1972"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2017/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2016-2017" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                181039 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2017"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2014/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2013-2014" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                333175 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2014"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2006/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2005-2006" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                457889 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2006/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2005-2006" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                927805 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1991/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1990-1991" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                343045 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1991"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1989/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1988-1989" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                560116 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1989"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1980/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1979-1980" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                292280 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1980"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1971/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1970-1971" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                24414 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1971"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2014/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2013-2014" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                1072749 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2014"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2014/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2013-2014" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                536317 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2014"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1997/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1996-1997" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                469628 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1997"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2010/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2009-2010" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                1013658 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1997/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1996-1997" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                18721 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1997"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1986/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1985-1986" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1986"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1970/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1969-1970" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1970"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1979/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1978-1979" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                35675 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1979"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1975/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1974-1975" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1975"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2003/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2002-2003" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                129283 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2003"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1975/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1974-1975" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                253428 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1975"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1986/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1985-1986" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                53473 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1986"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2017/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2016-2017" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                352257 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2017"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2001/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2000-2001" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                320993 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2001"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1994/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1993-1994" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                960705 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1994"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2000/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1999-2000" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                914825 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2000"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1994/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1993-1994" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                350520 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1994"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2011/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2010-2011" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                161647 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1994/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1993-1994" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                86624 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1994"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1976/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1975-1976" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                528398 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1976"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1990/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1989-1990" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                955968 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1990"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1976/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1975-1976" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                828019 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1976"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1991/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1990-1991" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                543744 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1991"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1984/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1983-1984" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                933732 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1984"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2014/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2013-2014" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                34003 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2014"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2008/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2007-2008" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                486444 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1980/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1979-1980" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                877136 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1980"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1978/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1977-1978" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                284261 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1978"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2016/First%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2015-2016" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "First level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                553380 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2016"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2003/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2002-2003" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                28649 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2003"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1973/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1972-1973" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                26490 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1973"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2004/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2003-2004" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                309232 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1966/All%20levels%20of%20education>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1965-1966" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "All levels of education" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                638298 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1966"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/2008/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "2007-2008" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                29967 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1997/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1996-1997" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                353617 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1997"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1980/Third%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1979-1980" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Third level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                37425 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1980"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1981/Second%20level>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1980-1981" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Second level" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                297747 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1981"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://foo.example.org/StudentData/1994/Post%20leaving%20certificate%20courses%20%28VPT2%29>
+        a       <http://xmlns.com/foaf/0.1/StudentData> ;
+        <http://xmlns.com/foaf/0.1/hasAcademicYear>
+                "1993-1994" ;
+        <http://xmlns.com/foaf/0.1/hasLevelOfEducation>
+                "Post leaving certificate courses (VPT2)" ;
+        <http://xmlns.com/foaf/0.1/hasValue>
+                17678 ;
+        <http://xmlns.com/foaf/0.1/hasYear>
+                "1994"^^<http://www.w3.org/2001/XMLSchema#gYear> .
