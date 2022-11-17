@@ -6,18 +6,18 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#>.
 
 <#MapDetails>
-rr:logicalTable [ rr:tableName "ATTRACTIONS"];
+rr:logicalTable [ rr:tableName "ACTIVITIES"];
 		
 	rr:subjectMap	[
-		rr:template "http://foo.example.org/Attractions/{NAME}";
+		rr:template "http://foo.example.org/Activity/{NAME}";
 		rr:termType rr:IRI;
-		rr:class foaf:Attraction;
+		rr:class foaf:Activity;
 	];		
 	
 	rr:predicateObjectMap [
 		rr:predicate geo:hasGeometry;
 		rr:objectMap	[
-			rr:template "http://foo.example.org/Accommodation/{NAME}/{LONGITUDE}_{LATITUDE}";
+			rr:template "http://foo.example.org/Activity/{NAME}/{LONGITUDE}_{LATITUDE}";
 			rr:class geo:Geometry;
 			rr:termType rr:IRI;
 		];
@@ -78,13 +78,13 @@ rr:logicalTable [ rr:tableName "ATTRACTIONS"];
 	];	
  .
 
-<#AttractionType>
-rr:logicalTable [ rr:tableName "ATTRACTIONS"];
+<#AccommodationType>
+rr:logicalTable [ rr:tableName "ACTIVITIES"];
 		
 	rr:subjectMap	[
-		rr:template "http://foo.example.org/Attractions/{TAGS}";
+		rr:template "http://foo.example.org/Activity/{TAGS}";
 		rr:termType rr:IRI;
-		rr:class foaf:AttractionType;
+		rr:class foaf:ActivityType;
 	];	
  .	
 

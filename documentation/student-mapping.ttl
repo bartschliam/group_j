@@ -1,0 +1,55 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+
+<#MapDetails>
+rr:logicalTable [ rr:tableName "STUDENTDATA"];
+		
+	rr:subjectMap	[
+		rr:template "http://foo.example.org/StudentData/{TLIST(A1)}/{Level%of%Education}";
+		rr:termType rr:IRI;
+		rr:class foaf:StudentData;
+	];		
+
+	rr:predicateObjectMap [
+		rr:predicate foaf:hasYear;
+		rr:objectMap  [ 
+			rr:column "TLIST(A1)";
+			rr:termType rr:Literal;
+			rr:datatype xsd:gYear;
+		];	
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate foaf:hasAcademicYear;
+		rr:objectMap  [ 
+			rr:column "ACADEMIC%YEAR";
+			rr:termType rr:Literal;
+			rr:datatype xsd:string;
+		];	
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate foaf:hasLevelOfEducation;
+		rr:objectMap  [ 
+			rr:column "LEVEL%OF%EDUCATION";
+			rr:termType rr:Literal;
+			rr:datatype xsd:string;
+		];	
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate foaf:hasValue;
+		rr:objectMap  [ 
+			rr:column "VALUE";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];
+	
+	
+ .
+	
