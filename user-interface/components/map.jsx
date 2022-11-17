@@ -11,18 +11,20 @@ const myIcon = new divIcon({
     iconSize: [25, 25]
    })
 
-const Map = () => {
+const Map = ({data}) => {
   return (
-    <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} style={{height: 400, width: "100%"}}>
+    <MapContainer center={[53.4494762, -7.5029786]} zoom={6} scrollWheelZoom={false} style={{height: 400, width: "100%"}}>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[51.505, -0.09]} icon={myIcon}>
-        <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup>
-      </Marker>
+      {data.map((marker, index) => 
+          <Marker position={[marker.lat.value, marker.long.value]} icon={myIcon} key={index}>
+            <Popup>
+              {marker.station.value}
+            </Popup>
+          </Marker>
+      )}
     </MapContainer>
   )
 }

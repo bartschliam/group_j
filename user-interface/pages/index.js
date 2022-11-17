@@ -37,8 +37,8 @@ export default function Home() {
   const [queryResult, setQueryResult] = React.useState([]);
   const [error, setError] = React.useState({ text: "", enabled: false });
   const [chartStatus, setChartStatus] = React.useState({
-    bar: true,
-    map: true,
+    bar: false,
+    map: false,
   });
 
   const Map = React.useMemo(
@@ -159,7 +159,7 @@ export default function Home() {
         )}
         {chartStatus.map && (
           <Box mt={2}>
-            <Map />
+            <Map data={queryResult} />
           </Box>
         )}
         <Box bgcolor={blueGrey[50]} mt={2} p={2} borderRadius={1}>

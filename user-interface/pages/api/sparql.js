@@ -11,7 +11,7 @@ export default async function handler(req, res) {
   const query = await axios.get(
     `http://0.0.0.0:7200/repositories/${
       process.env.GRAPHDB_REPO
-    }?query=${encodeURI(sparqlQuery)}`
+    }?query=${encodeURIComponent(sparqlQuery)}`
   );
 
   const result = query.data.results.bindings.map((column) => {
@@ -22,6 +22,10 @@ export default async function handler(req, res) {
 
       if (column[key].datatype === "http://www.w3.org/2001/XMLSchema#gYear") {
         column[key].value = parseInt(column[key].value); // Date.parse
+      }
+
+      if (column[key].datatype === "http://www.w3.org/2001/XMLSchema#double") {
+        column[key].value = parseFloat(column[key].value);
       }
     });
     return column;
