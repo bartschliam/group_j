@@ -9,7 +9,7 @@
 rr:logicalTable [ rr:tableName "ACCOMMODATION"];
 		
 	rr:subjectMap	[
-		rr:template "http://foo.example.org/{TAGS}/{NAME}";
+		rr:template "http://foo.example.org/Accommodation/{NAME}";
 		rr:termType rr:IRI;
 		rr:class foaf:Accommodation;
 	];		
