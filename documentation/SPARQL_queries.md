@@ -239,23 +239,22 @@ select ?housing ?name ?division where {
 
 ---
 
-### Query 9 (to do) In low crime areas, are new houses sold for more than old houses?
-
-Not perfect but it gets the job done. Can be improved later
+### Query 9 In low crime areas, are new houses sold for more than old houses?
 
 ```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX ex:<http://foo.example.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-select ?gardaStation ?totalCrime ?division ?newHousing ?secondHousing
+select ?division ?totalCrimes ?newHouseValue ?secondHouseValue ?year
 where {
     {
-    select ?gardaStation ?totalCrime ?division ?year
+        select  ?division (SUM(?totalCrime) as ?totalCrimes) ?year
     where {
         ?gardaStation foaf:hasYear ?year .
         ?gardaStation rdf:type foaf:GardaStation .
         ?gardaStation foaf:hasDivision ?division .
+        ?gardaStation foaf:hasStation ?station .
 
         ?gardaStation foaf:hasMurderOffences  ?numMurders .
         ?gardaStation foaf:hasBurglaryOffences ?numBurglary .
@@ -271,21 +270,33 @@ where {
         ?gardaStation foaf:hasWeaponsOffences ?numWeapons .
         filter(?totalCrime = 0) .
         bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
-    } order by asc (?totalCrime)
+    } groupby ?division ?year
     } OPTIONAL {
       	?newHousing rdf:type foaf:HousePrice .
         ?newHousing foaf:hasYear ?year .
         ?newHousing foaf:hasArea ?division .
-        ?newHousing foaf:hasStatistic "New House Prices"
+        ?newHousing foaf:hasStatistic "New House Prices" .
+        ?newHousing foaf:hasValue ?newHouseValue
+    } OPTIONAL {
+      	?newHousing rdf:type foaf:HousePrice .
+        ?newHousing foaf:hasYear ?year .
+        ?newHousing foaf:hasArea "National" .
+        ?newHousing foaf:hasStatistic "New House Prices" .
+        ?newHousing foaf:hasValue ?newHouseValue
     } OPTIONAL {
       	?secondHousing rdf:type foaf:HousePrice .
         ?secondHousing foaf:hasYear ?year .
         ?secondHousing foaf:hasArea ?division .
-        ?secondHousing foaf:hasStatistic "Second Hand House Prices"
+        ?secondHousing foaf:hasStatistic "Second Hand House Prices" .
+        ?secondHousing foaf:hasValue ?secondHouseValue
+    } OPTIONAL {
+      	?secondHousing rdf:type foaf:HousePrice .
+        ?secondHousing foaf:hasYear ?year .
+        ?secondHousing foaf:hasArea "National" .
+        ?secondHousing foaf:hasStatistic "Second Hand House Prices" .
+        ?secondHousing foaf:hasValue ?secondHouseValue
     }
 }
-
-
 ```
 
 ---
