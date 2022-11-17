@@ -13,7 +13,7 @@ const myIcon = new divIcon({
 
 const Map = ({data}) => {
   return (
-    <MapContainer center={[53.4494762, -7.5029786]} zoom={6} scrollWheelZoom={false} style={{height: 400, width: "100%"}}>
+    <MapContainer center={[53.4494762, -7.5029786]} zoom={6} scrollWheelZoom={true} style={{height: 400, width: "100%"}}>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
