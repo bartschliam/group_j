@@ -1,0 +1,90 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+
+<#MapDetails>
+rr:logicalTable [ rr:tableName "ATTRACTIONS"];
+		
+	rr:subjectMap	[
+		rr:template "http://foo.example.org/Attractions/{NAME}";
+		rr:termType rr:IRI;
+		rr:class foaf:Accommodation;
+	];		
+	
+	rr:predicateObjectMap [
+		rr:predicate geo:hasGeometry;
+		rr:objectMap	[
+			rr:template "http://foo.example.org/Accommodation/{NAME}/{LONGITUDE}_{LATITUDE}";
+			rr:class geo:Geometry;
+			rr:termType rr:IRI;
+		];
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate foaf:hasName;
+		rr:objectMap  [ 
+			rr:column "NAME";
+			rr:termType rr:Literal;
+			rr:datatype xsd:string;
+		];	
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate foaf:hasType;
+		rr:objectMap  [ 
+			rr:column "TAGS";
+			rr:termType rr:Literal;
+			rr:datatype xsd:string;
+		];	
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate foaf:hasLongitude;
+		rr:objectMap  [ 
+			rr:column "LONGITUDE";
+			rr:termType rr:Literal;
+			rr:datatype xsd:double;
+		];	
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate foaf:hasLatitude;
+		rr:objectMap  [ 
+			rr:column "LATITUDE";
+			rr:termType rr:Literal;
+			rr:datatype xsd:double;
+		];	
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicate foaf:hasAddressLocality;
+		rr:objectMap  [ 
+			rr:column "ADDRESSLOCALITY";
+			rr:termType rr:Literal;
+			rr:datatype xsd:string;
+		];	
+	];	
+
+	rr:predicateObjectMap [
+		rr:predicate foaf:hasAddressRegion;
+		rr:objectMap  [ 
+			rr:column "ADDRESSREGION";
+			rr:termType rr:Literal;
+			rr:datatype xsd:string;
+		];	
+	];	
+ .
+
+<#AttractionType>
+rr:logicalTable [ rr:tableName "ATTRACTIONS"];
+		
+	rr:subjectMap	[
+		rr:template "http://foo.example.org/Attractions/{TAGS}";
+		rr:termType rr:IRI;
+		rr:class foaf:AttractionType;
+	];	
+ .	
+
