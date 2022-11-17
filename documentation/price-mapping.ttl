@@ -12,7 +12,7 @@ rr:logicalTable [ rr:tableName "HOUSEDATA"];
 	rr:subjectMap	[
 		rr:template "http://foo.example.org/House/{AREA}/{YEAR}/{STATISTIC}";
 		rr:termType rr:IRI;
-		rr:class foaf:HousePrice;
+		rr:class foaf:House;
 	];		
 	
 	rr:predicateObjectMap [
