@@ -70,7 +70,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];
 	
 	rr:predicateObjectMap [
-		rr:predicate foaf:hasMurders;
+		rr:predicate foaf:hasMurderOffences;
 		rr:objectMap  [ 
 			rr:column "Attempts or threats to murder, assaults, harassments and related offences";
 			rr:termType rr:Literal;
@@ -79,7 +79,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:hasNeglect;
+		rr:predicate foaf:hasNeglectOffesnces;
 		rr:objectMap  [ 
 			rr:column "Dangerous or negligent acts";
 			rr:termType rr:Literal;
@@ -88,7 +88,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 	
 	rr:predicateObjectMap [
-		rr:predicate foaf:hasKidnapping;
+		rr:predicate foaf:hasKidnappingOffences;
 		rr:objectMap  [ 
 			rr:column "Kidnapping and related offences";
 			rr:termType rr:Literal;
@@ -97,7 +97,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:hasRobbery;
+		rr:predicate foaf:hasRobberyOffences;
 		rr:objectMap  [ 
 			rr:column "Robbery, extortion and hijacking offences";
 			rr:termType rr:Literal;
@@ -106,7 +106,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:hasBurglary;
+		rr:predicate foaf:hasBurglaryOffences;
 		rr:objectMap  [ 
 			rr:column "Burglary and related offences";
 			rr:termType rr:Literal;
@@ -115,7 +115,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:hasTheft;
+		rr:predicate foaf:hasTheftOffences;
 		rr:objectMap  [ 
 			rr:column "Theft and related offences";
 			rr:termType rr:Literal;
@@ -124,7 +124,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:hasFraud;
+		rr:predicate foaf:hasFraudOffences;
 		rr:objectMap  [ 
 			rr:column "Fraud, deception and related offences";
 			rr:termType rr:Literal;
@@ -133,7 +133,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:hasDrugOffenses;
+		rr:predicate foaf:hasDrugOffences;
 		rr:objectMap  [ 
 			rr:column "Controlled drug offences";
 			rr:termType rr:Literal;
@@ -142,7 +142,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:hasWeaponsOffenses;
+		rr:predicate foaf:hasWeaponsOffences;
 		rr:objectMap  [ 
 			rr:column "Weapons and Explosives Offences";
 			rr:termType rr:Literal;
@@ -151,7 +151,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:hasDamagedPropertyOffenses;
+		rr:predicate foaf:hasDamagedPropertyOffences;
 		rr:objectMap  [ 
 			rr:column "Damage to property and to the environment";
 			rr:termType rr:Literal;
@@ -160,7 +160,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:hasOffensesAgainstGovernment;
+		rr:predicate foaf:hasOffencesAgainstGovernment;
 		rr:objectMap  [ 
 			rr:column "Offences against government, justice procedures and organisation of crime";
 			rr:termType rr:Literal;
@@ -169,7 +169,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:hasPublicOrderOffenses;
+		rr:predicate foaf:hasPublicOrderOffences;
 		rr:objectMap  [ 
 			rr:column "Public order and other social code offences";
 			rr:termType rr:Literal;

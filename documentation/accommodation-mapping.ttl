@@ -6,13 +6,12 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#>.
 
 <#MapDetails>
- 
 rr:logicalTable [ rr:tableName "ACCOMMODATION"];
 		
 	rr:subjectMap	[
-		rr:template "http://foo.example.org/Accommodation/{TAGS}";
+		rr:template "http://foo.example.org/{TAGS}/{NAME}";
 		rr:termType rr:IRI;
-		rr:class foaf:Accom;
+		rr:class foaf:Accommodation;
 	];		
 	
 	rr:predicateObjectMap [
@@ -78,3 +77,14 @@ rr:logicalTable [ rr:tableName "ACCOMMODATION"];
 		];	
 	];	
  .
+
+<#AccommodationType>
+rr:logicalTable [ rr:tableName "ACCOMMODATION"];
+		
+	rr:subjectMap	[
+		rr:template "http://foo.example.org/Accommodation/{TAGS}";
+		rr:termType rr:IRI;
+		rr:class foaf:AccommodationType;
+	];	
+ .	
+

@@ -251,35 +251,35 @@ where {
     {
     select ?gardaStation ?totalCrime ?division ?year
     where {
-        ?gardaStation foaf:Year ?year .
+        ?gardaStation foaf:hasYear ?year .
         ?gardaStation rdf:type foaf:GardaStation .
         ?gardaStation foaf:hasDivision ?division .
 
-        ?gardaStation foaf:Attempted-Murder-Assaults-Harrasments  ?numMurders .
-        ?gardaStation foaf:Burglary ?numBurglary .
-        ?gardaStation foaf:Controlled-Drug-Offences ?numDrugs .
-        ?gardaStation foaf:Damage-Property ?numPropertyDamage .
-        ?gardaStation foaf:Dangerous-Negligent-Acts ?numDangerousActs .
-        ?gardaStation foaf:Fraud ?numFraud .
-        ?gardaStation foaf:Kidnapping ?numKidnapping .
-        ?gardaStation foaf:Offenses-Against-Government ?numOffensesGov .
-        ?gardaStation foaf:Public-Order ?numPublicOrder .
-        ?gardaStation foaf:Robbery ?numRobbery .
-        ?gardaStation foaf:Theft ?numTheft .
-        ?gardaStation foaf:Weapons-Explosives ?numWeapons .
+        ?gardaStation foaf:hasMurders  ?numMurders .
+        ?gardaStation foaf:hasBurglary ?numBurglary .
+        ?gardaStation foaf:hasDrugOffenses ?numDrugs .
+        ?gardaStation foaf:hasDamagedPropertyOffenses ?numPropertyDamage .
+        ?gardaStation foaf:hasNeglect ?numDangerousActs .
+        ?gardaStation foaf:hasFraud ?numFraud .
+        ?gardaStation foaf:hasKidnapping ?numKidnapping .
+        ?gardaStation foaf:hasOffensesAgainstGovernment ?numOffensesGov .
+        ?gardaStation foaf:hasPublicOrderOffenses ?numPublicOrder .
+        ?gardaStation foaf:hasRobbery ?numRobbery .
+        ?gardaStation foaf:hasTheft ?numTheft .
+        ?gardaStation foaf:hasWeaponsOffenses ?numWeapons .
         filter(?totalCrime = 0) .
         bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
     } order by asc (?totalCrime)
     } OPTIONAL {
       	?newHousing rdf:type foaf:HousePrice .
-        ?newHousing foaf:Year ?year .
-        ?newHousing foaf:Area ?division .
-        ?newHousing foaf:Statistic "New House Prices"
+        ?newHousing foaf:hasYear ?year .
+        ?newHousing foaf:hasArea ?division .
+        ?newHousing foaf:hasStatistic "New House Prices"
     } OPTIONAL {
       	?secondHousing rdf:type foaf:HousePrice .
-        ?secondHousing foaf:Year ?year .
-        ?secondHousing foaf:Area ?division .
-        ?secondHousing foaf:Statistic "Second Hand House Prices"
+        ?secondHousing foaf:hasYear ?year .
+        ?secondHousing foaf:hasArea ?division .
+        ?secondHousing foaf:hasStatistic "Second Hand House Prices"
     }
 }
 
