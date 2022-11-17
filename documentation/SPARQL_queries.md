@@ -14,12 +14,12 @@
 ---
 
 ```
-PREFIX accom:<http://foo.example.org/Accommodation/>
+PREFIX accom:<http://xmlns.com/foaf/0.1/Accommodation>
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 
-select (count (distinct ?names) as ?count)
+select (count (distinct ?type) as ?count)
 where {
-accom:Hostel foaf:hasAddressLocality ?names .
+?s foaf:hasType ?type .
 }
 ```
 
@@ -74,16 +74,16 @@ SELECT * WHERE {
 ---
 
 ```
-PREFIX accom:<http://foo.example.org/Accommodation/>
+PREFIX accom:<http://xmlns.com/foaf/0.1/Accommodation>
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX crime:<http://foo.example.org/Station/20646/>
 
 select *
 where {
-    ?a foaf:hasMurders ?b.
-    ?a foaf:hasBurglary ?b.
-    ?a foaf:hasDrugOffenses ?b.
-    ?a foaf:hasDamagedPropertyOffenses ?b
+    ?a foaf:hasMurderOffences ?b.
+    ?a foaf:hasBurglaryOffences ?b.
+    ?a foaf:hasDrugOffences ?b.
+    ?a foaf:hasDamagedPropertyOffences ?b
 }
 ORDER BY DESC(?b)
 ```
@@ -102,19 +102,20 @@ PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 
 select ?station (sum(?kidnapping + ?neglect + ?robbery + ?burglary + ?theft + ?drugoffences + ?weaponsexplosives + ?damageproperty + ?offensesagainstgovernment + ?publicorder ) AS ?total)
 where {
-	?station foaf:hasKidnapping ?kidnapping.
-	?station foaf:hasNeglect ?neglect.
-	?station foaf:hasRobbery ?robbery.
-	?station foaf:hasBurglary ?burglary.
-	?station foaf:hasTheft ?theft.
-    ?station foaf:hasFraud ?fraud.
-    ?station foaf:hasDrugOffenses ?drugoffences.
-    ?station foaf:hasWeaponsOffenses ?weaponsexplosives.
-    ?station foaf:hasDamagedPropertyOffenses ?damageproperty.
-    ?station foaf:hasOffensesAgainstGovernment ?offensesagainstgovernment.
-    ?station foaf:hasPublicOrderOffenses ?publicorder.
+	?station foaf:hasKidnappingOffences ?kidnapping.
+	?station foaf:hasNeglectOffences ?neglect.
+	?station foaf:hasRobberyOffences ?robbery.
+	?station foaf:hasBurglaryOffences ?burglary.
+	?station foaf:hasTheftOffences ?theft.
+    ?station foaf:hasFraudOffences ?fraud.
+    ?station foaf:hasDrugOffences ?drugoffences.
+    ?station foaf:hasWeaponsOffences ?weaponsexplosives.
+    ?station foaf:hasDamagedPropertyOffences ?damageproperty.
+    ?station foaf:hasOffencesAgainstGovernment ?offensesagainstgovernment.
+    ?station foaf:hasPublicOrderOffences ?publicorder.
 }
 GROUP BY ?station
+
 
 ```
 
@@ -175,18 +176,18 @@ where {
         filter(year(?year) = 2016) .
         ?gardaStation rdf:type foaf:GardaStation .
         ?gardaStation foaf:hasDivision ?division .
-        ?gardaStation foaf:hasMurders  ?numMurders .
-        ?gardaStation foaf:hasBurglary ?numBurglary .
-        ?gardaStation foaf:hasDrugOffenses ?numDrugs .
-        ?gardaStation foaf:hasDamagedPropertyOffenses ?numPropertyDamage .
-        ?gardaStation foaf:hasNeglect ?numDangerousActs .
-        ?gardaStation foaf:hasFraud ?numFraud .
-        ?gardaStation foaf:hasKidnapping ?numKidnapping .
-        ?gardaStation foaf:hasOffensesAgainstGovernment ?numOffensesGov .
-        ?gardaStation foaf:hasPublicOrderOffenses ?numPublicOrder .
-        ?gardaStation foaf:hasRobbery ?numRobbery .
-        ?gardaStation foaf:hasTheft ?numTheft .
-        ?gardaStation foaf:hasWeaponsOffenses ?numWeapons .
+        ?gardaStation foaf:hasMurderOffences  ?numMurders .
+        ?gardaStation foaf:hasBurglaryOffences ?numBurglary .
+        ?gardaStation foaf:hasDrugOffences ?numDrugs .
+        ?gardaStation foaf:hasDamagedPropertyOffences ?numPropertyDamage .
+        ?gardaStation foaf:hasNeglectOffences ?numDangerousActs .
+        ?gardaStation foaf:hasFraudOffences ?numFraud .
+        ?gardaStation foaf:hasKidnappingOffences ?numKidnapping .
+        ?gardaStation foaf:hasOffencesAgainstGovernment ?numOffensesGov .
+        ?gardaStation foaf:hasPublicOrderOffences ?numPublicOrder .
+        ?gardaStation foaf:hasRobberyOffences ?numRobbery .
+        ?gardaStation foaf:hasTheftOffences ?numTheft .
+        ?gardaStation foaf:hasWeaponsOffences ?numWeapons .
         bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
     } order by desc (?totalCrime)
     limit 1
@@ -208,7 +209,7 @@ PREFIX ex:<http://foo.example.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 select ?housing ?name ?division where {
-    ?housing rdf:type foaf:Accom .
+    ?housing rdf:type foaf:Accommodation .
 	?housing foaf:hasType ?type .
     ?housing foaf:hasName ?name .
     ?housing foaf:hasAddressRegion ?region .
@@ -217,20 +218,21 @@ select ?housing ?name ?division where {
     filter(year(?year) = 2016) .
     ?gardaStation rdf:type foaf:GardaStation .
     ?gardaStation foaf:hasDivision ?region.
-    ?gardaStation foaf:hasMurders  ?numMurders .
-    ?gardaStation foaf:hasBurglary ?numBurglary .
-    ?gardaStation foaf:hasDrugOffenses ?numDrugs .
-    ?gardaStation foaf:hasDamagedPropertyOffenses ?numPropertyDamage .
-    ?gardaStation foaf:hasNeglect ?numDangerousActs .
-    ?gardaStation foaf:hasFraud ?numFraud .
-    ?gardaStation foaf:hasKidnapping ?numKidnapping .
-    ?gardaStation foaf:hasOffensesAgainstGovernment ?numOffensesGov .
-    ?gardaStation foaf:hasPublicOrderOffenses ?numPublicOrder .
-    ?gardaStation foaf:hasRobbery ?numRobbery .
-    ?gardaStation foaf:hasTheft ?numTheft .
-    ?gardaStation foaf:hasWeaponsOffenses ?numWeapons .
+    ?gardaStation foaf:hasMurderOffences  ?numMurders .
+    ?gardaStation foaf:hasBurglaryOffences ?numBurglary .
+    ?gardaStation foaf:hasDrugOffences ?numDrugs .
+    ?gardaStation foaf:hasDamagedPropertyOffences ?numPropertyDamage .
+    ?gardaStation foaf:hasNeglectOffences ?numDangerousActs .
+    ?gardaStation foaf:hasFraudOffences ?numFraud .
+    ?gardaStation foaf:hasKidnappingOffences ?numKidnapping .
+    ?gardaStation foaf:hasOffencesAgainstGovernment ?numOffensesGov .
+    ?gardaStation foaf:hasPublicOrderOffences ?numPublicOrder .
+    ?gardaStation foaf:hasRobberyOffences ?numRobbery .
+    ?gardaStation foaf:hasTheftOffences ?numTheft .
+    ?gardaStation foaf:hasWeaponsOffences ?numWeapons .
     bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
 }
+
 
 
 ```
@@ -255,18 +257,18 @@ where {
         ?gardaStation rdf:type foaf:GardaStation .
         ?gardaStation foaf:hasDivision ?division .
 
-        ?gardaStation foaf:hasMurders  ?numMurders .
-        ?gardaStation foaf:hasBurglary ?numBurglary .
-        ?gardaStation foaf:hasDrugOffenses ?numDrugs .
-        ?gardaStation foaf:hasDamagedPropertyOffenses ?numPropertyDamage .
-        ?gardaStation foaf:hasNeglect ?numDangerousActs .
-        ?gardaStation foaf:hasFraud ?numFraud .
-        ?gardaStation foaf:hasKidnapping ?numKidnapping .
-        ?gardaStation foaf:hasOffensesAgainstGovernment ?numOffensesGov .
-        ?gardaStation foaf:hasPublicOrderOffenses ?numPublicOrder .
-        ?gardaStation foaf:hasRobbery ?numRobbery .
-        ?gardaStation foaf:hasTheft ?numTheft .
-        ?gardaStation foaf:hasWeaponsOffenses ?numWeapons .
+        ?gardaStation foaf:hasMurderOffences  ?numMurders .
+        ?gardaStation foaf:hasBurglaryOffences ?numBurglary .
+        ?gardaStation foaf:hasDrugOffences ?numDrugs .
+        ?gardaStation foaf:hasDamagedPropertyOffences ?numPropertyDamage .
+        ?gardaStation foaf:hasNeglectOffences ?numDangerousActs .
+        ?gardaStation foaf:hasFraudOffences ?numFraud .
+        ?gardaStation foaf:hasKidnappingOffences ?numKidnapping .
+        ?gardaStation foaf:hasOffencesAgainstGovernment ?numOffensesGov .
+        ?gardaStation foaf:hasPublicOrderOffences ?numPublicOrder .
+        ?gardaStation foaf:hasRobberyOffences ?numRobbery .
+        ?gardaStation foaf:hasTheftOffences ?numTheft .
+        ?gardaStation foaf:hasWeaponsOffences ?numWeapons .
         filter(?totalCrime = 0) .
         bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
     } order by asc (?totalCrime)
@@ -282,6 +284,7 @@ where {
         ?secondHousing foaf:hasStatistic "Second Hand House Prices"
     }
 }
+
 
 ```
 
