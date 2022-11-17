@@ -79,7 +79,7 @@ rr:logicalTable [ rr:tableName "GARDA_STATIONS"];
 	];	
 
 	rr:predicateObjectMap [
-		rr:predicate foaf:hasNeglectOffesnces;
+		rr:predicate foaf:hasNeglectOffences;
 		rr:objectMap  [ 
 			rr:column "Dangerous or negligent acts";
 			rr:termType rr:Literal;
