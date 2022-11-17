@@ -10,6 +10,9 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { blueGrey } from "@mui/material/colors";
 
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
+
 const queries = [
   {
     label: "WORKING EXAMPLE: Count the number of Hostels in Ireland",
@@ -85,6 +88,7 @@ const queries = [
 export default function Home() {
   const [selectedQuery, setSelectedQuery] = React.useState("");
   const [queryResult, setQueryResult] = React.useState({});
+  const [error, setError] = React.useState({ text: "", enabled: false });
 
   const Map = React.useMemo(
     () =>
@@ -103,7 +107,18 @@ export default function Home() {
       .get("/api/sparql", {
         params: { sparqlQuery: selectedQuery.query },
       })
-      .then((result) => setQueryResult(result.data));
+      .then((result) => setQueryResult(result.data))
+      .catch((error) =>
+        setError({ text: "Error fetching results.", enabled: true })
+      );
+  };
+
+  const handleCloseError = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setError({ text: "", enabled: false });
   };
 
   return (
@@ -111,9 +126,9 @@ export default function Home() {
       <Head>
         <title>User Interface</title>
       </Head>
-      <Box sx={{ width: "100%", maxWidth: 500 }} m={2} pb={3}>
+      <Box sx={{ width: "100%", maxWidth: 800, margin: "auto" }} m={2} pb={3}>
         <Typography variant="h4" gutterBottom fontWeight={800}>
-          Knowledge Engineering
+          Housing, Accommodation, and Crime
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
           Use the following drop down to execute a query.
@@ -126,12 +141,11 @@ export default function Home() {
           onChange={(event, newValue) => {
             setSelectedQuery(newValue);
           }}
-          sx={{ width: 300 }}
           renderInput={(params) => <TextField {...params} label="Query" />}
           fullWidth
         />
         <Button variant="contained" sx={{ mt: 1 }} onClick={handleQuerySubmit}>
-          Select Query
+          Rum Query
         </Button>
         <Box bgcolor={blueGrey[50]} mt={2} p={2} borderRadius={1}>
           <Typography variant="body1" gutterBottom fontWeight={800}>
@@ -158,6 +172,19 @@ export default function Home() {
         </Box>
         <br />
         <Map />
+        <Snackbar
+          open={error.enabled}
+          autoHideDuration={6000}
+          onClose={handleCloseError}
+        >
+          <MuiAlert
+            onClose={handleCloseError}
+            severity="error"
+            sx={{ width: "100%" }}
+          >
+            {error.text}
+          </MuiAlert>
+        </Snackbar>
       </Box>
     </div>
   );

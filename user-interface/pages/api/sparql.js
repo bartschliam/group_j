@@ -9,7 +9,9 @@ export default async function handler(req, res) {
   // const getRepos = await axios.get("http://0.0.0.0:7200/repositories");
 
   const query = await axios.get(
-    `http://0.0.0.0:7200/repositories/Project?query=${encodeURI(sparqlQuery)}`
+    `http://0.0.0.0:7200/repositories/${
+      process.env.GRAPHDB_REPO
+    }?query=${encodeURI(sparqlQuery)}`
   );
 
   // Create a better object to process in the front end
