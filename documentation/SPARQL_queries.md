@@ -386,7 +386,7 @@ SELECT (count(?accom) as ?TotalBandBs) ?leastExpensiveRegion WHERE {
 ?accom rdf:type foaf:Accommodation .
 ?accom foaf:hasType ?type .
 ?accom foaf:hasAddressRegion ?county .
-Filter (?type = "B&B" || ?type = "B&B,Activity Holiday Accommodation" || ?type = "B&B,B&B Ireland" || ?type = "B&B,B&B Ireland,B&Bs,Historic House" || ?type = "B&B,B&Bs,Historic House" || ?type = "B&B,Hotel,Welcome Standard" || ?type = "B&B,Welcome Standard" || ?type = "B&B,Self Catering Accommodation,Welcome Standard" || ?type = "B&B,Self Catering Accommodation,Welcome Standard,Activity Holiday Accommodation" || ?type = "B&B,Self Catering Accommodation,Welcome Standard" || ?type = "B&B,Welcome Standard,Camping,Glamping")
+Filter (contains(?type,"B&B"))
 Filter (?county = ?leastExpensiveRegion)
 {
 select _ where {
@@ -403,7 +403,7 @@ SELECT (count(?accom) as ?TotalBandBs) ?mostExpensiveRegion WHERE {
 ?accom rdf:type foaf:Accommodation .
 ?accom foaf:hasType ?type .
 ?accom foaf:hasAddressRegion ?county .
-Filter (?type = "B&B" || ?type = "B&B,Activity Holiday Accommodation" || ?type = "B&B,B&B Ireland" || ?type = "B&B,B&B Ireland,B&Bs,Historic House" || ?type = "B&B,B&Bs,Historic House" || ?type = "B&B,Hotel,Welcome Standard" || ?type = "B&B,Welcome Standard" || ?type = "B&B,Self Catering Accommodation,Welcome Standard" || ?type = "B&B,Self Catering Accommodation,Welcome Standard,Activity Holiday Accommodation" || ?type = "B&B,Self Catering Accommodation,Welcome Standard" || ?type = "B&B,Welcome Standard,Camping,Glamping")
+Filter (contains(?type,"B&B"))
 Filter (?county = ?mostExpensiveRegion)
 {
 select \* where {
