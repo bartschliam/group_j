@@ -374,3 +374,49 @@ GROUP BY(?reigon)
 ```
 
 ```
+
+### Query 11: Does the least expensive region have more B&B's than the most expensive region?
+
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select _ {
+{
+SELECT (count(?accom) as ?TotalBandBs) ?leastExpensiveRegion WHERE {
+?accom rdf:type foaf:Accommodation .
+?accom foaf:hasType ?type .
+?accom foaf:hasAddressRegion ?county .
+Filter (?type = "B&B" || ?type = "B&B,Activity Holiday Accommodation" || ?type = "B&B,B&B Ireland" || ?type = "B&B,B&B Ireland,B&Bs,Historic House" || ?type = "B&B,B&Bs,Historic House" || ?type = "B&B,Hotel,Welcome Standard" || ?type = "B&B,Welcome Standard" || ?type = "B&B,Self Catering Accommodation,Welcome Standard" || ?type = "B&B,Self Catering Accommodation,Welcome Standard,Activity Holiday Accommodation" || ?type = "B&B,Self Catering Accommodation,Welcome Standard" || ?type = "B&B,Welcome Standard,Camping,Glamping")
+Filter (?county = ?leastExpensiveRegion)
+{
+select _ where {
+{
+?housePrice foaf:hasValue ?value .
+?housePrice foaf:hasArea ?leastExpensiveRegion .
+}
+}order by asc (?value) limit 1
+}
+} group by ?leastExpensiveRegion
+}
+union {
+SELECT (count(?accom) as ?TotalBandBs) ?mostExpensiveRegion WHERE {
+?accom rdf:type foaf:Accommodation .
+?accom foaf:hasType ?type .
+?accom foaf:hasAddressRegion ?county .
+Filter (?type = "B&B" || ?type = "B&B,Activity Holiday Accommodation" || ?type = "B&B,B&B Ireland" || ?type = "B&B,B&B Ireland,B&Bs,Historic House" || ?type = "B&B,B&Bs,Historic House" || ?type = "B&B,Hotel,Welcome Standard" || ?type = "B&B,Welcome Standard" || ?type = "B&B,Self Catering Accommodation,Welcome Standard" || ?type = "B&B,Self Catering Accommodation,Welcome Standard,Activity Holiday Accommodation" || ?type = "B&B,Self Catering Accommodation,Welcome Standard" || ?type = "B&B,Welcome Standard,Camping,Glamping")
+Filter (?county = ?mostExpensiveRegion)
+{
+select \* where {
+{
+?housePrice foaf:hasValue ?value .
+?housePrice foaf:hasArea ?mostExpensiveRegion .
+}
+}order by desc (?value) limit 1
+}
+} group by ?mostExpensiveRegion
+}
+}
+
+```
+
+```
