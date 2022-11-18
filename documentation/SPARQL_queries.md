@@ -104,23 +104,12 @@ select ?area ?year ?housingValue ?totalCrimes where {
 
 ---
 
-### Query 4 (in progress)
+### Query 4 (to do)
 
 ---
 
 ```
-PREFIX accom:<http://xmlns.com/foaf/0.1/Accommodation>
-PREFIX foaf:<http://xmlns.com/foaf/0.1/>
-PREFIX crime:<http://foo.example.org/Station/20646/>
 
-select *
-where {
-    ?a foaf:hasMurderOffences ?b.
-    ?a foaf:hasBurglaryOffences ?b.
-    ?a foaf:hasDrugOffences ?b.
-    ?a foaf:hasDamagedPropertyOffences ?b
-}
-ORDER BY DESC(?b)
 ```
 
 ---
