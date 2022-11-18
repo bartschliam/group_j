@@ -532,3 +532,182 @@ WHERE {
 [Index](#sparql-queries-index)
 
 ---
+
+## Query 12
+
+### gets amount of people and total number of people on welfare each year
+
+```
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT *
+WHERE {
+  {
+    SELECT ?year (sum(?people2008) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    WHERE {
+      ?WelfareOffice foaf:hasPersons2008 ?people2008 .
+      {
+        SELECT *
+        WHERE {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = 'All levels of education')
+          FILTER (?year = 2008)
+        }
+      }
+    }
+    GROUP BY ?year ?amount
+  }
+  UNION
+  {
+    SELECT ?year (sum(?people2009) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    WHERE {
+      ?WelfareOffice foaf:hasPersons2009 ?people2009 .
+      {
+        SELECT *
+        WHERE {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = 'All levels of education')
+          FILTER (?year = 2009)
+        }
+      }
+    }
+    GROUP BY ?year ?amount
+  }
+  UNION
+  {
+    SELECT ?year (sum(?people2010) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    WHERE {
+      ?WelfareOffice foaf:hasPersons2010 ?people2010 .
+      {
+        SELECT *
+        WHERE {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = 'All levels of education')
+          FILTER (?year = 2010)
+        }
+      }
+    }
+    GROUP BY ?year ?amount
+  }
+  UNION
+  {
+    SELECT ?year (sum(?people2011) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    WHERE {
+      ?WelfareOffice foaf:hasPersons2011 ?people2011 .
+      {
+        SELECT *
+        WHERE {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = 'All levels of education')
+          FILTER (?year = 2011)
+        }
+      }
+    }
+    GROUP BY ?year ?amount
+  }
+  UNION
+  {
+    SELECT ?year (sum(?people2012) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    WHERE {
+      ?WelfareOffice foaf:hasPersons2012 ?people2012 .
+      {
+        SELECT *
+        WHERE {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = 'All levels of education')
+          FILTER (?year = 2012)
+        }
+      }
+    }
+    GROUP BY ?year ?amount
+  }
+  UNION
+  {
+    SELECT ?year (sum(?people2013) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    WHERE {
+      ?WelfareOffice foaf:hasPersons2013 ?people2013 .
+      {
+        SELECT *
+        WHERE {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = 'All levels of education')
+          FILTER (?year = 2013)
+        }
+      }
+    }
+    GROUP BY ?year ?amount
+  }
+  UNION
+  {
+    SELECT ?year (sum(?people2014) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    WHERE {
+      ?WelfareOffice foaf:hasPersons2014 ?people2014 .
+      {
+        SELECT *
+        WHERE {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = 'All levels of education')
+          FILTER (?year = 2014)
+        }
+      }
+    }
+    GROUP BY ?year ?amount
+  }
+  UNION
+  {
+    SELECT ?year (sum(?people2015) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    WHERE {
+      ?WelfareOffice foaf:hasPersons2015 ?people2015 .
+      {
+        SELECT *
+        WHERE {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = 'All levels of education')
+          FILTER (?year = 2015)
+        }
+      }
+    }
+    GROUP BY ?year ?amount
+  }
+  UNION
+  {
+    SELECT ?year (sum(?people2016) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    WHERE {
+      ?WelfareOffice foaf:hasPersons2016 ?people2016 .
+      {
+        SELECT *
+        WHERE {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = 'All levels of education')
+          FILTER (?year = 2016)
+        }
+      }
+    }
+    GROUP BY ?year ?amount
+  }
+}
+```
+
+[Index](#sparql-queries-index)
+
+---
