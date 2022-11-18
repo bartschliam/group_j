@@ -1,4 +1,5 @@
 # SPARQL Queries Index
+
 - [Query 1](#query-1)
 - [Query 2](#query-2)
 - [Query 3](#query-3)
@@ -12,25 +13,27 @@
 - [Query 11](#query-11)
 
 ---
-## Query 1
-### TODO: Should replace
-### Number of Hostels 
----
-```
-PREFIX accom:<http://xmlns.com/foaf/0.1/Accommodation>
-PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 
-select (count (distinct ?type) as ?count)
-where {
-?s foaf:hasType ?type .
-}
+## TODO: Query 1
+
+### Where can I go camping where there is low petty crime?
+
+---
+
 ```
+
+```
+
 [Index](#sparql-queries-index)
 
 ---
+
 ## Query 2
-### Min Max of Housing Prices
+
+### What is the mimum and maximum of housing prices in Ireland?
+
 ---
+
 ```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 SELECT * WHERE {
@@ -56,21 +59,23 @@ SELECT * WHERE {
     }
 }
 ```
+
 [Index](#sparql-queries-index)
 
 ---
 
-## Query 3 
-### In areas where there's an increase in new housing sale value, what trends are there in crime over time?
-### Find the difference or % increase from past year for crimes and for prices per year
+## Query 3
+
+### What trends are there in housing value with relation to the amount of crime in Ireland
+
 ---
+
 ```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
-PREFIX ex:<http://foo.example.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 select ?area ?year ?housingValue ?totalCrimes where {
-	?housing rdf:type foaf:HousePrice .
+	?housing rdf:type foaf:House .
     ?housing foaf:hasYear ?year .
     ?housing foaf:hasArea ?area .
     ?housing foaf:hasStatistic "New House Prices" .
@@ -102,49 +107,69 @@ select ?area ?year ?housingValue ?totalCrimes where {
     }
 } order by ?year
 ```
+
 [Index](#sparql-queries-index)
 
 ---
-### Query 4
-### TODO
+
+### TODO: Query 4
+
 ---
+
 ```
 
 ```
+
 [Index](#sparql-queries-index)
 
 ---
-## Query 5 
-### How many X crimes reported per station
-### (Done but maybe can be made more presentable?)
+
+## Query 5
+
+### How many X crimes reported per station (Sum of entire dataset)
+
 ---
+
 ```
 PREFIX station:<http://foo.example.org/Station/>
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-select ?station (sum(?kidnapping + ?neglect + ?robbery + ?burglary + ?theft + ?drugoffences + ?weaponsexplosives + ?damageproperty + ?offensesagainstgovernment + ?publicorder ) AS ?total)
+select ?station ?division (sum(?kidnapping + ?neglect + ?robbery + ?burglary + ?theft + ?drugoffences + ?weaponsexplosives + ?damageproperty + ?offensesagainstgovernment + ?publicorder ) AS ?totalCrime) ?lat ?long
 where {
-	?station foaf:hasKidnappingOffences ?kidnapping.
-	?station foaf:hasNeglectOffences ?neglect.
-	?station foaf:hasRobberyOffences ?robbery.
-	?station foaf:hasBurglaryOffences ?burglary.
-	?station foaf:hasTheftOffences ?theft.
-    ?station foaf:hasFraudOffences ?fraud.
-    ?station foaf:hasDrugOffences ?drugoffences.
-    ?station foaf:hasWeaponsOffences ?weaponsexplosives.
-    ?station foaf:hasDamagedPropertyOffences ?damageproperty.
-    ?station foaf:hasOffencesAgainstGovernment ?offensesagainstgovernment.
-    ?station foaf:hasPublicOrderOffences ?publicorder.
+    ?gSstation rdf:type foaf:GardaStation.
+
+	?gSstation foaf:hasKidnappingOffences ?kidnapping.
+	?gSstation foaf:hasNeglectOffences ?neglect.
+	?gSstation foaf:hasRobberyOffences ?robbery.
+	?gSstation foaf:hasBurglaryOffences ?burglary.
+	?gSstation foaf:hasTheftOffences ?theft.
+    ?gSstation foaf:hasFraudOffences ?fraud.
+    ?gSstation foaf:hasDrugOffences ?drugoffences.
+    ?gSstation foaf:hasWeaponsOffences ?weaponsexplosives.
+    ?gSstation foaf:hasDamagedPropertyOffences ?damageproperty.
+    ?gSstation foaf:hasOffencesAgainstGovernment ?offensesagainstgovernment.
+    ?gSstation foaf:hasPublicOrderOffences ?publicorder.
+
+    ?gSstation foaf:hasYear ?year.
+    ?gSstation foaf:hasDivision ?division .
+    ?gSstation foaf:hasStation ?station .
+    ?gSstation foaf:hasLatitude ?lat .
+    ?gSstation foaf:hasLongitude ?long .
 }
-GROUP BY ?station
+GROUP BY ?division ?station ?lat ?long
 ```
+
 [Index](#sparql-queries-index)
 
 ---
 
-## Query 6 
+## TODO: Query 6
+
 ### ranked list for house prices, amount of accomm and crime, testing (in progress)
+
 ---
+
 ```
 https://stackoverflow.com/questions/17313730/how-to-rank-values-in-sparql
 this might be handy but website currently down
@@ -166,12 +191,17 @@ select ?station ?division ?murder ?neglect ?kidnapping where {
 
 
 ```
+
 [Index](#sparql-queries-index)
 
 ---
-## Query 7
-### (to do) In 2016, in the top crime location, what was the volume of housing sales and what other types of accomodation existed.
+
+## TODO: Query 7
+
+### In 2016, in the top crime location, what was the volume of housing sales and what other types of accomodation existed.
+
 ---
+
 ```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX ex:<http://foo.example.org/>
@@ -211,13 +241,19 @@ where {
     }
 }
 ```
+
 [Index](#sparql-queries-index)
 
 ---
-## Query 8 
-### (to do) In high crime areas, what types of accomodation is there? (Do people go camping where there is crime?)
+
+## TODO: Query 8
+
+### In high crime areas, what types of accomodation is there? (Do people go camping where there is crime?)
+
 ### IN PROGRESS NOT DONE BECAUSE IT STILL IS BIT BROKEY
+
 ---
+
 ```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX ex:<http://foo.example.org/>
@@ -248,11 +284,15 @@ select ?housing ?name ?division where {
     bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
 }
 ```
+
 [Index](#sparql-queries-index)
 
 ---
-## Query 9 
+
+## Query 9
+
 ### In low crime areas, are new houses sold for more than old houses?
+
 ```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX ex:<http://foo.example.org/>
@@ -284,25 +324,25 @@ where {
         bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
     } groupby ?division ?year
     } OPTIONAL {
-      	?newHousing rdf:type foaf:HousePrice .
+      	?newHousing rdf:type foaf:House .
         ?newHousing foaf:hasYear ?year .
         ?newHousing foaf:hasArea ?division .
         ?newHousing foaf:hasStatistic "New House Prices" .
         ?newHousing foaf:hasValue ?newHouseValue
     } OPTIONAL {
-      	?newHousing rdf:type foaf:HousePrice .
+      	?newHousing rdf:type foaf:House .
         ?newHousing foaf:hasYear ?year .
         ?newHousing foaf:hasArea "National" .
         ?newHousing foaf:hasStatistic "New House Prices" .
         ?newHousing foaf:hasValue ?newHouseValue
     } OPTIONAL {
-      	?secondHousing rdf:type foaf:HousePrice .
+      	?secondHousing rdf:type foaf:House .
         ?secondHousing foaf:hasYear ?year .
         ?secondHousing foaf:hasArea ?division .
         ?secondHousing foaf:hasStatistic "Second Hand House Prices" .
         ?secondHousing foaf:hasValue ?secondHouseValue
     } OPTIONAL {
-      	?secondHousing rdf:type foaf:HousePrice .
+      	?secondHousing rdf:type foaf:House .
         ?secondHousing foaf:hasYear ?year .
         ?secondHousing foaf:hasArea "National" .
         ?secondHousing foaf:hasStatistic "Second Hand House Prices" .
@@ -310,19 +350,24 @@ where {
     }
 }
 ```
+
 [Index](#sparql-queries-index)
 
 ---
-## Query 10 
+
+## TODO: Query 10
+
 ### (to do) Do areas with a large amount of accomodation have a high house prices?
+
 ## FYI: There are only 5 named counties in the housing prices set, the others are national and other areas.
+
 ```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX ex:<http://foo.example.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX accom:<http://foo.example.org/Accommodation/>
 
-select \*
+select *
 where
 {
 {
@@ -348,52 +393,69 @@ GROUP BY(?reigon)
 }
 }
 ```
+
 [Index](#sparql-queries-index)
 
 ---
-## Query 11
-### Does the least expensive region have more B&B's than the most expensive region?
-```
-PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 
+## Query 11
+
+### Does the least expensive region have more B&B's than the most expensive region?
+
+```
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-select _ {
-{
-SELECT (count(?accom) as ?TotalBandBs) ?leastExpensiveRegion WHERE {
-?accom rdf:type foaf:Accommodation .
-?accom foaf:hasType ?type .
-?accom foaf:hasAddressRegion ?county .
-Filter (contains(?type,"B&B"))
-Filter (?county = ?leastExpensiveRegion)
-{
-select _ where {
-{
-?housePrice foaf:hasValue ?value .
-?housePrice foaf:hasArea ?leastExpensiveRegion .
-}
-}order by asc (?value) limit 1
-}
-} group by ?leastExpensiveRegion
-}
-union {
-SELECT (count(?accom) as ?TotalBandBs) ?mostExpensiveRegion WHERE {
-?accom rdf:type foaf:Accommodation .
-?accom foaf:hasType ?type .
-?accom foaf:hasAddressRegion ?county .
-Filter (contains(?type,"B&B"))
-Filter (?county = ?mostExpensiveRegion)
-{
-select \* where {
-{
-?housePrice foaf:hasValue ?value .
-?housePrice foaf:hasArea ?mostExpensiveRegion .
-}
-}order by desc (?value) limit 1
-}
-} group by ?mostExpensiveRegion
-}
+
+SELECT *
+WHERE {
+  {
+    SELECT (COUNT(?accom) AS ?TotalBandBs) ?region
+    WHERE {
+      ?accom rdf:type foaf:Accommodation .
+      ?accom foaf:hasType ?type .
+      ?accom foaf:hasAddressRegion ?county .
+      FILTER (CONTAINS(?type, "B&B"))
+      FILTER (?county = ?region)
+      {
+        SELECT *
+        WHERE {
+          {
+            ?housePrice foaf:hasValue ?value .
+            ?housePrice foaf:hasArea ?region .
+          }
+        }
+        ORDER BY ?value
+        LIMIT 1
+      }
+    }
+    GROUP BY ?region
+  }
+  UNION
+  {
+    SELECT (COUNT(?accom) AS ?TotalBandBs) ?region
+    WHERE {
+      ?accom rdf:type foaf:Accommodation .
+      ?accom foaf:hasType ?type .
+      ?accom foaf:hasAddressRegion ?county .
+      FILTER (CONTAINS(?type, "B&B"))
+      FILTER (?county = ?region)
+      {
+        SELECT *
+        WHERE {
+          {
+            ?housePrice foaf:hasValue ?value .
+            ?housePrice foaf:hasArea ?region .
+          }
+        }
+        ORDER BY DESC(?value)
+        LIMIT 1
+      }
+    }
+    GROUP BY ?region
+  }
 }
 ```
+
 [Index](#sparql-queries-index)
 
 ---
