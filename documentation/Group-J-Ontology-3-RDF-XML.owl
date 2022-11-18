@@ -1,0 +1,745 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.foo.example.org#"
+     xml:base="http://www.foo.example.org"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.foo.example.org">
+        <owl:backwardCompatibleWith>rdfs:label &quot;Group J Onoloty&quot; ;
+rdfs:comment &quot;This is the onology created by group J for the group project, It is used to investigate the relationships between house prices, accomodation, attractions, atctivities, crime and welfare to see of there are any correlations. &quot;;
+owl:versionInfo &quot;Version 3&quot;;</owl:backwardCompatibleWith>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.foo.example.org#happensAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.foo.example.org#happensAt">
+        <owl:inverseOf rdf:resource="http://www.foo.example.org#hasActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.foo.example.org#hasActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.foo.example.org#hasActivity"/>
+    
+
+
+    <!-- http://www.foo.example.org#locatedNear -->
+
+    <owl:ObjectProperty rdf:about="http://www.foo.example.org#locatedNear">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.foo.example.org#reportsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.foo.example.org#reportsTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.foo.example.org#hasAcademicYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasAcademicYear"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasAddressLocality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasAddressLocality"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasAddressRegion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasAddressRegion"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasAmount"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasArea"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasBurglaryOffences -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasBurglaryOffences"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasCounty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasCounty"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasDamagedPropertyOffences -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasDamagedPropertyOffences"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasDivision -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasDivision"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasDrugOffences -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasDrugOffences"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasFraudOffences -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasFraudOffences"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasKidnappingOffences -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasKidnappingOffences"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasLatitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasLatitude"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasLevelOfEducation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasLevelOfEducation"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasLongitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasLongitude"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasMurderOffences -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasMurderOffences"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasName"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasNeglectOffences -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasNeglectOffences"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasOffencesAgainstGovernment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasOffencesAgainstGovernment"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasPersons2008 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasPersons2008"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasPersons2009 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasPersons2009"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasPersons2010 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasPersons2010"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasPersons2011 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasPersons2011"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasPersons2012 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasPersons2012"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasPersons2013 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasPersons2013"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasPersons2014 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasPersons2014"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasPersons2015 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasPersons2015"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasPersons2016 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasPersons2016"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasPublicOrderOfences -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasPublicOrderOfences"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasRobberyOffences -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasRobberyOffences"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasStation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasStation"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasStatistic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasStatistic"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasTheftOffences -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasTheftOffences"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasType"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasValue"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasWeaponsOffences -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasWeaponsOffences"/>
+    
+
+
+    <!-- http://www.foo.example.org#hasYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.foo.example.org#hasYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.foo.example.org#Accommodation -->
+
+    <owl:Class rdf:about="http://www.foo.example.org#Accommodation">
+        <rdfs:subClassOf rdf:resource="http://www.foo.example.org#Tourism"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasAddressLocality"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasAddressRegion"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasLatitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasLongitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foo.example.org#Activity -->
+
+    <owl:Class rdf:about="http://www.foo.example.org#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.foo.example.org#Tourism"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#happensAt"/>
+                <owl:someValuesFrom rdf:resource="http://www.foo.example.org#Attraction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasAddressLocality"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasAddressRegion"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasLatitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasLongitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foo.example.org#Attraction -->
+
+    <owl:Class rdf:about="http://www.foo.example.org#Attraction">
+        <rdfs:subClassOf rdf:resource="http://www.foo.example.org#Tourism"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasAddressLocality"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasAddressRegion"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasLatitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasLongitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foo.example.org#Education -->
+
+    <owl:Class rdf:about="http://www.foo.example.org#Education"/>
+    
+
+
+    <!-- http://www.foo.example.org#GardaStation -->
+
+    <owl:Class rdf:about="http://www.foo.example.org#GardaStation">
+        <rdfs:subClassOf rdf:resource="http://www.foo.example.org#Government"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#reportsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.foo.example.org#WelfareOffice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasBurglaryOffences"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasDamagedPropertyOffences"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasDivision"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasDrugOffences"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasLatitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasLongitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasMurderOffences"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasNeglectOffences"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasOffencesAgainstGovernment"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasPublicOrderOfences"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasRobberyOffences"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasStation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasTheftOffences"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasWeaponsOffences"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasYear"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foo.example.org#Government -->
+
+    <owl:Class rdf:about="http://www.foo.example.org#Government"/>
+    
+
+
+    <!-- http://www.foo.example.org#House -->
+
+    <owl:Class rdf:about="http://www.foo.example.org#House">
+        <rdfs:subClassOf rdf:resource="http://www.foo.example.org#Housing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasArea"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasStatistic"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasYear"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foo.example.org#Housing -->
+
+    <owl:Class rdf:about="http://www.foo.example.org#Housing"/>
+    
+
+
+    <!-- http://www.foo.example.org#StudentData -->
+
+    <owl:Class rdf:about="http://www.foo.example.org#StudentData">
+        <rdfs:subClassOf rdf:resource="http://www.foo.example.org#Education"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasAcademicYear"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasAmount"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasLevelOfEducation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasYear"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foo.example.org#Tourism -->
+
+    <owl:Class rdf:about="http://www.foo.example.org#Tourism"/>
+    
+
+
+    <!-- http://www.foo.example.org#WelfareOffice -->
+
+    <owl:Class rdf:about="http://www.foo.example.org#WelfareOffice">
+        <rdfs:subClassOf rdf:resource="http://www.foo.example.org#Government"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#reportsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.foo.example.org#GardaStation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasCounty"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasLatitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasLongitude"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasPersons2008"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasPersons2009"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasPersons2010"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.foo.example.org#hasPersons2016"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
