@@ -1,18 +1,21 @@
-- [Query 1](#query-1-number-of-hostels)
-- [Query 2](#query-2-min-max-of-housing-prices)
-- [Query 3](#query-3-in-progress)
-- [Query 4](#query-4-in-progress)
-- [Query 5](#query-5-in-progress-testing-how-many-x-crimes-reported-per-station)
-- [Query 6](#query-6-in-progress-testing-ranked-list-for-house-prices-amount-of-accomm-and-crime)
-- [Query 7](#query-7-to-do)
-- [Query 8](#query-8-to-do)
-- [Query 9](#query-9-to-do)
-- [Query 10](#query-10-to-do)
-
-### Query 1. Number of Hostels TODO: Should replace
+# SPARQL Queries Index
+- [Query 1](#query-1)
+- [Query 2](#query-2)
+- [Query 3](#query-3)
+- [Query 4](#query-4)
+- [Query 5](#query-5)
+- [Query 6](#query-6)
+- [Query 7](#query-7)
+- [Query 8](#query-8)
+- [Query 9](#query-9)
+- [Query 10](#query-10)
+- [Query 11](#query-11)
 
 ---
-
+## Query 1
+### TODO: Should replace
+### Number of Hostels 
+---
 ```
 PREFIX accom:<http://xmlns.com/foaf/0.1/Accommodation>
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
@@ -22,13 +25,12 @@ where {
 ?s foaf:hasType ?type .
 }
 ```
+[Index](#sparql-queries-index)
 
 ---
-
-### Query 2. Min Max of Housing Prices
-
+## Query 2
+### Min Max of Housing Prices
 ---
-
 ```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 SELECT * WHERE {
@@ -54,15 +56,14 @@ SELECT * WHERE {
     }
 }
 ```
+[Index](#sparql-queries-index)
 
 ---
 
-### Query 3 In areas where there's an increase in new housing sale value, what trends are there in crime over time?
-
-## Find the difference or % increase from past year for crimes and for prices per year
-
+## Query 3 
+### In areas where there's an increase in new housing sale value, what trends are there in crime over time?
+### Find the difference or % increase from past year for crimes and for prices per year
 ---
-
 ```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX ex:<http://foo.example.org/>
@@ -101,25 +102,22 @@ select ?area ?year ?housingValue ?totalCrimes where {
     }
 } order by ?year
 ```
+[Index](#sparql-queries-index)
 
 ---
-
-### Query 4 (to do)
-
+### Query 4
+### TODO
 ---
-
 ```
 
 ```
+[Index](#sparql-queries-index)
 
 ---
-
-### Query 5 (Done but maybe can be made more presentable?)
-
-#### testing how many X crimes reported per station
-
+## Query 5 
+### How many X crimes reported per station
+### (Done but maybe can be made more presentable?)
 ---
-
 ```
 PREFIX station:<http://foo.example.org/Station/>
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
@@ -139,18 +137,14 @@ where {
     ?station foaf:hasPublicOrderOffences ?publicorder.
 }
 GROUP BY ?station
-
-
 ```
+[Index](#sparql-queries-index)
 
 ---
 
-### Query 6 (in progress)
-
-#### testing ranked list for house prices, amount of accomm and crime
-
+## Query 6 
+### ranked list for house prices, amount of accomm and crime, testing (in progress)
 ---
-
 ```
 https://stackoverflow.com/questions/17313730/how-to-rank-values-in-sparql
 this might be handy but website currently down
@@ -172,13 +166,12 @@ select ?station ?division ?murder ?neglect ?kidnapping where {
 
 
 ```
+[Index](#sparql-queries-index)
 
 ---
-
-### Query 7 (to do) In 2016, in the top crime location, what was the volume of housing sales and what other types of accomodation existed.
-
+## Query 7
+### (to do) In 2016, in the top crime location, what was the volume of housing sales and what other types of accomodation existed.
 ---
-
 ```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX ex:<http://foo.example.org/>
@@ -218,15 +211,13 @@ where {
     }
 }
 ```
+[Index](#sparql-queries-index)
 
 ---
-
-### Query 8 (to do) In high crime areas, what types of accomodation is there? (Do people go camping where there is crime?)
-
-IN PROGRESS NOT DONE BECAUSE IT STILL IS BIT BROKEY
-
+## Query 8 
+### (to do) In high crime areas, what types of accomodation is there? (Do people go camping where there is crime?)
+### IN PROGRESS NOT DONE BECAUSE IT STILL IS BIT BROKEY
 ---
-
 ```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX ex:<http://foo.example.org/>
@@ -256,15 +247,12 @@ select ?housing ?name ?division where {
     ?gardaStation foaf:hasWeaponsOffences ?numWeapons .
     bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
 }
-
-
-
 ```
+[Index](#sparql-queries-index)
 
 ---
-
-### Query 9 In low crime areas, are new houses sold for more than old houses?
-
+## Query 9 
+### In low crime areas, are new houses sold for more than old houses?
 ```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX ex:<http://foo.example.org/>
@@ -322,13 +310,13 @@ where {
     }
 }
 ```
+[Index](#sparql-queries-index)
 
 ---
-
-### Query 10 (to do) Do areas with a large amount of accomodation have a high house prices?
-
+## Query 10 
+### (to do) Do areas with a large amount of accomodation have a high house prices?
 ## FYI: There are only 5 named counties in the housing prices set, the others are national and other areas.
-
+```
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX ex:<http://foo.example.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -359,13 +347,13 @@ where
 GROUP BY(?reigon)
 }
 }
-
 ```
+[Index](#sparql-queries-index)
 
+---
+## Query 11
+### Does the least expensive region have more B&B's than the most expensive region?
 ```
-
-### Query 11: Does the least expensive region have more B&B's than the most expensive region?
-
 PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -405,7 +393,7 @@ select \* where {
 } group by ?mostExpensiveRegion
 }
 }
-
 ```
+[Index](#sparql-queries-index)
 
-```
+---
