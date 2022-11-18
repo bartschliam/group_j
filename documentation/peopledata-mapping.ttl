@@ -1,0 +1,144 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+
+<#MapDetails>
+rr:logicalTable [ rr:tableName "ALLPERSONS"];
+		
+	rr:subjectMap	[
+		rr:template "http://foo.example.org/WelfareOffice/{NAMES}";
+		rr:termType rr:IRI;
+		rr:class foaf:WelfareOffice;
+	];		
+
+    rr:predicateObjectMap [
+		rr:predicate foaf:hasName;
+		rr:objectMap  [ 
+			rr:column "NAMES";
+			rr:termType rr:Literal;
+			rr:datatype xsd:string;
+		];	
+	];
+
+    rr:predicateObjectMap [
+		rr:predicate geo:hasGeometry;
+		rr:objectMap	[
+			rr:template "http://foo.example.org/WelfareOffice/{NAMES}/{LONGITUDE}_{LATITUDE}";
+			rr:class geo:Geometry;
+			rr:termType rr:IRI;
+		];
+	];
+
+    rr:predicateObjectMap [
+		rr:predicate foaf:hasLatitude;
+		rr:objectMap  [ 
+			rr:column "LATITUDE";
+			rr:termType rr:Literal;
+			rr:datatype xsd:double;
+		];	
+	];
+
+    rr:predicateObjectMap [
+		rr:predicate foaf:hasLongitude;
+		rr:objectMap  [ 
+			rr:column "LONGITUDE";
+			rr:termType rr:Literal;
+			rr:datatype xsd:double;
+		];	
+	];
+
+    rr:predicateObjectMap [
+		rr:predicate foaf:hasCounty;
+		rr:objectMap  [ 
+			rr:column "COUNTY";
+			rr:termType rr:Literal;
+			rr:datatype xsd:string;
+		];	
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate foaf:hasPersons2008;
+		rr:objectMap  [ 
+			rr:column "2008";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate foaf:hasPersons2009;
+		rr:objectMap  [ 
+			rr:column "2009";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];
+
+    rr:predicateObjectMap [
+		rr:predicate foaf:hasPersons2010;
+		rr:objectMap  [ 
+			rr:column "2010";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];
+
+    rr:predicateObjectMap [
+		rr:predicate foaf:hasPersons2011;
+		rr:objectMap  [ 
+			rr:column "2011";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];
+
+    rr:predicateObjectMap [
+		rr:predicate foaf:hasPersons2012;
+		rr:objectMap  [ 
+			rr:column "2012";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];
+
+    rr:predicateObjectMap [
+		rr:predicate foaf:hasPersons2013;
+		rr:objectMap  [ 
+			rr:column "2013";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];
+
+    rr:predicateObjectMap [
+		rr:predicate foaf:hasPersons2014;
+		rr:objectMap  [ 
+			rr:column "2014";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate foaf:hasPersons2015;
+		rr:objectMap  [ 
+			rr:column "2015";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];
+
+    rr:predicateObjectMap [
+		rr:predicate foaf:hasPersons2016;
+		rr:objectMap  [ 
+			rr:column "2016";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];	
+	];
+	
+ .
+	

@@ -1,0 +1,3626 @@
+<http://foo.example.org/WelfareOffice/Letterkenny>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Letterkenny/54.95299_-7.73302> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Donegal" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.73302"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "54.95299"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Letterkenny" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                35603 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                60997 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                70750 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                74365 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                73001 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                72043 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                68084 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                63689 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                56328 .
+
+<http://foo.example.org/WelfareOffice/Carrickmacross>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Carrickmacross/53.97501_-6.71831> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Monaghan" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.71831"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.97501"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Carrickmacross" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                9566 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                18490 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                19649 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                18796 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                18838 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                18399 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                17398 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                14460 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                12078 .
+
+<http://foo.example.org/WelfareOffice/Castlerea>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Castlerea/53.76451_-8.48755> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Roscommon" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.48755"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.76451"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Castlerea" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                10664 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                18929 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                21186 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                21368 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                21180 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                20526 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                19264 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                17736 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                16112 .
+
+<http://foo.example.org/WelfareOffice/Ardee>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Ardee/53.85289_-6.5398> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Louth" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.5398"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.85289"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Ardee" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                12778 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                25873 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                30230 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                29644 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                28046 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                25804 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                23319 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                20505 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                17681 .
+
+<http://foo.example.org/WelfareOffice/Monaghan>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Monaghan/54.24548_-6.96684> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Monaghan" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.96684"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "54.24548"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Monaghan" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                13464 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                26190 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                29600 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                29902 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                29876 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                27445 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                24947 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                27059 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                23435 .
+
+<http://foo.example.org/WelfareOffice/Swinford>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Swinford/53.94068_-8.93588> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Mayo" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.93588"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.94068"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Swinford" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                10644 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                18543 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                20193 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                19863 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                18659 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                18089 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                16934 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                15632 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                14124 .
+
+<http://foo.example.org/WelfareOffice/Buncrana>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Buncrana/55.13434_-7.44949> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Donegal" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.44949"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "55.13434"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Buncrana" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                29058 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                54422 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                59851 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                58126 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                54274 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                50341 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                45605 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                39748 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                33463 .
+
+<http://foo.example.org/WelfareOffice/Ballyfermot>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Ballyfermot/53.34278_-6.36156> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Dublin City" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.36156"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.34278"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Ballyfermot" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                19647 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                35876 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                40062 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                41761 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                42528 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                40406 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                37148 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                33603 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                30215 .
+
+<http://foo.example.org/WelfareOffice/Kenmare>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Kenmare/51.87924_-9.58538> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Kerry" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.58538"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "51.87924"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Kenmare" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                3522 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                7540 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                8056 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                8022 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                7783 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                7121 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                6311 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                5393 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                4482 .
+
+<http://foo.example.org/WelfareOffice/Thurles>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Thurles/52.67774_-7.81062> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Tipperary North Riding" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.81062"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.67774"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Thurles" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                15697 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                30326 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                34793 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                37521 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                37464 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                36051 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                33003 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                30271 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                28449 .
+
+<http://foo.example.org/WelfareOffice/Claremorris>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Claremorris/53.71782_-8.99355> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Mayo" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.99355"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.71782"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Claremorris" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                7558 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                14960 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                16548 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                16076 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                16402 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                16180 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                14588 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                13399 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                11216 .
+
+<http://foo.example.org/WelfareOffice/Cavan>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Cavan/53.99277_-7.35474> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cavan" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.35474"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.99277"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Cavan" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                35522 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                67862 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                74041 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                73523 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                71959 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                69805 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                63692 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                56766 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                50475 .
+
+<http://foo.example.org/WelfareOffice/Castlepollard>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Castlepollard/53.6797_-7.29842> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Westmeath" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.29842"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.6797"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Castlepollard" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                7595 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                14705 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                15196 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                14774 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                14530 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                14276 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                13152 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                11689 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                10881 .
+
+<http://foo.example.org/WelfareOffice/Trim>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Trim/53.55213_-6.79109> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Meath" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.79109"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.55213"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Trim" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                17123 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                37384 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                44870 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                44984 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                42602 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                40029 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                35767 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                31840 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                27688 .
+
+<http://foo.example.org/WelfareOffice/Limerick%20City>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Limerick%20City/52.65983_-8.62214> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Limercik City" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.62214"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.65983"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Limerick City" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                89821 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                168945 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                187131 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                179722 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                171200 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                158548 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                144544 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                126785 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                112761 .
+
+<http://foo.example.org/WelfareOffice/Kilbarrack>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Kilbarrack/53.3892_-6.1637> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Dublin City" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.1637"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.3892"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Kilbarrack" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                30833 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                58906 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                64371 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                64155 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                63198 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                62046 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                56833 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                50917 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                44399 .
+
+<http://foo.example.org/WelfareOffice/Nenagh>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Nenagh/52.86175_-8.19303> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Tipperary North Riding" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.19303"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.86175"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Nenagh" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                13880 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                28566 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                34779 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                36598 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                35347 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                34691 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                32344 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                29735 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                26356 .
+
+<http://foo.example.org/WelfareOffice/Galway%20City>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Galway%20City/53.27346_-9.04711> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Galway City" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.04711"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.27346"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Galway City" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                83163 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                144543 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                147788 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                146641 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                139742 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                132955 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                117701 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                104542 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                93693 .
+
+<http://foo.example.org/WelfareOffice/Bishop%20Square>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Bishop%20Square/53.34412_-6.26773> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Dublin City" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.26773"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.34412"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Bishop Square" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                49514 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                94450 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                105667 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                107607 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                106809 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                103548 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                94924 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                85140 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                74732 .
+
+<http://foo.example.org/WelfareOffice/Waterford%20City>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Waterford%20City/52.2515_-7.10966> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Waterford City" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.10966"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.2515"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Waterford City" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                84424 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                139429 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                146106 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                143853 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                145027 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                138452 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                126328 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                114133 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                102542 .
+
+<http://foo.example.org/WelfareOffice/Portlaoise>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Portlaoise/53.03384_-7.29845> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Laoighis" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.29845"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.03384"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Portlaoise" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                21184 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                39655 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                45760 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                49207 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                51384 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                52772 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                49904 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                44188 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                39308 .
+
+<http://foo.example.org/WelfareOffice/Portarlington>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Portarlington/53.15958_-7.18517> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Laoighis" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.18517"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.15958"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Portarlington" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                17992 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                34617 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                39603 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                39973 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                40473 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                40407 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                37121 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                31858 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                27167 .
+
+<http://foo.example.org/WelfareOffice/Kilrush>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Kilrush/52.63526_-9.48445> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Clare" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.48445"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.63526"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Kilrush" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                8702 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                15501 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                17425 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                17303 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                16720 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                15947 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                14915 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                13446 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                12285 .
+
+<http://foo.example.org/WelfareOffice/Boyle>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Boyle/53.96977_-8.29601> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Roscommon" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.29601"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.96977"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Boyle" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                5857 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                11275 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                12401 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                12795 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                12640 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                12351 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                11455 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                10261 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                9248 .
+
+<http://foo.example.org/WelfareOffice/Tullow>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Tullow/52.79538_-6.72381> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Carlow" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.72381"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.79538"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Tullow" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                8640 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                16462 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                18162 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                17957 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                17754 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                18085 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                16016 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                14631 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                12845 .
+
+<http://foo.example.org/WelfareOffice/Tullamore>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Tullamore/53.27099_-7.49549> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Offaly" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.49549"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.27099"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Tullamore" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                23454 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                42673 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                48409 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                51919 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                52065 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                51515 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                47332 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                42397 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                36581 .
+
+<http://foo.example.org/WelfareOffice/Birr>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Birr/53.09325_-7.90331> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Offaly" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.90331"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.09325"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Birr" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                13044 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                23589 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                28181 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                29807 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                29174 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                28389 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                27243 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                24573 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                22636 .
+
+<http://foo.example.org/WelfareOffice/Roscrea>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Roscrea/52.95408_-7.79827> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Tipperary North Riding" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.79827"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.95408"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Roscrea" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                7403 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                13816 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                16377 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                17349 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                17237 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                16577 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                15329 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                13687 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                12566 .
+
+<http://foo.example.org/WelfareOffice/Manorhamilton>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Manorhamilton/54.30521_-8.17071> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Leitrim" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.17071"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "54.30521"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Manorhamilton" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                5527 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                10029 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                11080 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                10387 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                10108 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                9169 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                8251 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                7399 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                6814 .
+
+<http://foo.example.org/WelfareOffice/Coolock>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Coolock/53.3888_-6.20163> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Dublin City" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.20163"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.3888"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Coolock" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                31934 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                59357 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                63870 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                60196 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                58172 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                55137 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                51520 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                46598 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                41994 .
+
+<http://foo.example.org/WelfareOffice/Cork%20City>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Cork%20City/51.89449_-8.46698> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cork City" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.46698"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "51.89449"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Cork City" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                116205 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                213763 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                238259 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                238442 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                231045 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                210817 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                188992 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                168680 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                144022 .
+
+<http://foo.example.org/WelfareOffice/Carlow>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Carlow/52.83438_-6.92428> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Carlow" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.92428"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.83438"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Carlow" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                21310 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                38757 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                44791 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                45385 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                45929 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                46080 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                43180 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                39329 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                34426 .
+
+<http://foo.example.org/WelfareOffice/Clonakilty>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Clonakilty/51.6157_-8.88922> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cork County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.88922"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "51.6157"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Clonakilty" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                6849 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                13776 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                15909 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                16328 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                15812 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                14572 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                13962 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                12003 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                10663 .
+
+<http://foo.example.org/WelfareOffice/Ballybofey>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Ballybofey/54.79917_-7.78282> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Donegal" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.78282"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "54.79917"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Ballybofey" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                15176 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                29213 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                31922 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                32578 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                32339 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                32175 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                30202 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                27136 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                25129 .
+
+<http://foo.example.org/WelfareOffice/Navan>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Navan/53.65031_-6.68467> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Meath" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.68467"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.65031"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Navan" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                30984 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                65244 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                72755 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                72795 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                67173 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                60400 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                55947 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                49673 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                43259 .
+
+<http://foo.example.org/WelfareOffice/Carrick-On-Shannon>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Carrick-On-Shannon/53.94431_-8.09141> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Leitrim" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.09141"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.94431"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Carrick-On-Shannon" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                16063 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                30543 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                32618 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                33017 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                31958 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                30249 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                27988 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                26123 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                23207 .
+
+<http://foo.example.org/WelfareOffice/Athy>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Athy/52.98014_-6.97646> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Kildare" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.97646"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.98014"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Athy" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                15654 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                27629 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                32739 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                33329 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                32804 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                32186 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                30467 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                30045 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                27269 .
+
+<http://foo.example.org/WelfareOffice/Baltinglass>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Baltinglass/52.93877_-6.70732> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Wicklow" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.70732"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.93877"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Baltinglass" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                7977 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                14438 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                17132 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                18184 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                18274 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                17789 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                16781 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                15535 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                13716 .
+
+<http://foo.example.org/WelfareOffice/Ballymun>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Ballymun/53.3949_-6.26433> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Dublin City" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.26433"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.3949"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Ballymun" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                19476 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                32342 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                35868 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                36097 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                35416 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                33316 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                31890 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                29314 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                27265 .
+
+<http://foo.example.org/WelfareOffice/Dungloe>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Dungloe/54.94748_-8.35779> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Donegal" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.35779"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "54.94748"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Dungloe" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                15859 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                23895 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                27190 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                27200 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                26448 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                25223 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                23448 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                22447 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                20234 .
+
+<http://foo.example.org/WelfareOffice/Maynooth>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Maynooth/53.38334_-6.60571> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Kildare" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.60571"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.38334"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Maynooth" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                29079 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                66195 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                72089 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                72617 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                74340 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                73310 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                65859 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                59548 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                51189 .
+
+<http://foo.example.org/WelfareOffice/Gorey>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Gorey/52.67399_-6.28716> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Wexford" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.28716"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.67399"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Gorey" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                21756 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                42501 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                48967 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                50629 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                49053 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                47078 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                44644 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                40723 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                36474 .
+
+<http://foo.example.org/WelfareOffice/Fermoy>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Fermoy/52.13619_-8.26032> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cork County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.26032"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.13619"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Fermoy" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                15249 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                28855 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                33889 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                33140 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                31935 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                30267 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                26119 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                22406 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                19271 .
+
+<http://foo.example.org/WelfareOffice/Cahir>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Cahir/52.37239_-7.92802> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Tipperary South Riding" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.92802"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.37239"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Cahir" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                6806 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                14052 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                16257 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                16705 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                16215 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                15857 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                14294 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                12996 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                11642 .
+
+<http://foo.example.org/WelfareOffice/Dundalk>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Dundalk/53.99722_-6.39906> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Louth" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.39906"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.99722"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Dundalk" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                41009 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                72069 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                79014 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                84372 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                85427 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                84509 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                78649 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                71085 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                63057 .
+
+<http://foo.example.org/WelfareOffice/Killorglin>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Killorglin/52.10416_-9.79135> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Kerry" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.79135"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.10416"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Killorglin" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                6993 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                14424 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                16263 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                16099 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                15854 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                14935 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                13169 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                11881 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                10373 .
+
+<http://foo.example.org/WelfareOffice/Donegal>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Donegal/54.65641_-8.10583> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Donegal" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.10583"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "54.65641"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Donegal" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                8481 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                15418 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                16653 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                16669 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                16395 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                16408 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                14935 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                12815 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                10820 .
+
+<http://foo.example.org/WelfareOffice/Enniscorthy>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Enniscorthy/52.50005_-6.56728> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Wexford" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.56728"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.50005"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Enniscorthy" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                28594 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                49690 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                55059 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                57513 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                57019 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                55271 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                51742 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                48023 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                42195 .
+
+<http://foo.example.org/WelfareOffice/Kells>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Kells/53.72594_-6.87896> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Meath" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.87896"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.72594"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Kells" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                10324 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                21258 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                23859 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                25353 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                25869 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                24330 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                21265 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                17716 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                15361 .
+
+<http://foo.example.org/WelfareOffice/Kilkenny>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Kilkenny/52.649_-7.24421> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Kilkenny" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.24421"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.649"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Kilkenny" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                35753 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                64322 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                72431 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                74183 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                73027 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                69832 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                63564 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                56919 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                49151 .
+
+<http://foo.example.org/WelfareOffice/Thomastown>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Thomastown/52.52219_-7.13436> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Kilkenny" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.13436"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.52219"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Thomastown" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                6992 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                14641 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                17084 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                16683 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                16278 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                16083 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                15221 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                13053 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                11148 .
+
+<http://foo.example.org/WelfareOffice/Castleblayney>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Castleblayney/54.11811_-6.73341> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Monaghan" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.73341"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "54.11811"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Castleblayney" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                9808 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                18425 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                20684 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                21332 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                22777 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                21976 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                19553 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                17040 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                14883 .
+
+<http://foo.example.org/WelfareOffice/Nutgrove%20%28Rathfarnham%29>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Nutgrove%20%28Rathfarnham%29/53.29056_-6.26734> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Dublin" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.26734"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.29056"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Nutgrove (Rathfarnham)" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                28878 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                57064 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                62969 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                60938 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                59080 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                56808 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                52058 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                46791 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                40776 .
+
+<http://foo.example.org/WelfareOffice/Bray>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Bray/53.20195_-6.11276> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Wicklow" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.11276"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.20195"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Bray" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                27382 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                58348 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                64671 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                67083 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                64201 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                63318 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                59096 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                53055 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                44536 .
+
+<http://foo.example.org/WelfareOffice/Castlebar>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Castlebar/53.84763_-9.29151> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Mayo" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.29151"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.84763"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Castlebar" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                13327 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                25144 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                29095 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                29460 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                28980 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                28777 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                26773 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                23794 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                21304 .
+
+<http://foo.example.org/WelfareOffice/Listowel>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Listowel/52.44108_-9.47004> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Kerry" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.47004"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.44108"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Listowel" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                18342 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                34073 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                37260 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                38319 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                37039 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                34693 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                32422 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                29189 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                25146 .
+
+<http://foo.example.org/WelfareOffice/Gort>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Gort/53.06439_-8.8178> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Galway County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.8178"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.06439"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Gort" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                8466 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                15640 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                17854 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                17583 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                17454 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                17363 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                16045 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                13956 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                12837 .
+
+<http://foo.example.org/WelfareOffice/Roscommon>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Roscommon/53.62508_-8.18685> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Roscommon" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.18685"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.62508"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Roscommon" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                6684 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                13391 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                14689 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                15116 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                15088 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                15116 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                13925 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                12099 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                11033 .
+
+<http://foo.example.org/WelfareOffice/Ballyconnell>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Ballyconnell/54.1161_-7.58336> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cavan" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.58336"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "54.1161"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Ballyconnell" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                7484 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                14706 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                15714 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                16109 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                15554 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                14634 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                13381 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                11956 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                10877 .
+
+<http://foo.example.org/WelfareOffice/Ballinasloe>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Ballinasloe/53.32434_-8.19853> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Galway County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.19853"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.32434"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Ballinasloe" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                14888 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                28382 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                31675 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                31283 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                30177 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                29410 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                27232 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                24002 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                21435 .
+
+<http://foo.example.org/WelfareOffice/Ballinrobe>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Ballinrobe/53.62102_-9.21461> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Mayo" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.21461"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.62102"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Ballinrobe" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                5856 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                12020 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                13167 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                13144 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                12427 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                11255 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                10321 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                9453 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                7639 .
+
+<http://foo.example.org/WelfareOffice/Kilmallock>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Kilmallock/52.39795_-8.57134> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Limerick County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.57134"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.39795"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Kilmallock" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                13967 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                29154 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                33381 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                32556 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                31548 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                29518 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                25364 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                21562 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                18605 .
+
+<http://foo.example.org/WelfareOffice/Edenderry>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Edenderry/53.33746_-7.05885> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Offaly" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.05885"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.33746"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Edenderry" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                12292 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                25498 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                28989 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                30149 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                30426 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                28912 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                26342 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                24249 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                21839 .
+
+<http://foo.example.org/WelfareOffice/Kinsale>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Kinsale/51.70513_-8.51436> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cork County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.51436"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "51.70513"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Kinsale" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                8508 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                14627 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                15825 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                15803 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                15707 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                14889 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                13538 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                11609 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                9978 .
+
+<http://foo.example.org/WelfareOffice/Dun%20Laoghaire>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Dun%20Laoghaire/53.29152_-6.1368> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Dun Laoghaire - Rathdown" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.1368"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.29152"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Dun Laoghaire" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                39068 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                83743 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                92995 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                91178 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                86977 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                80394 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                73172 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                63442 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                56314 .
+
+<http://foo.example.org/WelfareOffice/Mullingar>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Mullingar/53.51499_-7.33896> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Westmeath" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.33896"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.51499"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Mullingar" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                31255 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                55488 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                60450 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                61067 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                60433 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                59325 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                55217 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                51645 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                46484 .
+
+<http://foo.example.org/WelfareOffice/Macroom>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Macroom/51.89703_-8.94276> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cork County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.94276"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "51.89703"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Macroom" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                8875 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                19501 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                22113 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                21137 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                20043 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                19340 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                16590 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                14217 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                12203 .
+
+<http://foo.example.org/WelfareOffice/Caherciveen>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Caherciveen/51.94277_-10.22662> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Kerry" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-10.22662"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "51.94277"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Caherciveen" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                4798 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                7934 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                8351 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                8847 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                8304 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                7828 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                6580 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                5754 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                4850 .
+
+<http://foo.example.org/WelfareOffice/Loughrea>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Loughrea/53.19621_-8.57064> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Galway County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.57064"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.19621"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Loughrea" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                11991 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                27278 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                30728 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                30021 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                28334 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                28276 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                25336 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                21603 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                17922 .
+
+<http://foo.example.org/WelfareOffice/Midleton>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Midleton/51.90889_-8.16832> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cork County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.16832"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "51.90889"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Midleton" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                17095 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                35004 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                40289 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                40351 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                38492 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                36898 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                33298 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                29620 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                25599 .
+
+<http://foo.example.org/WelfareOffice/Dingle>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Dingle/52.13872_-10.26782> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Kerry" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-10.26782"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.13872"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Dingle" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                4717 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                8276 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                9465 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                10149 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                10010 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                9712 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                9199 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                8625 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                7137 .
+
+<http://foo.example.org/WelfareOffice/Achill>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Achill/53.97906_-9.97257> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Mayo" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.97257"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.97906"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Achill" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                3194 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                4916 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                5676 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                5737 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                5635 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                5473 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                4828 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                4350 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                3867 .
+
+<http://foo.example.org/WelfareOffice/Balbriggan>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Balbriggan/53.60804_-6.1835> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Dublin" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.1835"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.60804"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Balbriggan" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                22903 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                51898 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                59943 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                61738 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                61047 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                57071 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                53266 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                47550 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                42292 .
+
+<http://foo.example.org/WelfareOffice/Muine%20Bheag%20%28Bagenalstown%29>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Muine%20Bheag%20%28Bagenalstown%29/52.7008_-6.95748> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Carlow" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.95748"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.7008"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Muine Bheag (Bagenalstown)" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                8478 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                16802 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                19886 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                19417 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                19372 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                18947 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                16650 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                15193 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                13879 .
+
+<http://foo.example.org/WelfareOffice/Carrigaline>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Carrigaline/51.81138_-8.39215> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cork County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.39215"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "51.81138"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Carrigaline" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                11811 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                26161 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                30734 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                30096 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                29172 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                26281 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                24261 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                20993 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                16713 .
+
+<http://foo.example.org/WelfareOffice/Belmullet>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Belmullet/54.22221_-9.98424> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Mayo" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.98424"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "54.22221"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Belmullet" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                6273 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                10216 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                12491 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                13302 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                11958 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                10946 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                9534 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                9284 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                8847 .
+
+<http://foo.example.org/WelfareOffice/Clifden>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Clifden/53.48479_-10.01926> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Galway County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-10.01926"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.48479"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Clifden" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                8892 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                13442 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                14786 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                15372 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                14758 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                14127 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                12732 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                11375 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                10151 .
+
+<http://foo.example.org/WelfareOffice/Westport>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Westport/53.79413_-9.52083> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Mayo" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.52083"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.79413"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Westport" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                9053 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                19134 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                21787 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                22701 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                22210 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                21405 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                18963 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                16819 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                14481 .
+
+<http://foo.example.org/WelfareOffice/Tipperary>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Tipperary/52.47246_-8.15872> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Tipperary South Riding" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.15872"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.47246"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Tipperary" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                8808 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                17887 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                21092 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                21527 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                20955 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                20173 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                19031 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                17471 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                16024 .
+
+<http://foo.example.org/WelfareOffice/New%20Ross>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/New%20Ross/52.39502_-6.94075> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Wexford" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.94075"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.39502"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "New Ross" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                20505 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                36759 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                41579 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                42521 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                40709 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                38026 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                35022 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                31804 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                28599 .
+
+<http://foo.example.org/WelfareOffice/Navan%20Road>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Navan%20Road/53.36675_-6.31513> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Dublin City" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.31513"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.36675"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Navan Road" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                36796 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                71309 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                78710 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                79439 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                78568 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                75237 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                70594 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                62456 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                51908 .
+
+<http://foo.example.org/WelfareOffice/Youghal>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Youghal/51.94996_-7.84908> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cork County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.84908"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "51.94996"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Youghal" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                11031 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                19266 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                22148 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                22692 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                21824 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                21289 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                19665 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                17544 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                15679 .
+
+<http://foo.example.org/WelfareOffice/Bantry%20Comb>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Bantry%20Comb/51.6813_-9.44259> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cork County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.44259"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "51.6813"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Bantry Comb" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                7308 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                16768 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                18789 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                17617 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                17105 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                16747 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                15368 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                13857 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                12262 .
+
+<http://foo.example.org/WelfareOffice/Bandon>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Bandon/51.7434_-8.73269> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cork County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.73269"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "51.7434"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Bandon" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                9265 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                17307 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                18579 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                18140 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                18060 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                17131 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                15312 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                13214 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                11477 .
+
+<http://foo.example.org/WelfareOffice/Newmarket>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Newmarket/52.21384_-8.99867> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cork County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.99867"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.21384"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Newmarket" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                8876 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                20726 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                23713 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                22258 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                21153 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                19867 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                15308 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                14387 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                12613 .
+
+<http://foo.example.org/WelfareOffice/Blanchardstown>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Blanchardstown/53.38826_-6.38482> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Dublin" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.38482"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.38826"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Blanchardstown" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                53638 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                97042 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                102290 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                106006 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                101799 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                100278 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                92249 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                80612 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                75738 .
+
+<http://foo.example.org/WelfareOffice/Killarney>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Killarney/52.06196_-9.50299> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Kerry" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.50299"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.06196"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Killarney" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                16450 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                33720 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                35507 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                35599 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                33866 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                31592 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                26716 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                23674 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                20551 .
+
+<http://foo.example.org/WelfareOffice/Ennis>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Ennis/52.84102_-8.97982> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Clare" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.97982"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.84102"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Ennis" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                37941 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                68715 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                71399 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                70622 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                68238 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                64536 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                57316 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                51488 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                44807 .
+
+<http://foo.example.org/WelfareOffice/Tuam>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Tuam/53.50847_-8.84938> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Galway County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.84938"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.50847"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Tuam" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                18672 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                37411 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                41367 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                41415 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                39632 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                38551 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                35657 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                31096 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                27076 .
+
+<http://foo.example.org/WelfareOffice/Skibbereen>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Skibbereen/51.54744_-9.26218> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cork County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.26218"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "51.54744"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Skibbereen" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                5602 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                12586 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                15339 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                16132 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                15461 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                15620 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                14331 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                12614 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                10966 .
+
+<http://foo.example.org/WelfareOffice/Wicklow>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Wicklow/52.97765_-6.04481> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Wicklow" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.04481"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.97765"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Wicklow" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                12844 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                23973 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                26606 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                26586 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                26890 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                27131 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                25892 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                23280 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                20723 .
+
+<http://foo.example.org/WelfareOffice/Ennistymon>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Ennistymon/52.93961_-9.29358> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Clare" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.29358"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.93961"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Ennistymon" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                9925 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                17386 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                19167 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                19149 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                18575 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                17552 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                16898 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                15805 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                13873 .
+
+<http://foo.example.org/WelfareOffice/Wexford>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Wexford/52.338_-6.46018> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Wexford" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.46018"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.338"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Wexford" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                41262 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                72985 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                80261 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                84418 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                83427 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                78503 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                71677 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                64065 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                55347 .
+
+<http://foo.example.org/WelfareOffice/Ballyshannon>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Ballyshannon/54.50102_-8.19027> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Donegal" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.19027"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "54.50102"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Ballyshannon" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                8384 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                15984 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                18397 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                18867 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                18701 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                18346 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                17050 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                15727 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                14693 .
+
+<http://foo.example.org/WelfareOffice/Newbridge>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Newbridge/53.17727_-6.79795> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Kildare" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.79795"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.17727"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Newbridge" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                53183 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                101771 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                113443 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                113741 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                111943 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                112920 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                103452 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                91929 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                77021 .
+
+<http://foo.example.org/WelfareOffice/Longford>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Longford/53.73487_-7.77904> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Longford" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.77904"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.73487"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Longford" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                34469 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                61964 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                64480 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                63603 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                62122 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                60007 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                55912 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                51080 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                45379 .
+
+<http://foo.example.org/WelfareOffice/Mallow>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Mallow/52.13534_-8.64617> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cork County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.64617"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.13534"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Mallow" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                13784 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                28267 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                33717 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                32844 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                33001 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                31429 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                27870 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                24192 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                20799 .
+
+<http://foo.example.org/WelfareOffice/Cashel>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Cashel/52.51217_-7.88271> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Tipperary South Riding" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.88271"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.51217"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Cashel" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                5689 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                12019 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                14802 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                14651 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                14393 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                13952 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                13134 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                11936 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                10594 .
+
+<http://foo.example.org/WelfareOffice/Sligo>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Sligo/54.26914_-8.47244> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Sligo" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.47244"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "54.26914"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Sligo" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                25584 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                48111 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                53875 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                55088 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                53101 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                52034 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                49078 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                45129 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                41659 .
+
+<http://foo.example.org/WelfareOffice/Killybegs>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Killybegs/54.63734_-8.44224> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Donegal" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.44224"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "54.63734"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Killybegs" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                10124 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                14654 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                14993 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                15862 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                14450 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                13937 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                13175 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                11448 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                10294 .
+
+<http://foo.example.org/WelfareOffice/Ballina>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Ballina/54.11248_-9.15007> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Mayo" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.15007"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "54.11248"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Ballina" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                20057 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                35288 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                38776 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                39301 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                39262 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                38844 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                36641 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                34262 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                30947 .
+
+<http://foo.example.org/WelfareOffice/Dungarvan>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Dungarvan/52.08685_-7.61908> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Waterford County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.61908"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.08685"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Dungarvan" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                14044 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                25105 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                28504 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                28939 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                27690 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                26136 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                23848 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                20864 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                18906 .
+
+<http://foo.example.org/WelfareOffice/Athlone>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Athlone/53.42264_-7.94313> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Westmeath" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.94313"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.42264"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Athlone" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                23533 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                44156 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                48171 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                49134 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                49531 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                49969 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                46502 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                41819 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                38602 .
+
+<http://foo.example.org/WelfareOffice/Dunfanaghy>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Dunfanaghy/55.18294_-7.97209> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Donegal" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.97209"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "55.18294"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Dunfanaghy" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                10452 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                17449 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                19363 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                19633 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                19508 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                18590 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                16624 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                14698 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                12851 .
+
+<http://foo.example.org/WelfareOffice/Rathdowney>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Rathdowney/52.85536_-7.58478> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Laoighis" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.58478"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.85536"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Rathdowney" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                6474 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                12372 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                13712 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                13494 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                14058 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                13426 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                13021 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                12146 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                11250 .
+
+<http://foo.example.org/WelfareOffice/Finglas>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Finglas/53.39001_-6.30124> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Dublin City" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.30124"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.39001"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Finglas" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                36027 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                66757 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                72824 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                73718 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                76324 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                76283 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                71812 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                65522 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                59631 .
+
+<http://foo.example.org/WelfareOffice/Tralee>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Tralee/52.26495_-9.70071> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Kerry" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.70071"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.26495"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Tralee" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                45377 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                74397 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                78979 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                81692 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                79766 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                74367 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                69624 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                65146 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                58306 .
+
+<http://foo.example.org/WelfareOffice/Tallaght>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Tallaght/53.28433_-6.38018> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "South Dublin" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.38018"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.28433"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Tallaght" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                56827 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                109869 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                124870 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                131374 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                139847 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                137618 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                126863 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                112724 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                100745 .
+
+<http://foo.example.org/WelfareOffice/Clonmel>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Clonmel/52.34891_-7.69322> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Waterford County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.69322"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.34891"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Clonmel" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                14528 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                27753 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                32929 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                34571 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                35474 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                35513 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                32328 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                29326 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                25798 .
+
+<http://foo.example.org/WelfareOffice/Newcastle%20West>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Newcastle%20West/52.44652_-9.05329> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Limerick County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-9.05329"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.44652"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Newcastle West" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                18445 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                39148 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                42736 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                41230 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                39444 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                36242 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                30681 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                25329 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                21074 .
+
+<http://foo.example.org/WelfareOffice/Cobh>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Cobh/51.84701_-8.31388> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Cork County" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.31388"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "51.84701"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Cobh" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                5915 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                11618 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                13834 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                14042 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                14232 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                13878 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                13117 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                11831 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                10278 .
+
+<http://foo.example.org/WelfareOffice/Tulla>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Tulla/52.86465_-8.75669> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Clare" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.75669"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.86465"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Tulla" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                8232 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                16172 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                18040 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                18147 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                17240 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                16480 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                14603 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                13308 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                11969 .
+
+<http://foo.example.org/WelfareOffice/Clondalkin>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Clondalkin/53.32177_-6.39374> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "South Dublin" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.39374"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.32177"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Clondalkin" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                56874 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                111510 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                121133 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                115985 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                109220 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                104407 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                95105 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                81151 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                69122 .
+
+<http://foo.example.org/WelfareOffice/Drogheda>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Drogheda/53.71334_-6.34482> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Louth" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.34482"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "53.71334"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Drogheda" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                47910 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                92229 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                100535 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                99756 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                96949 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                89358 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                81792 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                74835 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                64535 .
+
+<http://foo.example.org/WelfareOffice/Arklow>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Arklow/52.79661_-6.15121> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Wicklow" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-6.15121"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.79661"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Arklow" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                21065 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                38297 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                41360 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                41287 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                39793 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                37768 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                34743 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                31275 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                28863 .
+
+<http://foo.example.org/WelfareOffice/Carrick-On-Suir>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Carrick-On-Suir/52.34388_-7.41174> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Tipperary South Riding" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-7.41174"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "52.34388"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Carrick-On-Suir" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                13584 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                22648 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                25239 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                25306 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                24864 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                22913 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                21036 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                19605 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                17520 .
+
+<http://foo.example.org/WelfareOffice/Tubbercurry>
+        a       <http://xmlns.com/foaf/0.1/WelfareOffice> ;
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://foo.example.org/WelfareOffice/Tubbercurry/54.04885_-8.73609> ;
+        <http://xmlns.com/foaf/0.1/hasCounty>
+                "Sligo" ;
+        <http://xmlns.com/foaf/0.1/hasLatitude>
+                "-8.73609"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasLongitude>
+                "54.04885"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        <http://xmlns.com/foaf/0.1/hasName>
+                "Tubbercurry" ;
+        <http://xmlns.com/foaf/0.1/hasPersons2008>
+                6532 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2009>
+                10820 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2010>
+                11461 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2011>
+                11131 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2012>
+                10720 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2013>
+                10690 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2014>
+                10043 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2015>
+                9020 ;
+        <http://xmlns.com/foaf/0.1/hasPersons2016>
+                8039 .
