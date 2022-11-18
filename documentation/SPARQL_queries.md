@@ -112,7 +112,80 @@ select ?area ?year ?housingValue ?totalCrimes where {
 
 ---
 
-### TODO: Query 4
+### TODO: Query 4: Does more attractions mean higher house prices? Here are the house prices and number of attractions
+
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+select \* where {
+{
+select ?county ?TotalAttractions ?value where {
+?house rdf:type foaf:House .
+?house foaf:hasArea ?county .
+?house foaf:hasValue ?value .
+{
+select ?county (count(?Attractions) as ?TotalAttractions) where {
+?Attractions rdf:type foaf:Attraction .
+?Attractions foaf:hasAddressRegion ?county .
+Filter(contains(?county,'Dublin'))
+} group by ?county
+}
+}group by ?county ?TotalAttractions ?value order by desc(?value) limit 1
+}union{
+select ?county ?TotalAttractions ?value where {
+?house rdf:type foaf:House .
+?house foaf:hasArea ?county .
+?house foaf:hasValue ?value .
+{
+select ?county (count(?Attractions) as ?TotalAttractions) where {
+?Attractions rdf:type foaf:Attraction .
+?Attractions foaf:hasAddressRegion ?county .
+Filter(contains(?county,'Galway'))
+} group by ?county
+}
+}group by ?county ?TotalAttractions ?value order by desc(?value) limit 1
+}union{
+select ?county ?TotalAttractions ?value where {
+?house rdf:type foaf:House .
+?house foaf:hasArea ?county .
+?house foaf:hasValue ?value .
+{
+select ?county (count(?Attractions) as ?TotalAttractions) where {
+?Attractions rdf:type foaf:Attraction .
+?Attractions foaf:hasAddressRegion ?county .
+Filter(contains(?county,'Cork'))
+} group by ?county
+}
+}group by ?county ?TotalAttractions ?value order by desc(?value) limit 1
+}union{
+select ?county ?TotalAttractions ?value where {
+?house rdf:type foaf:House .
+?house foaf:hasArea ?county .
+?house foaf:hasValue ?value .
+{
+select ?county (count(?Attractions) as ?TotalAttractions) where {
+?Attractions rdf:type foaf:Attraction .
+?Attractions foaf:hasAddressRegion ?county .
+Filter(contains(?county,'Limerick'))
+} group by ?county
+}
+}group by ?county ?TotalAttractions ?value order by desc(?value) limit 1
+}union{
+select ?county ?TotalAttractions ?value where {
+?house rdf:type foaf:House .
+?house foaf:hasArea ?county .
+?house foaf:hasValue ?value .
+{
+select ?county (count(?Attractions) as ?TotalAttractions) where {
+?Attractions rdf:type foaf:Attraction .
+?Attractions foaf:hasAddressRegion ?county .
+Filter(contains(?county,'Waterford'))
+} group by ?county
+}
+}group by ?county ?TotalAttractions ?value order by desc(?value) limit 1
+}
+}order by desc (?TotalAttractions)
 
 ---
 
@@ -207,45 +280,37 @@ PREFIX foaf:<http://xmlns.com/foaf/0.1/>
 PREFIX ex:<http://foo.example.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-
-select (count(?accommodation) as ?result )  where {
-    ?accommodation foaf:hasAddressRegion ?division .
-    ?accommodation foaf:hasType 'Hotel' .
+select ?gardaStation ?totalCrime ?statistic ?value
+where {
+    ?housing rdf:type foaf:HousePrice .
+    ?housing foaf:hasYear ?year .
+    ?housing foaf:hasValue ?value .
+    filter(year(?year) = 2016) .
+    ?housing foaf:hasArea ?division .
+    ?housing foaf:hasStatistic ?statistic .
 
     {
-        select ?gardaStation ?totalCrime ?statistic ?value ?division
+    select ?gardaStation ?totalCrime ?division
     where {
-        ?housing rdf:type foaf:HousePrice .
-        ?housing foaf:hasYear ?year .
-        ?housing foaf:hasValue ?value .
-        ?housing foaf:hasArea ?division .
-        ?housing foaf:hasStatistic ?statistic .
-         filter(year(?year) = 2016) .
-
-        {
-        select ?gardaStation ?totalCrime ?division
-        where {
-            ?gardaStation foaf:hasYear ?year .
-            filter(year(?year) = 2016) .
-            ?gardaStation rdf:type foaf:GardaStation .
-            ?gardaStation foaf:hasDivision ?division .
-            ?gardaStation foaf:hasMurderOffences  ?numMurders .
-            ?gardaStation foaf:hasBurglaryOffences ?numBurglary .
-            ?gardaStation foaf:hasDrugOffences ?numDrugs .
-            ?gardaStation foaf:hasDamagedPropertyOffences ?numPropertyDamage .
-            ?gardaStation foaf:hasNeglectOffences ?numDangerousActs .
-            ?gardaStation foaf:hasFraudOffences ?numFraud .
-            ?gardaStation foaf:hasKidnappingOffences ?numKidnapping .
-            ?gardaStation foaf:hasOffencesAgainstGovernment ?numOffensesGov .
-            ?gardaStation foaf:hasPublicOrderOffences ?numPublicOrder .
-            ?gardaStation foaf:hasRobberyOffences ?numRobbery .
-            ?gardaStation foaf:hasTheftOffences ?numTheft .
-            ?gardaStation foaf:hasWeaponsOffences ?numWeapons .
-            bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
-        } order by desc (?totalCrime)
-        limit 1
-        }
-    }
+        ?gardaStation foaf:hasYear ?year .
+        filter(year(?year) = 2016) .
+        ?gardaStation rdf:type foaf:GardaStation .
+        ?gardaStation foaf:hasDivision ?division .
+        ?gardaStation foaf:hasMurderOffences  ?numMurders .
+        ?gardaStation foaf:hasBurglaryOffences ?numBurglary .
+        ?gardaStation foaf:hasDrugOffences ?numDrugs .
+        ?gardaStation foaf:hasDamagedPropertyOffences ?numPropertyDamage .
+        ?gardaStation foaf:hasNeglectOffences ?numDangerousActs .
+        ?gardaStation foaf:hasFraudOffences ?numFraud .
+        ?gardaStation foaf:hasKidnappingOffences ?numKidnapping .
+        ?gardaStation foaf:hasOffencesAgainstGovernment ?numOffensesGov .
+        ?gardaStation foaf:hasPublicOrderOffences ?numPublicOrder .
+        ?gardaStation foaf:hasRobberyOffences ?numRobbery .
+        ?gardaStation foaf:hasTheftOffences ?numTheft .
+        ?gardaStation foaf:hasWeaponsOffences ?numWeapons .
+        bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
+    } order by desc (?totalCrime)
+    limit 1
     }
 }
 ```
