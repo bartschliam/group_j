@@ -84,7 +84,12 @@ export default function Home() {
 
   const clearQuery = () => {
     setQueryResult([]);
-    setSelectedQuery({ id: 0, label: "", mapLabelKey: "", query: "" });
+    setSelectedQuery({ id: 0, label: "", mapLabelKeys: [], query: "" });
+    const updatedChartStatus = chartStatus;
+    Object.keys(chartStatus).map((chart) => {
+      updatedChartStatus[chart] = false;
+    });
+    setChartStatus(updatedChartStatus);
   };
 
   const handleCloseError = (event, reason) => {
