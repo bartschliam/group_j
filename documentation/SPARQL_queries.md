@@ -653,8 +653,15 @@ where {
 
 ---
 
-## TODO: Query 10
+## Query 10
 
+<<<<<<< HEAD
+=======
+### Do areas with a large amount of accomodation have a high house prices?
+
+## FYI: There are only 5 named counties in the housing prices set, the others are national and other areas.
+
+>>>>>>> d4e552191c619af6966f52d4ca31194a40f10deb
 ```
 
 ```
