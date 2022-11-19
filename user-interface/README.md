@@ -1,6 +1,6 @@
 # Setup
 
-Create a GraphDB Repo and inport the correct TTL and OWL files.
+Create a GraphDB Repo and import the correct TTL and OWL files.
 
 Navigate to `./user-interface`
 
