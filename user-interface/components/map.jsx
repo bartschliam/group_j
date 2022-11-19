@@ -11,7 +11,7 @@ const myIcon = new divIcon({
     iconSize: [25, 25]
    })
 
-const Map = ({data}) => {
+const Map = ({data, labelKeys}) => {
   return (
     <MapContainer center={[53.4494762, -7.5029786]} zoom={6} scrollWheelZoom={true} style={{height: 400, width: "100%"}}>
       <TileLayer
@@ -21,7 +21,13 @@ const Map = ({data}) => {
       {data.map((marker, index) => 
           <Marker position={[marker.lat.value, marker.long.value]} icon={myIcon} key={index}>
             <Popup>
-              {marker.station.value}
+              {labelKeys.map((labelKey, index) => 
+                <div>
+                  {marker[labelKey]?.value}
+                  <br />
+                </div>)}
+              
+              {"(" + marker.lat.value + ", " + marker.long.value + ")"}
             </Popup>
           </Marker>
       )}

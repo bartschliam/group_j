@@ -12,6 +12,13 @@ import { blueGrey } from "@mui/material/colors";
 import Switch from "@mui/material/Switch";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import Paper from "@mui/material/Paper";
 
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
@@ -36,6 +43,7 @@ export default function Home() {
   const [selectedQuery, setSelectedQuery] = React.useState({
     id: 0,
     label: "",
+    mapLabelKeys: [],
     query: "",
   });
   const [queryResult, setQueryResult] = React.useState([]);
@@ -43,6 +51,7 @@ export default function Home() {
   const [chartStatus, setChartStatus] = React.useState({
     bar: false,
     map: false,
+    table: false,
   });
 
   const Map = React.useMemo(
@@ -68,11 +77,14 @@ export default function Home() {
       .catch((error) => {
         setError({ text: "Error fetching results.", enabled: true });
       });
+    if (selectedQuery.mapLabelKeys.length > 0) {
+      setChartStatus({ ...chartStatus, map: true });
+    }
   };
 
   const clearQuery = () => {
     setQueryResult([]);
-    setSelectedQuery({ id: 0, label: "", query: "" });
+    setSelectedQuery({ id: 0, label: "", mapLabelKey: "", query: "" });
   };
 
   const handleCloseError = (event, reason) => {
@@ -88,7 +100,12 @@ export default function Home() {
   };
 
   const handleCustomQuery = (event) => {
-    setSelectedQuery({ id: 11, label: "CUSTOM", query: event.target.value });
+    setSelectedQuery({
+      ...selectedQuery,
+      id: 11,
+      label: "CUSTOM",
+      query: event.target.value,
+    });
   };
 
   return (
@@ -113,13 +130,13 @@ export default function Home() {
           renderInput={(params) => <TextField {...params} label="Query" />}
           fullWidth
         />
-        <Button variant="contained" sx={{ mt: 1 }} onClick={handleQuerySubmit}>
+        <Button variant="contained" sx={{ m: 1 }} onClick={handleQuerySubmit}>
           Run Query
         </Button>
-        <Button variant="contained" sx={{ mt: 1 }} onClick={clearQuery}>
+        <Button variant="contained" sx={{ m: 1 }} onClick={clearQuery}>
           Clear Query
         </Button>
-        <FormGroup>
+        <FormGroup row>
           <FormControlLabel
             control={
               <Switch
@@ -138,7 +155,21 @@ export default function Home() {
             }
             label="Bar"
           />
+          <FormControlLabel
+            control={
+              <Switch
+                checked={chartStatus.table}
+                onChange={(e) => handleSwitch(e, "table")}
+              />
+            }
+            label="Table"
+          />
         </FormGroup>
+        {chartStatus.map && (
+          <Box mt={2}>
+            <Map data={queryResult} labelKeys={selectedQuery.mapLabelKeys} />
+          </Box>
+        )}
         {chartStatus.bar && (
           <ResponsiveContainer width={"100%"} height={300}>
             <BarChart
@@ -164,10 +195,30 @@ export default function Home() {
             </BarChart>
           </ResponsiveContainer>
         )}
-        {chartStatus.map && (
-          <Box mt={2}>
-            <Map data={queryResult} />
-          </Box>
+        {chartStatus.table && (
+          <TableContainer component={Paper}>
+            <Table sx={{ minWidth: 650 }} aria-label="simple table">
+              <TableHead>
+                <TableRow>
+                  {Object.keys(queryResult[0]).map((key, index) => (
+                    <TableCell key={index}>{key}</TableCell>
+                  ))}
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {queryResult.map((row, index) => (
+                  <TableRow
+                    key={index}
+                    sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                  >
+                    {Object.keys(row).map((key, index) => (
+                      <TableCell key={index}>{row[key].value}</TableCell>
+                    ))}
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
         )}
         <Box bgcolor={blueGrey[50]} mt={2} p={2} borderRadius={1}>
           <TextField

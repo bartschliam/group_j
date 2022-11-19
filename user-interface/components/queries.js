@@ -2,6 +2,7 @@ const queries = [
   {
     id: 1,
     label: "Where can I go camping where there is low theft and robbery rates?",
+    mapLabelKeys: ["name"],
     query: `PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
@@ -34,6 +35,7 @@ WHERE {
   {
     id: 2,
     label: "What is the mimum and maximum of housing prices in Ireland?",
+    mapLabelKeys: [],
     query: `PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
 SELECT *
@@ -66,6 +68,7 @@ WHERE {
     id: 3,
     label:
       "What trends are there in housing value with relation to the amount of crime in Ireland?",
+    mapLabelKeys: [],
     query: `PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
@@ -108,6 +111,7 @@ ORDER BY ?year`,
     id: 4,
     label:
       "Does more attractions mean higher house prices? Here are the house prices and number of attractions.",
+    mapLabelKeys: [],
     query: `PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -224,6 +228,7 @@ ORDER BY DESC(?TotalAttractions)`,
   {
     id: 5,
     label: "How many crimes reported per station?",
+    mapLabelKeys: ["division", "station", "totalCrimes"],
     query: `PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
@@ -254,6 +259,7 @@ GROUP BY ?division ?station ?lat ?long`,
     id: 6,
     label:
       "Gets amount of people in education and total number of people on welfare each year.",
+    mapLabelKeys: [],
     query: `PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -427,6 +433,7 @@ WHERE {
     id: 7,
     label:
       "Does the least expensive region have more B&B's than the most expensive region?",
+    mapLabelKeys: [],
     query: `PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
@@ -482,6 +489,7 @@ WHERE {
   {
     id: 8,
     label: "Do people go camping where there is high crime?",
+    mapLabelKeys: [],
     query: `PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
@@ -515,6 +523,7 @@ GROUP BY ?region`,
   {
     id: 9,
     label: "In low crime areas, are new houses sold for more than old houses?",
+    mapLabelKeys: [],
     query: `PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
@@ -578,6 +587,7 @@ WHERE {
     id: 10,
     label:
       "Look at trends in third level student enrolement, crime, and housing prices, how do they relate? Does a more educated population mean higher prices?",
+    mapLabelKeys: [],
     query: `PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
