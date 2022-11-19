@@ -14,13 +14,39 @@
 
 ---
 
-## TODO: Query 1
+## Query 1
 
-### Where can I go camping where there is low petty crime?
+### Where can I go camping where there is low theft and robbery rates?
 
 ---
 
 ```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+
+select ?name ?type ?lat ?long ?region ?locality where {
+    ?camping foaf:hasType ?type .
+    filter(contains(?type, "Camping")) .
+    ?camping foaf:hasAddressRegion ?region .
+    ?camping foaf:hasAddressLocality ?locality .
+    ?camping foaf:hasLatitude ?lat .
+    ?camping foaf:hasLongitude ?long .
+    ?camping foaf:hasName ?name .
+    {
+        select ?locality ?region where {
+            ?gardaStation foaf:hasYear ?year .
+            ?gardaStation rdf:type foaf:GardaStation .
+            ?gardaStation foaf:hasDivision ?region .
+            ?gardaStation foaf:hasStation ?locality .
+            ?gardaStation foaf:hasRobberyOffences ?numRobbery .
+            ?gardaStation foaf:hasTheftOffences ?numTheft .
+            ?gardaStation foaf:hasYear ?year .
+            bind(?numRobbery + ?numTheft as ?totalSteal) .
+            filter(?totalSteal < 5) .
+            filter(year(?year) = 2016) .
+        }
+    }
+}
 
 ```
 
@@ -112,84 +138,123 @@ select ?area ?year ?housingValue ?totalCrimes where {
 
 ---
 
-### TODO: Query 4: Does more attractions mean higher house prices? Here are the house prices and number of attractions
-
-PREFIX foaf:<http://xmlns.com/foaf/0.1/>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
-select \* where {
-{
-select ?county ?TotalAttractions ?value where {
-?house rdf:type foaf:House .
-?house foaf:hasArea ?county .
-?house foaf:hasValue ?value .
-{
-select ?county (count(?Attractions) as ?TotalAttractions) where {
-?Attractions rdf:type foaf:Attraction .
-?Attractions foaf:hasAddressRegion ?county .
-Filter(contains(?county,'Dublin'))
-} group by ?county
-}
-}group by ?county ?TotalAttractions ?value order by desc(?value) limit 1
-}union{
-select ?county ?TotalAttractions ?value where {
-?house rdf:type foaf:House .
-?house foaf:hasArea ?county .
-?house foaf:hasValue ?value .
-{
-select ?county (count(?Attractions) as ?TotalAttractions) where {
-?Attractions rdf:type foaf:Attraction .
-?Attractions foaf:hasAddressRegion ?county .
-Filter(contains(?county,'Galway'))
-} group by ?county
-}
-}group by ?county ?TotalAttractions ?value order by desc(?value) limit 1
-}union{
-select ?county ?TotalAttractions ?value where {
-?house rdf:type foaf:House .
-?house foaf:hasArea ?county .
-?house foaf:hasValue ?value .
-{
-select ?county (count(?Attractions) as ?TotalAttractions) where {
-?Attractions rdf:type foaf:Attraction .
-?Attractions foaf:hasAddressRegion ?county .
-Filter(contains(?county,'Cork'))
-} group by ?county
-}
-}group by ?county ?TotalAttractions ?value order by desc(?value) limit 1
-}union{
-select ?county ?TotalAttractions ?value where {
-?house rdf:type foaf:House .
-?house foaf:hasArea ?county .
-?house foaf:hasValue ?value .
-{
-select ?county (count(?Attractions) as ?TotalAttractions) where {
-?Attractions rdf:type foaf:Attraction .
-?Attractions foaf:hasAddressRegion ?county .
-Filter(contains(?county,'Limerick'))
-} group by ?county
-}
-}group by ?county ?TotalAttractions ?value order by desc(?value) limit 1
-}union{
-select ?county ?TotalAttractions ?value where {
-?house rdf:type foaf:House .
-?house foaf:hasArea ?county .
-?house foaf:hasValue ?value .
-{
-select ?county (count(?Attractions) as ?TotalAttractions) where {
-?Attractions rdf:type foaf:Attraction .
-?Attractions foaf:hasAddressRegion ?county .
-Filter(contains(?county,'Waterford'))
-} group by ?county
-}
-}group by ?county ?TotalAttractions ?value order by desc(?value) limit 1
-}
-}order by desc (?TotalAttractions)
+### Query 4: Does more attractions mean higher house prices? Here are the house prices and number of attractions
 
 ---
 
 ```
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT *
+WHERE {
+  {
+    SELECT ?county ?TotalAttractions ?value
+    WHERE {
+      ?house rdf:type foaf:House .
+      ?house foaf:hasArea ?county .
+      ?house foaf:hasValue ?value .
+      {
+        SELECT ?county (COUNT(?Attractions) AS ?TotalAttractions)
+        WHERE {
+          ?Attractions rdf:type foaf:Attraction .
+          ?Attractions foaf:hasAddressRegion ?county .
+          FILTER (CONTAINS(?county, 'Dublin'))
+        }
+        GROUP BY ?county
+      }
+    }
+    GROUP BY ?county ?TotalAttractions ?value
+    ORDER BY DESC(?value)
+    LIMIT 1
+  }
+  UNION
+  {
+    SELECT ?county ?TotalAttractions ?value
+    WHERE {
+      ?house rdf:type foaf:House .
+      ?house foaf:hasArea ?county .
+      ?house foaf:hasValue ?value .
+      {
+        SELECT ?county (COUNT(?Attractions) AS ?TotalAttractions)
+        WHERE {
+          ?Attractions rdf:type foaf:Attraction .
+          ?Attractions foaf:hasAddressRegion ?county .
+          FILTER (CONTAINS(?county, 'Galway'))
+        }
+        GROUP BY ?county
+      }
+    }
+    GROUP BY ?county ?TotalAttractions ?value
+    ORDER BY DESC(?value)
+    LIMIT 1
+  }
+  UNION
+  {
+    SELECT ?county ?TotalAttractions ?value
+    WHERE {
+      ?house rdf:type foaf:House .
+      ?house foaf:hasArea ?county .
+      ?house foaf:hasValue ?value .
+      {
+        SELECT ?county (COUNT(?Attractions) AS ?TotalAttractions)
+        WHERE {
+          ?Attractions rdf:type foaf:Attraction .
+          ?Attractions foaf:hasAddressRegion ?county .
+          FILTER (CONTAINS(?county, 'Cork'))
+        }
+        GROUP BY ?county
+      }
+    }
+    GROUP BY ?county ?TotalAttractions ?value
+    ORDER BY DESC(?value)
+    LIMIT 1
+  }
+  UNION
+  {
+    SELECT ?county ?TotalAttractions ?value
+    WHERE {
+      ?house rdf:type foaf:House .
+      ?house foaf:hasArea ?county .
+      ?house foaf:hasValue ?value .
+      {
+        SELECT ?county (COUNT(?Attractions) AS ?TotalAttractions)
+        WHERE {
+          ?Attractions rdf:type foaf:Attraction .
+          ?Attractions foaf:hasAddressRegion ?county .
+          FILTER (CONTAINS(?county, 'Limerick'))
+        }
+        GROUP BY ?county
+      }
+    }
+    GROUP BY ?county ?TotalAttractions ?value
+    ORDER BY DESC(?value)
+    LIMIT 1
+  }
+  UNION
+  {
+    SELECT ?county ?TotalAttractions ?value
+    WHERE {
+      ?house rdf:type foaf:House .
+      ?house foaf:hasArea ?county .
+      ?house foaf:hasValue ?value .
+      {
+        SELECT ?county (COUNT(?Attractions) AS ?TotalAttractions)
+        WHERE {
+          ?Attractions rdf:type foaf:Attraction .
+          ?Attractions foaf:hasAddressRegion ?county .
+          FILTER (CONTAINS(?county, 'Waterford'))
+        }
+        GROUP BY ?county
+      }
+    }
+    GROUP BY ?county ?TotalAttractions ?value
+    ORDER BY DESC(?value)
+    LIMIT 1
+  }
+}
+ORDER BY DESC(?TotalAttractions)
 
 ```
 
