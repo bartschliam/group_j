@@ -545,43 +545,42 @@ WHERE {
 
 ---
 
-## TODO: Query 8
+## Query 8
 
-### In high crime areas, what types of accomodation is there? (Do people go camping where there is crime?)
-
-### IN PROGRESS NOT DONE BECAUSE IT STILL IS BIT BROKEY
+### Do people go camping where there is high crime?
 
 ---
 
 ```
-PREFIX foaf:<http://xmlns.com/foaf/0.1/>
-PREFIX ex:<http://foo.example.org/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-select ?housing ?name ?division where {
-    ?housing rdf:type foaf:Accommodation .
-	?housing foaf:hasType ?type .
-    ?housing foaf:hasName ?name .
-    ?housing foaf:hasAddressRegion ?region .
-
-    ?gardaStation foaf:hasYear ?year .
-    filter(year(?year) = 2016) .
-    ?gardaStation rdf:type foaf:GardaStation .
-    ?gardaStation foaf:hasDivision ?region.
-    ?gardaStation foaf:hasMurderOffences  ?numMurders .
-    ?gardaStation foaf:hasBurglaryOffences ?numBurglary .
-    ?gardaStation foaf:hasDrugOffences ?numDrugs .
-    ?gardaStation foaf:hasDamagedPropertyOffences ?numPropertyDamage .
-    ?gardaStation foaf:hasNeglectOffences ?numDangerousActs .
-    ?gardaStation foaf:hasFraudOffences ?numFraud .
-    ?gardaStation foaf:hasKidnappingOffences ?numKidnapping .
-    ?gardaStation foaf:hasOffencesAgainstGovernment ?numOffensesGov .
-    ?gardaStation foaf:hasPublicOrderOffences ?numPublicOrder .
-    ?gardaStation foaf:hasRobberyOffences ?numRobbery .
-    ?gardaStation foaf:hasTheftOffences ?numTheft .
-    ?gardaStation foaf:hasWeaponsOffences ?numWeapons .
-    bind(?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons as ?totalCrime)
+SELECT DISTINCT ?region (sum(?totalCrime) AS ?allCrime) (COUNT(?accom) AS ?numCamping)
+WHERE {
+  ?accom rdf:type foaf:Accommodation .
+  ?accom foaf:hasType ?type .
+  ?accom foaf:hasName ?name .
+  ?accom foaf:hasAddressRegion ?region .
+  FILTER (CONTAINS(?type, "Camping"))
+  ?gardaStation foaf:hasYear ?year .
+  FILTER (year(?year) = 2016)
+  ?gardaStation rdf:type foaf:GardaStation .
+  ?gardaStation foaf:hasDivision ?region .
+  ?gardaStation foaf:hasMurderOffences ?numMurders .
+  ?gardaStation foaf:hasBurglaryOffences ?numBurglary .
+  ?gardaStation foaf:hasDrugOffences ?numDrugs .
+  ?gardaStation foaf:hasDamagedPropertyOffences ?numPropertyDamage .
+  ?gardaStation foaf:hasNeglectOffences ?numDangerousActs .
+  ?gardaStation foaf:hasFraudOffences ?numFraud .
+  ?gardaStation foaf:hasKidnappingOffences ?numKidnapping .
+  ?gardaStation foaf:hasOffencesAgainstGovernment ?numOffensesGov .
+  ?gardaStation foaf:hasPublicOrderOffences ?numPublicOrder .
+  ?gardaStation foaf:hasRobberyOffences ?numRobbery .
+  ?gardaStation foaf:hasTheftOffences ?numTheft .
+  ?gardaStation foaf:hasWeaponsOffences ?numWeapons .
+  BIND (?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons AS ?totalCrime)
 }
+GROUP BY ?region
 ```
 
 [Index](#sparql-queries-index)
@@ -656,41 +655,8 @@ where {
 
 ## TODO: Query 10
 
-### (to do) Do areas with a large amount of accomodation have a high house prices?
-
-## FYI: There are only 5 named counties in the housing prices set, the others are national and other areas.
-
 ```
-PREFIX foaf:<http://xmlns.com/foaf/0.1/>
-PREFIX ex:<http://foo.example.org/>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX accom:<http://foo.example.org/Accommodation/>
 
-select *
-where
-{
-{
-select distinct ("Other areas" as ?reigon) (count(?accomms) as ?totalaccom)
-where
-{
-?x foaf:hasAddressRegion ?place .
-?x foaf:hasName ?accomms .
-FILTER (?place NOT IN ("Cork","Dublin","Galway","Waterford","Limerick")).
-}
-}
-UNION
-{
-select distinct ?reigon (count(?accomms) as ?totalaccom)
-where
-{
-?x foaf:hasAddressRegion ?reigon .
-?x foaf:hasName ?accomms .
-?y foaf:hasArea ?reigon .
-?y foaf:hasValue ?price .
-}
-GROUP BY(?reigon)
-}
-}
 ```
 
 [Index](#sparql-queries-index)
