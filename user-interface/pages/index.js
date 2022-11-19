@@ -86,6 +86,10 @@ export default function Home() {
   const clearQuery = () => {
     setQueryResult([]);
     setSelectedQuery({ id: 0, label: "", mapLabelKeys: [], query: "" });
+    clearCharts();
+  };
+
+  const clearCharts = () => {
     const updatedChartStatus = chartStatus;
     Object.keys(chartStatus).map((chart) => {
       updatedChartStatus[chart] = false;
@@ -99,6 +103,11 @@ export default function Home() {
     }
 
     setError({ text: "", enabled: false });
+  };
+
+  const handleQueryChange = (event, newValue) => {
+    setSelectedQuery(newValue);
+    clearCharts();
   };
 
   const handleSwitch = (event, type) => {
@@ -130,9 +139,7 @@ export default function Home() {
           disablePortal
           options={queries}
           value={selectedQuery}
-          onChange={(event, newValue) => {
-            setSelectedQuery(newValue);
-          }}
+          onChange={handleQueryChange}
           renderInput={(params) => <TextField {...params} label="Query" />}
           fullWidth
         />
