@@ -144,7 +144,9 @@ ORDER BY ?year
 
 ---
 
-### Query 4: Does more attractions mean higher house prices? Here are the house prices and number of attractions
+## Query 4
+
+### Does more attractions mean higher house prices? Here are the house prices and number of attractions.
 
 ---
 
@@ -269,7 +271,7 @@ ORDER BY DESC(?TotalAttractions)
 
 ## Query 5
 
-### How many X crimes reported per station (Sum of entire dataset)
+### How many crimes reported per station (Sum of entire dataset)
 
 ---
 
@@ -305,7 +307,7 @@ GROUP BY ?division ?station ?lat ?long
 
 ---
 
-## TODO: Query 6
+## Query 6
 
 ### gets amount of people and total number of people on welfare each year
 
@@ -329,7 +331,7 @@ WHERE {
           ?StudentData foaf:hasYear ?year .
           ?StudentData foaf:hasValue ?amount .
           FILTER (?level = 'All levels of education')
-          FILTER (?year = 2008)
+          FILTER (year(?year) = 2008)
         }
       }
     }
@@ -347,7 +349,7 @@ WHERE {
           ?StudentData foaf:hasYear ?year .
           ?StudentData foaf:hasValue ?amount .
           FILTER (?level = 'All levels of education')
-          FILTER (?year = 2009)
+          FILTER (year(?year) = 2009)
         }
       }
     }
@@ -365,7 +367,7 @@ WHERE {
           ?StudentData foaf:hasYear ?year .
           ?StudentData foaf:hasValue ?amount .
           FILTER (?level = 'All levels of education')
-          FILTER (?year = 2010)
+          FILTER (year(?year) = 2010)
         }
       }
     }
@@ -383,7 +385,7 @@ WHERE {
           ?StudentData foaf:hasYear ?year .
           ?StudentData foaf:hasValue ?amount .
           FILTER (?level = 'All levels of education')
-          FILTER (?year = 2011)
+          FILTER (year(?year) = 2011)
         }
       }
     }
@@ -401,7 +403,7 @@ WHERE {
           ?StudentData foaf:hasYear ?year .
           ?StudentData foaf:hasValue ?amount .
           FILTER (?level = 'All levels of education')
-          FILTER (?year = 2012)
+          FILTER (year(?year) = 2012)
         }
       }
     }
@@ -419,7 +421,7 @@ WHERE {
           ?StudentData foaf:hasYear ?year .
           ?StudentData foaf:hasValue ?amount .
           FILTER (?level = 'All levels of education')
-          FILTER (?year = 2013)
+          FILTER (year(?year) = 2013)
         }
       }
     }
@@ -437,7 +439,7 @@ WHERE {
           ?StudentData foaf:hasYear ?year .
           ?StudentData foaf:hasValue ?amount .
           FILTER (?level = 'All levels of education')
-          FILTER (?year = 2014)
+          FILTER (year(?year) = 2014)
         }
       }
     }
@@ -455,7 +457,7 @@ WHERE {
           ?StudentData foaf:hasYear ?year .
           ?StudentData foaf:hasValue ?amount .
           FILTER (?level = 'All levels of education')
-          FILTER (?year = 2015)
+          FILTER (year(?year) = 2015)
         }
       }
     }
@@ -473,7 +475,7 @@ WHERE {
           ?StudentData foaf:hasYear ?year .
           ?StudentData foaf:hasValue ?amount .
           FILTER (?level = 'All levels of education')
-          FILTER (?year = 2016)
+          FILTER (year(?year) = 2016)
         }
       }
     }
