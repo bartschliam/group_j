@@ -56,7 +56,7 @@ WHERE {
 
 ## Query 2
 
-### What is the mimum and maximum of housing prices in Ireland?
+### What is the minimum and maximum of housing prices in Ireland?
 
 ---
 
@@ -96,7 +96,7 @@ WHERE {
 
 ## Query 3
 
-### What trends are there in housing value with relation to the amount of crime in Ireland
+### What trends are there in housing value with relation to the amount of crime in Ireland?
 
 ---
 
@@ -309,7 +309,7 @@ GROUP BY ?division ?station ?lat ?long
 
 ## Query 6
 
-### gets amount of people and total number of people on welfare each year
+### How many total people are there in total and on welfare each year?
 
 ---
 
@@ -663,7 +663,7 @@ WHERE {
 
 ## Query 10
 
-### Look at trends in third level student enrolement, crime, and housing prices, how do they relate? Does a more educated population mean higher prices?
+### Look at trends in third level student enrolment, crime, and housing prices, how do they relate? Does a more educated population mean higher prices?
 
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
