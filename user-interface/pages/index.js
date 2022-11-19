@@ -33,7 +33,11 @@ import {
 import queries from "../components/queries";
 
 export default function Home() {
-  const [selectedQuery, setSelectedQuery] = React.useState("");
+  const [selectedQuery, setSelectedQuery] = React.useState({
+    id: 0,
+    label: "",
+    query: "",
+  });
   const [queryResult, setQueryResult] = React.useState([]);
   const [error, setError] = React.useState({ text: "", enabled: false });
   const [chartStatus, setChartStatus] = React.useState({
@@ -68,7 +72,7 @@ export default function Home() {
 
   const clearQuery = () => {
     setQueryResult([]);
-    setSelectedQuery("");
+    setSelectedQuery({ id: 0, label: "", query: "" });
   };
 
   const handleCloseError = (event, reason) => {
@@ -81,6 +85,10 @@ export default function Home() {
 
   const handleSwitch = (event, type) => {
     setChartStatus({ ...chartStatus, [type]: event.target.checked });
+  };
+
+  const handleCustomQuery = (event) => {
+    setSelectedQuery({ id: 11, label: "CUSTOM", query: event.target.value });
   };
 
   return (
@@ -97,7 +105,6 @@ export default function Home() {
         </Typography>
         <Autocomplete
           disablePortal
-          id="combo-box"
           options={queries}
           value={selectedQuery}
           onChange={(event, newValue) => {
@@ -163,16 +170,18 @@ export default function Home() {
           </Box>
         )}
         <Box bgcolor={blueGrey[50]} mt={2} p={2} borderRadius={1}>
-          <Typography variant="body1" gutterBottom fontWeight={800}>
-            SPARQL:
-          </Typography>
-          <Typography
-            variant="body1"
-            gutterBottom
-            sx={{ whiteSpace: "pre-wrap" }}
-          >
-            {selectedQuery.query}
-          </Typography>
+          <TextField
+            label="SPARQL"
+            multiline
+            rows={selectedQuery.query.split(/\r\n|\r|\n/).len}
+            fullWidth
+            InputLabelProps={{
+              shrink: true,
+            }}
+            onChange={handleCustomQuery}
+            value={selectedQuery.query}
+            spellcheck="false"
+          />
         </Box>
         <Snackbar
           open={error.enabled}
