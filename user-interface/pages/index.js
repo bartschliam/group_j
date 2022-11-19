@@ -49,8 +49,9 @@ export default function Home() {
   const [queryResult, setQueryResult] = React.useState([]);
   const [error, setError] = React.useState({ text: "", enabled: false });
   const [chartStatus, setChartStatus] = React.useState({
-    bar: false,
     map: false,
+    line: false,
+    bar: false,
     table: false,
   });
 
@@ -142,38 +143,27 @@ export default function Home() {
           Clear Query
         </Button>
         <FormGroup row>
-          <FormControlLabel
-            control={
-              <Switch
-                checked={chartStatus.map}
-                onChange={(e) => handleSwitch(e, "map")}
-              />
-            }
-            label="Map"
-          />
-          <FormControlLabel
-            control={
-              <Switch
-                checked={chartStatus.bar}
-                onChange={(e) => handleSwitch(e, "bar")}
-              />
-            }
-            label="Bar"
-          />
-          <FormControlLabel
-            control={
-              <Switch
-                checked={chartStatus.table}
-                onChange={(e) => handleSwitch(e, "table")}
-              />
-            }
-            label="Table"
-          />
+          {Object.keys(chartStatus).map((chart) => (
+            <FormControlLabel
+              control={
+                <Switch
+                  checked={chartStatus[chart]}
+                  onChange={(e) => handleSwitch(e, chart)}
+                />
+              }
+              label={chart.charAt(0).toUpperCase() + chart.slice(1)}
+            />
+          ))}
         </FormGroup>
         {chartStatus.map && (
           <Box mt={2}>
             <Map data={queryResult} labelKeys={selectedQuery.mapLabelKeys} />
           </Box>
+        )}
+        {chartStatus.bar && (
+          <ResponsiveContainer width={"100%"} height={300}>
+            {/* TODO: LINE CHART HERE */}
+          </ResponsiveContainer>
         )}
         {chartStatus.bar && (
           <ResponsiveContainer width={"100%"} height={300}>
@@ -185,6 +175,7 @@ export default function Home() {
               <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
 
               <YAxis />
+              {/* TODO: Fix bar chart */}
               {queryResult[0]?.value && (
                 <>
                   <Bar dataKey="value.value" fill="#8884d8" />
