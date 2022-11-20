@@ -134,6 +134,8 @@ export default function Home() {
     table: false,
   });
 
+  const [customPlot, setCustomPlot] = React.useState(false);
+
   const Map = React.useMemo(
     () =>
       dynamic(() => import("../components/map"), {
@@ -157,17 +159,19 @@ export default function Home() {
       .catch((error) => {
         setError({ text: "Error fetching results.", enabled: true });
       });
-    if (selectedQuery?.mapLabelKeys) {
-      setChartStatus({ ...chartStatus, map: true });
-    }
-    if (selectedQuery?.barX && selectedQuery?.barY) {
-      setChartStatus({ ...chartStatus, bar: true });
-    }
-    if (selectedQuery?.xAxis && selectedQuery?.yAxis) {
-      setChartStatus({ ...chartStatus, line: true });
-    }
-    if (selectedQuery?.scatter) {
-      setChartStatus({ ...chartStatus, scatter: true });
+    if (!customPlot) {
+      if (selectedQuery?.mapLabelKeys) {
+        setChartStatus({ ...chartStatus, map: true });
+      }
+      if (selectedQuery?.barX && selectedQuery?.barY) {
+        setChartStatus({ ...chartStatus, bar: true });
+      }
+      if (selectedQuery?.xAxis && selectedQuery?.yAxis) {
+        setChartStatus({ ...chartStatus, line: true });
+      }
+      if (selectedQuery?.scatter) {
+        setChartStatus({ ...chartStatus, scatter: true });
+      }
     }
   };
 
@@ -179,6 +183,7 @@ export default function Home() {
       query: "",
     });
     clearCharts();
+    setCustomPlot(false);
   };
 
   const clearCharts = () => {
@@ -201,6 +206,7 @@ export default function Home() {
     setQueryResult([]);
     setSelectedQuery(newValue);
     clearCharts();
+    setCustomPlot(false);
   };
 
   const handleSwitch = (event, type) => {
@@ -236,12 +242,138 @@ export default function Home() {
           renderInput={(params) => <TextField {...params} label="Query" />}
           fullWidth
         />
-        <Button variant="contained" sx={{ m: 1 }} onClick={handleQuerySubmit}>
-          Run Query
-        </Button>
-        <Button variant="contained" sx={{ m: 1 }} onClick={clearQuery}>
-          Clear Query
-        </Button>
+        <FormGroup row>
+          <Button variant="contained" sx={{ m: 1 }} onClick={handleQuerySubmit}>
+            Run Query
+          </Button>
+          <Button variant="contained" sx={{ m: 1 }} onClick={clearQuery}>
+            Clear Query
+          </Button>
+          {selectedQuery.label === "CUSTOM" && (
+            <FormControlLabel
+              control={
+                <Switch
+                  checked={customPlot}
+                  onChange={(e) => setCustomPlot(e.target.checked)}
+                />
+              }
+              label="Custom Plotting Properties"
+            />
+          )}
+        </FormGroup>
+        {selectedQuery.label === "CUSTOM" && customPlot && (
+          <Box>
+            <Typography variant="h6" gutterBottom fontWeight={800}>
+              Custom Plotting Properties (Advanced)
+            </Typography>
+            <Box>
+              <Typography variant="body1" gutterBottom fontWeight={800}>
+                Geographical Map
+              </Typography>
+              <TextField
+                label="mapLabelKeys (list)"
+                variant="outlined"
+                value={selectedQuery.mapLabelKeys}
+                onChange={(e) =>
+                  setSelectedQuery({
+                    ...selectedQuery,
+                    mapLabelKeys: e.target.value.split(","),
+                  })
+                }
+              />
+            </Box>
+            <Box>
+              <Typography variant="body1" gutterBottom fontWeight={800}>
+                Line Chart
+              </Typography>
+              <TextField
+                label="xAxis"
+                variant="outlined"
+                value={selectedQuery.xAxis}
+                onChange={(e) =>
+                  setSelectedQuery({ ...selectedQuery, xAxis: e.target.value })
+                }
+              />
+              <TextField
+                label="yAxis (list)"
+                variant="outlined"
+                value={selectedQuery.yAxis}
+                onChange={(e) =>
+                  setSelectedQuery({
+                    ...selectedQuery,
+                    yAxis: e.target.value.split(","),
+                  })
+                }
+              />
+              <TextField
+                label="yAxisSingle"
+                variant="outlined"
+                value={selectedQuery.yAxisSingle}
+                onChange={(e) =>
+                  setSelectedQuery({
+                    ...selectedQuery,
+                    yAxisSingle: e.target.value,
+                  })
+                }
+              />
+              <TextField
+                label="lineFilter"
+                variant="outlined"
+                value={selectedQuery.lineFilter}
+                onChange={(e) =>
+                  setSelectedQuery({
+                    ...selectedQuery,
+                    lineFilter: e.target.value,
+                  })
+                }
+              />
+              <TextField
+                label="lineFilters (list)"
+                variant="outlined"
+                value={selectedQuery.lineFilters}
+                onChange={(e) =>
+                  setSelectedQuery({
+                    ...selectedQuery,
+                    lineFilters: e.target.value.split(","),
+                  })
+                }
+              />
+            </Box>
+            <Box>
+              <Typography variant="body1" gutterBottom fontWeight={800}>
+                Bar Chart
+              </Typography>
+              <TextField
+                label="barX"
+                variant="outlined"
+                value={selectedQuery.barX}
+                onChange={(e) =>
+                  setSelectedQuery({
+                    ...selectedQuery,
+                    barX: e.target.value,
+                  })
+                }
+              />
+              <TextField
+                label="barY (list)"
+                variant="outlined"
+                value={selectedQuery.barY}
+                onChange={(e) =>
+                  setSelectedQuery({
+                    ...selectedQuery,
+                    barY: e.target.value.split(","),
+                  })
+                }
+              />
+            </Box>
+            <Box>
+              <Typography variant="body1" gutterBottom fontWeight={800}>
+                Scatter Plot
+              </Typography>
+              <TextField label="scatter" variant="outlined" />
+            </Box>
+          </Box>
+        )}
         <FormGroup row>
           {Object.keys(chartStatus).map((chart) => (
             <FormControlLabel
