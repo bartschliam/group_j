@@ -122,11 +122,6 @@ export default function Home() {
   const [selectedQuery, setSelectedQuery] = React.useState({
     id: 0,
     label: "",
-    mapLabelKeys: [],
-    xAxis: "",
-    yAxis: [],
-    lineFilter: "",
-    lineFilters: [],
     query: "",
   });
   const [queryResult, setQueryResult] = React.useState([]);
@@ -150,7 +145,6 @@ export default function Home() {
     ]
   );
 
-  // TODO: Process the returned data
   const handleQuerySubmit = async (e) => {
     axios
       .get("/api/sparql", {
@@ -163,8 +157,17 @@ export default function Home() {
       .catch((error) => {
         setError({ text: "Error fetching results.", enabled: true });
       });
-    if (selectedQuery.mapLabelKeys.length > 0) {
+    if (selectedQuery?.mapLabelKeys) {
       setChartStatus({ ...chartStatus, map: true });
+    }
+    if (selectedQuery?.barX && selectedQuery?.barY) {
+      setChartStatus({ ...chartStatus, bar: true });
+    }
+    if (selectedQuery?.xAxis && selectedQuery?.yAxis) {
+      setChartStatus({ ...chartStatus, line: true });
+    }
+    if (selectedQuery?.scatter) {
+      setChartStatus({ ...chartStatus, scatter: true });
     }
   };
 
@@ -173,11 +176,6 @@ export default function Home() {
     setSelectedQuery({
       id: 0,
       label: "",
-      mapLabelKeys: [],
-      xAxis: "",
-      yAxis: [],
-      lineFilter: "",
-      lineFilters: [],
       query: "",
     });
     clearCharts();
@@ -262,7 +260,7 @@ export default function Home() {
             <Map data={queryResult} labelKeys={selectedQuery.mapLabelKeys} />
           </Box>
         )}
-        {chartStatus.line && (
+        {chartStatus.line && selectedQuery?.xAxis && selectedQuery?.yAxis && (
           <ResponsiveContainer data={queryResult} width={"100%"} height={600}>
             <LineChart margin={{ top: 25, right: 20, bottom: 5, left: 20 }}>
               <CartesianGrid strokeDasharray="3 3" />
@@ -273,14 +271,16 @@ export default function Home() {
               <Tooltip
                 content={<CustomTooltip selectedQuery={selectedQuery} />}
               />
-              <Legend
-                payload={selectedQuery.lineFilters.map((item, index) => ({
-                  id: item.name,
-                  type: "line",
-                  value: `${item}`,
-                  color: colors[index],
-                }))}
-              />
+              {selectedQuery?.lineFilters && (
+                <Legend
+                  payload={selectedQuery.lineFilters.map((item, index) => ({
+                    id: item.name,
+                    type: "line",
+                    value: `${item}`,
+                    color: colors[index],
+                  }))}
+                />
+              )}
               {selectedQuery?.yAxisSingle && (
                 <YAxis tick={{ fontSize: 10 }} yAxisId={"single"}>
                   <Label
@@ -311,7 +311,7 @@ export default function Home() {
                       </YAxis>
                     )}
 
-                    {selectedQuery.lineFilters.length > 0 &&
+                    {selectedQuery?.lineFilters &&
                       selectedQuery.lineFilters.map((filtered, index) => (
                         <Line
                           data={queryResult.filter(
@@ -327,7 +327,7 @@ export default function Home() {
                           yAxisId={yAxis}
                         />
                       ))}
-                    {selectedQuery.lineFilters.length == 0 && (
+                    {!selectedQuery?.lineFilters && (
                       <Line
                         data={queryResult}
                         name={yAxis}
@@ -344,7 +344,7 @@ export default function Home() {
             </LineChart>
           </ResponsiveContainer>
         )}
-        {chartStatus.bar && (
+        {chartStatus.bar && selectedQuery?.barX && selectedQuery?.barY && (
           <ResponsiveContainer width={"100%"} height={300}>
             <BarChart
               data={queryResult}
@@ -356,37 +356,14 @@ export default function Home() {
               <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
 
               <YAxis />
-              {/* TODO: Fix bar chart */}
-              {queryResult[0]?.value && (
-                <>
-                  <Bar dataKey="value.value" fill="#8884d8" />
-                  <XAxis dataKey="area.value" />
-                </>
-              )}
-              {queryResult[0]?.count && (
-                <>
-                  <Bar dataKey="count.value" fill="#8884d8" />
-                  <XAxis dataKey="count" label="Count" />
-                </>
-              )}
-              {queryResult[0]?.TotalBandBs && (
-                <>
-                  <Bar dataKey="TotalBandBs.value" fill="#8884d8" />
-                  <XAxis dataKey="region.value" label="Region" />
-                </>
-              )}
-              {queryResult[0]?.totalCrimes && (
-                <>
-                  <Bar dataKey="newHouseValue.value" fill={colors[0]} />
-                  <Bar dataKey="secondHouseValue.value" fill={colors[1]} />
-                  <XAxis dataKey="division.value" />
-                  <Legend />
-                </>
-              )}
+              <XAxis dataKey={`${selectedQuery.barX}.value`} />
+              {selectedQuery.barY.map((bar, i) => (
+                <Bar dataKey={`${bar}.value`} fill={colors[i]} />
+              ))}
             </BarChart>
           </ResponsiveContainer>
         )}
-        {chartStatus.scatter && selectedQuery?.scatter.length > 0 && (
+        {chartStatus.scatter && selectedQuery?.scatter && (
           <ResponsiveContainer width={"100%"} height={600}>
             <ScatterChart
               data={queryResult}
