@@ -18,19 +18,22 @@ const Map = ({data, labelKeys}) => {
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      {data?.map((marker, index) => 
-          <Marker position={[marker.lat.value, marker.long.value]} icon={myIcon} key={index}>
-            <Popup>
-              {labelKeys.map((labelKey, index) => 
-                <div>
-                  {marker[labelKey]?.value}
-                  <br />
-                </div>)}
-              
-              {"(" + marker.lat.value + ", " + marker.long.value + ")"}
-            </Popup>
-          </Marker>
-      )}
+      {data?.map((marker, index) => {
+        if (marker?.lat && marker?.long) {
+          return (
+              <Marker position={[marker.lat.value, marker.long.value]} icon={myIcon} key={index}>
+                <Popup>
+                  {labelKeys.map((labelKey, index) => 
+                    <div>
+                      {marker[labelKey]?.value}
+                      <br />
+                    </div>)}
+                  
+                  {"(" + marker.lat.value + ", " + marker.long.value + ")"}
+                </Popup>
+              </Marker>)
+          }
+        })}
     </MapContainer>
   )
 }

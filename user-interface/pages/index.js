@@ -27,7 +27,6 @@ import MuiAlert from "@mui/material/Alert";
 import {
   BarChart,
   Bar,
-  Cell,
   Scatter,
   ScatterChart,
   XAxis,
