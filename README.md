@@ -55,17 +55,17 @@ appropriate
 1. ✅ Demo: [Group Interim Progress](https://docs.google.com/presentation/d/1KMor0qnAbQpiv_s-OxFozfPKAhSGCVuNHesDoBExSro/edit?usp=sharing)
 
 2. ⏳Documentation
-    - ⏳ [OWL ontology model](https://docs.google.com/document/d/1WwFKcXlZCi9_zi84WCxoezuKGI9CtVtNBcwN2UEEXIY/edit?usp=sharing) & `./documentation/owl_ontology.owl`
-    - ⏳ Documented R2RML mappings 
-    - ⏳ Documented SPARQL queries 
-    - ⏳ Application code for Application Query Interface 
-    - ⏳ Original and uplifted datasets 
-    - ⏳ Electronic versions – for a,b,c use WIDOCO https://dgarijo.github.io/Widoco/
-        - ⏳ understand examples from WIDOCO github before attempting to use in your own project 
-        - ⏳ Note the html file generated with WIDOCO can be edited if needed with additional information (e.g. the SPARQL queries in a new section). 
-3. ⏳ [Technical Report](https://www.overleaf.com/8328128127kjhgzxphsrrq)
-    - ⏳ Approach to Ontology Modelling 
-        - ⏳ Description of Competency Questions that ontology answers 
+    - ✅ [OWL ontology model](https://docs.google.com/document/d/1WwFKcXlZCi9_zi84WCxoezuKGI9CtVtNBcwN2UEEXIY/edit?usp=sharing) & `./documentation/owl_ontology.owl`
+    - ✅ Documented R2RML mappings 
+    - ✅ Documented SPARQL queries 
+    - ✅ Application code for Application Query Interface 
+    - ✅ Original and uplifted datasets 
+    - ✅ Electronic versions – for a,b,c use WIDOCO https://dgarijo.github.io/Widoco/
+        - ✅ understand examples from WIDOCO github before attempting to use in your own project 
+        - ✅ Note the html file generated with WIDOCO can be edited if needed with additional information (e.g. the SPARQL queries in a new section). 
+3. ✅ [Technical Report](https://www.overleaf.com/8328128127kjhgzxphsrrq)
+    - ✅ Approach to Ontology Modelling 
+        - ✅ Description of Competency Questions that ontology answers 
         - ⏳ Description of datasets selected for application 
         - ⏳ Assumptions made 
         - References to sources used/reused e.g. SIOC, FOAF for people 
@@ -77,6 +77,6 @@ appropriate
     - ⏳ Discussion of challenges faced while ontology modelling or creating queries and mappings 
         - ⏳ Report how you organised your project (e.g. meetings, common google doc ...). 
     - ⏳ Conclusions: Self reflection of group on Strengths/weakness of ontology model, queries & interface 
-4. ⏳ Self Reflection Report (`./reports`)
+4. ⏳ Self Reflection Report
     - ⏳ What you contributed 
     - ⏳ Reflection strengths and weaknesses of own contribution and of group work 
