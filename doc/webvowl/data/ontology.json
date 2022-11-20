@@ -1,0 +1,1180 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.foo.example.org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.foo.example.org",
+    "other" : {
+      "backwardCompatibleWith" : [ {
+        "identifier" : "backwardCompatibleWith",
+        "language" : "undefined",
+        "value" : "rdfs:label \"Group J Onoloty\" ;\nrdfs:comment \"This is the onology created by group J for the group project, It is used to investigate the relationships between house prices, accomodation, attractions, atctivities, crime and welfare to see of there are any correlations. \";\nowl:versionInfo \"Version 3\";",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.foo.example.org#Attraction",
+    "baseIri" : "http://www.foo.example.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attraction"
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.foo.example.org#Activity",
+    "baseIri" : "http://www.foo.example.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity"
+    },
+    "id" : "10",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.foo.example.org#WelfareOffice",
+    "baseIri" : "http://www.foo.example.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WelfareOffice"
+    },
+    "id" : "23",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.foo.example.org#Education",
+    "baseIri" : "http://www.foo.example.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Education"
+    },
+    "subClasses" : [ "56" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.foo.example.org#Housing",
+    "baseIri" : "http://www.foo.example.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Housing"
+    },
+    "subClasses" : [ "58" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.foo.example.org#Tourism",
+    "baseIri" : "http://www.foo.example.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tourism"
+    },
+    "subClasses" : [ "10", "7", "60" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.foo.example.org#Accommodation",
+    "baseIri" : "http://www.foo.example.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Accommodation"
+    },
+    "id" : "60",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.foo.example.org#Government",
+    "baseIri" : "http://www.foo.example.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Government"
+    },
+    "subClasses" : [ "63", "23" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.foo.example.org#StudentData",
+    "baseIri" : "http://www.foo.example.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StudentData"
+    },
+    "id" : "56",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "2",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.foo.example.org#House",
+    "baseIri" : "http://www.foo.example.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "House"
+    },
+    "id" : "58",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.foo.example.org#GardaStation",
+    "baseIri" : "http://www.foo.example.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GardaStation"
+    },
+    "id" : "63",
+    "superClasses" : [ "24" ]
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "93",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.foo.example.org#hasRobberyOffences",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasRobberyOffences"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.foo.example.org#hasValue",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasValue"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.foo.example.org#hasActivity",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasActivity"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.foo.example.org#hasMurderOffences",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasMurderOffences"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.foo.example.org#hasDrugOffences",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasDrugOffences"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.foo.example.org#hasStation",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasStation"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.foo.example.org#hasPersons2012",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasPersons2012"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.foo.example.org#hasPersons2011",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasPersons2011"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.foo.example.org#hasPersons2010",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasPersons2010"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.foo.example.org#hasPersons2016",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasPersons2016"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.foo.example.org#hasPersons2015",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasPersons2015"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.foo.example.org#hasPersons2014",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasPersons2014"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.foo.example.org#hasPersons2013",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasPersons2013"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.foo.example.org#hasCounty",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasCounty"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.foo.example.org#hasAmount",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasAmount"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.foo.example.org#hasAcademicYear",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasAcademicYear"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.foo.example.org#hasPublicOrderOfences",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasPublicOrderOfences"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.foo.example.org#happensAt",
+    "inverse" : "6",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "happensAt"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "24",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.foo.example.org#hasTheftOffences",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasTheftOffences"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "range" : "57",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "8",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "55",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.foo.example.org#hasKidnappingOffences",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasKidnappingOffences"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.foo.example.org#hasType",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasType"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.foo.example.org#hasYear",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "hasYear"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.foo.example.org#hasDivision",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "hasDivision"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.foo.example.org#hasAddressLocality",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "hasAddressLocality"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.foo.example.org#hasAddressRegion",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "hasAddressRegion"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.foo.example.org#hasLatitude",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "hasLatitude"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.foo.example.org#hasStatistic",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasStatistic"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.foo.example.org#hasLevelOfEducation",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasLevelOfEducation"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.foo.example.org#hasOffencesAgainstGovernment",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasOffencesAgainstGovernment"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.foo.example.org#hasNeglectOffences",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasNeglectOffences"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.foo.example.org#hasDamagedPropertyOffences",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasDamagedPropertyOffences"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.foo.example.org#hasArea",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasArea"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.foo.example.org#hasLongitude",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasLongitude"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.foo.example.org#hasName",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasName"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.foo.example.org#reportsTo",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "reportsTo"
+    },
+    "domain" : "23",
+    "attributes" : [ "someValues", "object", "symmetric" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.foo.example.org#hasWeaponsOffences",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "hasWeaponsOffences"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.foo.example.org#happensAt",
+    "inverse" : "6",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "happensAt"
+    },
+    "domain" : "10",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.foo.example.org#reportsTo",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "reportsTo"
+    },
+    "domain" : "63",
+    "attributes" : [ "someValues", "object", "symmetric" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.foo.example.org#hasPersons2009",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasPersons2009"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.foo.example.org#hasPersons2008",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasPersons2008"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.foo.example.org#hasBurglaryOffences",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasBurglaryOffences"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.foo.example.org#locatedNear",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "locatedNear"
+    },
+    "domain" : "2",
+    "attributes" : [ "transitive", "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.foo.example.org#hasFraudOffences",
+    "baseIri" : "http://www.foo.example.org",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasFraudOffences"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "98"
+  } ]
+}

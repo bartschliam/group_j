@@ -1,0 +1,501 @@
+@prefix : <http://www.foo.example.org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.foo.example.org#> .
+
+<http://www.foo.example.org> rdf:type owl:Ontology ;
+                              owl:backwardCompatibleWith """rdfs:label \"Group J Onoloty\" ;
+rdfs:comment \"This is the onology created by group J for the group project, It is used to investigate the relationships between house prices, accomodation, attractions, atctivities, crime and welfare to see of there are any correlations. \";
+owl:versionInfo \"Version 3\";""" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.foo.example.org#happensAt
+:happensAt rdf:type owl:ObjectProperty ;
+           owl:inverseOf :hasActivity .
+
+
+###  http://www.foo.example.org#hasActivity
+:hasActivity rdf:type owl:ObjectProperty .
+
+
+###  http://www.foo.example.org#locatedNear
+:locatedNear rdf:type owl:ObjectProperty ,
+                      owl:TransitiveProperty .
+
+
+###  http://www.foo.example.org#reportsTo
+:reportsTo rdf:type owl:ObjectProperty ,
+                    owl:SymmetricProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.foo.example.org#hasAcademicYear
+:hasAcademicYear rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasAddressLocality
+:hasAddressLocality rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasAddressRegion
+:hasAddressRegion rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasAmount
+:hasAmount rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasArea
+:hasArea rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasBurglaryOffences
+:hasBurglaryOffences rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasCounty
+:hasCounty rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasDamagedPropertyOffences
+:hasDamagedPropertyOffences rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasDivision
+:hasDivision rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasDrugOffences
+:hasDrugOffences rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasFraudOffences
+:hasFraudOffences rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasKidnappingOffences
+:hasKidnappingOffences rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasLatitude
+:hasLatitude rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasLevelOfEducation
+:hasLevelOfEducation rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasLongitude
+:hasLongitude rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasMurderOffences
+:hasMurderOffences rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasName
+:hasName rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasNeglectOffences
+:hasNeglectOffences rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasOffencesAgainstGovernment
+:hasOffencesAgainstGovernment rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasPersons2008
+:hasPersons2008 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasPersons2009
+:hasPersons2009 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasPersons2010
+:hasPersons2010 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasPersons2011
+:hasPersons2011 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasPersons2012
+:hasPersons2012 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasPersons2013
+:hasPersons2013 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasPersons2014
+:hasPersons2014 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasPersons2015
+:hasPersons2015 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasPersons2016
+:hasPersons2016 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasPublicOrderOfences
+:hasPublicOrderOfences rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasRobberyOffences
+:hasRobberyOffences rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasStation
+:hasStation rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasStatistic
+:hasStatistic rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasTheftOffences
+:hasTheftOffences rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasType
+:hasType rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasValue
+:hasValue rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasWeaponsOffences
+:hasWeaponsOffences rdf:type owl:DatatypeProperty .
+
+
+###  http://www.foo.example.org#hasYear
+:hasYear rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.foo.example.org#Accommodation
+:Accommodation rdf:type owl:Class ;
+               rdfs:subClassOf :Tourism ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasAddressLocality ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasAddressRegion ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasLatitude ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasLongitude ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasName ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasType ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] .
+
+
+###  http://www.foo.example.org#Activity
+:Activity rdf:type owl:Class ;
+          rdfs:subClassOf :Tourism ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :happensAt ;
+                            owl:someValuesFrom :Attraction
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasAddressLocality ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasAddressRegion ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasLatitude ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:integer
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasLongitude ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:integer
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasName ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasType ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] .
+
+
+###  http://www.foo.example.org#Attraction
+:Attraction rdf:type owl:Class ;
+            rdfs:subClassOf :Tourism ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasAddressLocality ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasAddressRegion ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasLatitude ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:double
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasLongitude ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:double
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasName ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasType ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] .
+
+
+###  http://www.foo.example.org#Education
+:Education rdf:type owl:Class .
+
+
+###  http://www.foo.example.org#GardaStation
+:GardaStation rdf:type owl:Class ;
+              rdfs:subClassOf :Government ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :reportsTo ;
+                                owl:someValuesFrom :WelfareOffice
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasBurglaryOffences ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasDamagedPropertyOffences ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasDivision ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasDrugOffences ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasLatitude ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:double
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasLongitude ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:double
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasMurderOffences ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasNeglectOffences ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasOffencesAgainstGovernment ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasPublicOrderOfences ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasRobberyOffences ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasStation ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasTheftOffences ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasWeaponsOffences ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasYear ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:integer
+                              ] .
+
+
+###  http://www.foo.example.org#Government
+:Government rdf:type owl:Class .
+
+
+###  http://www.foo.example.org#House
+:House rdf:type owl:Class ;
+       rdfs:subClassOf :Housing ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasArea ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:string
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasStatistic ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:string
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasValue ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:integer
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasYear ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:integer
+                       ] .
+
+
+###  http://www.foo.example.org#Housing
+:Housing rdf:type owl:Class .
+
+
+###  http://www.foo.example.org#StudentData
+:StudentData rdf:type owl:Class ;
+             rdfs:subClassOf :Education ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasAcademicYear ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasAmount ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:integer
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasLevelOfEducation ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasYear ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:integer
+                             ] .
+
+
+###  http://www.foo.example.org#Tourism
+:Tourism rdf:type owl:Class .
+
+
+###  http://www.foo.example.org#WelfareOffice
+:WelfareOffice rdf:type owl:Class ;
+               rdfs:subClassOf :Government ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :reportsTo ;
+                                 owl:someValuesFrom :GardaStation
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasCounty ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasLatitude ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasLongitude ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasName ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasPersons2008 ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasPersons2009 ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasPersons2010 ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasPersons2016 ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

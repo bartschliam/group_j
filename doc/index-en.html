@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Irish Statistics</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://xmlns.com/foaf/0.1/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://xmlns.com/foaf/0.1/","name":"Irish Statistics", "headline":"A collection of Irish Statistics", "datePublished":"Sun Nov 20 22:22:43 GMT 2022"}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Irish Statistics</h1>
+
+
+<dl>
+<dt>Latest version:</dt>
+<dd><a href="http://www.foo.example.org">http://www.foo.example.org</a></dd>
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Compatible with:</dt>
+<dd><a href="rdfs:label "Group J Onoloty" ;
+rdfs:comment "This is the onology created by group J for the group project, It is used to investigate the relationships between house prices, accomodation, attractions, atctivities, crime and welfare to see of there are any correlations. ";
+owl:versionInfo "Version 3";">rdfs:label "Group J Onoloty" ;
+rdfs:comment "This is the onology created by group J for the group project, It is used to investigate the relationships between house prices, accomodation, attractions, atctivities, crime and welfare to see of there are any correlations. ";
+owl:versionInfo "Version 3";</a></dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+A collection of Irish Statistics</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+We took together many statistics relating to Irish life to look at interesting trends across areas.<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>foaf</b></td><td>&lt;http://xmlns.com/foaf/0.1/&gt;</td></tr>
+<tr><td></td><td></td></tr>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://www.foo.example.org&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Irish Statistics: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#http://www.foo.example.org#Accommodation" title="http://www.foo.example.org#Accommodation">
+         <span>accommodation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.foo.example.org#Activity" title="http://www.foo.example.org#Activity">
+         <span>activity</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.foo.example.org#Attraction" title="http://www.foo.example.org#Attraction">
+         <span>attraction</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.foo.example.org#GardaStation" title="http://www.foo.example.org#GardaStation">
+         <span>garda station</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.foo.example.org#House" title="http://www.foo.example.org#House">
+         <span>house</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.foo.example.org#StudentData" title="http://www.foo.example.org#StudentData">
+         <span>student data</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.foo.example.org#WelfareOffice" title="http://www.foo.example.org#WelfareOffice">
+         <span>welfare office</span>
+      </a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#http://www.foo.example.org#happensAt" title="http://www.foo.example.org#happensAt">
+         <span>happens at</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.foo.example.org#locatedNear" title="http://www.foo.example.org#locatedNear">
+         <span>located near</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.foo.example.org#reportsTo" title="http://www.foo.example.org#reportsTo">
+         <span>reports to</span>
+      </a>
+   </li>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Irish Statistics: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+   We took together many statistics relating to Irish life to look at interesting trends across areas.
+</div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Irish Statistics classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Irish Statistics.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://www.foo.example.org#Accommodation" title="http://www.foo.example.org#Accommodation">
+            <span>accommodation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.foo.example.org#Activity" title="http://www.foo.example.org#Activity">
+            <span>activity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.foo.example.org#Attraction" title="http://www.foo.example.org#Attraction">
+            <span>attraction</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.foo.example.org#GardaStation" title="http://www.foo.example.org#GardaStation">
+            <span>garda station</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.foo.example.org#House" title="http://www.foo.example.org#House">
+            <span>house</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.foo.example.org#StudentData" title="http://www.foo.example.org#StudentData">
+            <span>student data</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.foo.example.org#WelfareOffice" title="http://www.foo.example.org#WelfareOffice">
+            <span>welfare office</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://www.foo.example.org#Accommodation">
+      <h3>accommodation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.foo.example.org#Accommodation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.foo.example.org#Tourism"
+               target="_blank"
+               title="http://www.foo.example.org#Tourism">tourism</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.foo.example.org#Activity">
+      <h3>activity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.foo.example.org#Activity</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.foo.example.org#Tourism"
+               target="_blank"
+               title="http://www.foo.example.org#Tourism">tourism</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.foo.example.org#Attraction">
+      <h3>attraction<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.foo.example.org#Attraction</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.foo.example.org#Tourism"
+               target="_blank"
+               title="http://www.foo.example.org#Tourism">tourism</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.foo.example.org#GardaStation">
+      <h3>garda station<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.foo.example.org#GardaStation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.foo.example.org#Government"
+               target="_blank"
+               title="http://www.foo.example.org#Government">government</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.foo.example.org#House">
+      <h3>house<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.foo.example.org#House</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.foo.example.org#Housing"
+               target="_blank"
+               title="http://www.foo.example.org#Housing">housing</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.foo.example.org#StudentData">
+      <h3>student data<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.foo.example.org#StudentData</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.foo.example.org#Education"
+               target="_blank"
+               title="http://www.foo.example.org#Education">education</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.foo.example.org#WelfareOffice">
+      <h3>welfare office<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.foo.example.org#WelfareOffice</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.foo.example.org#Government"
+               target="_blank"
+               title="http://www.foo.example.org#Government">government</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://www.foo.example.org#happensAt" title="http://www.foo.example.org#happensAt">
+            <span>happens at</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.foo.example.org#locatedNear" title="http://www.foo.example.org#locatedNear">
+            <span>located near</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.foo.example.org#reportsTo" title="http://www.foo.example.org#reportsTo">
+            <span>reports to</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://www.foo.example.org#happensAt">
+      <h3>happens at<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.foo.example.org#happensAt</p>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="http://www.foo.example.org#hasActivity"
+                  target="_blank"
+                  title="http://www.foo.example.org#hasActivity">has activity</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.foo.example.org#locatedNear">
+      <h3>located near<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.foo.example.org#locatedNear</p>
+   </div>
+   <div class="entity" id="http://www.foo.example.org#reportsTo">
+      <h3>reports to<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.foo.example.org#reportsTo</p>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+</div>
+</div>
+</div>
+
+<h1 id="sparql-queries-index">SPARQL Queries Index</h1>
+<ul>
+<li><a href="#query-1">Query 1</a></li>
+<li><a href="#query-2">Query 2</a></li>
+<li><a href="#query-3">Query 3</a></li>
+<li><a href="#query-4">Query 4</a></li>
+<li><a href="#query-5">Query 5</a></li>
+<li><a href="#query-6">Query 6</a></li>
+<li><a href="#query-7">Query 7</a></li>
+<li><a href="#query-8">Query 8</a></li>
+<li><a href="#query-9">Query 9</a></li>
+<li><a href="#query-10">Query 10</a></li>
+</ul>
+<hr>
+<h2 id="query-1">Query 1</h2>
+<h3 id="where-can-i-go-camping-where-there-is-low-theft-and-robbery-rates-">Where can I go camping where there is low theft and robbery rates?</h3>
+<hr>
+<pre><code>PREFIX <span class="hljs-string">rdf:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
+PREFIX <span class="hljs-string">foaf:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//xmlns.com/foaf/0.1/&gt;</span>
+
+SELECT ?name ?type ?lat ?long ?region ?locality
+WHERE {
+  ?camping foaf:hasType ?type .
+  FILTER (CONTAINS(?type, "Camping"))
+  ?camping foaf:hasAddressRegion ?region .
+  ?camping foaf:hasAddressLocality ?locality .
+  ?camping foaf:hasLatitude ?lat .
+  ?camping foaf:hasLongitude ?long .
+  ?camping foaf:hasName ?name .
+  {
+    SELECT ?locality ?region
+    WHERE {
+      ?gardaStation foaf:hasYear ?year .
+      ?gardaStation rdf:type <span class="hljs-string">foaf:</span>GardaStation .
+      ?gardaStation foaf:hasDivision ?region .
+      ?gardaStation foaf:hasStation ?locality .
+      ?gardaStation foaf:hasRobberyOffences ?numRobbery .
+      ?gardaStation foaf:hasTheftOffences ?numTheft .
+      ?gardaStation foaf:hasYear ?year .
+      BIND (?numRobbery + ?numTheft AS ?totalSteal)
+      FILTER (?totalSteal &lt; 5)
+      FILTER (year(?year) = 2016)
+    }
+  }
+}
+</code></pre><p><a href="#sparql-queries-index">Index</a></p>
+<hr>
+<h2 id="query-2">Query 2</h2>
+<h3 id="what-is-the-minimum-and-maximum-of-housing-prices-in-ireland-">What is the minimum and maximum of housing prices in Ireland?</h3>
+<hr>
+<pre><code>PREFIX foaf: &lt;http://xmlns.com/foaf/<span class="hljs-number">0.1</span>/&gt;
+
+<span class="hljs-keyword">SELECT</span> *
+<span class="hljs-keyword">WHERE</span> {
+  {
+    <span class="hljs-keyword">SELECT</span> ?house ?<span class="hljs-keyword">value</span> ?area ?year
+    <span class="hljs-keyword">WHERE</span> {
+      ?house foaf:hasValue ?<span class="hljs-keyword">value</span> .
+      ?house foaf:hasArea ?area .
+      ?house foaf:hasYear ?year .
+    }
+    ORDER BY DESC(?<span class="hljs-keyword">value</span>)
+    LIMIT <span class="hljs-number">1</span>
+  }
+  UNION
+  {
+    <span class="hljs-keyword">SELECT</span> ?house ?<span class="hljs-keyword">value</span> ?area ?year
+    <span class="hljs-keyword">WHERE</span> {
+      ?house foaf:hasValue ?<span class="hljs-keyword">value</span> .
+      FILTER (?<span class="hljs-keyword">value</span> &gt; <span class="hljs-number">0</span>)
+      ?house foaf:hasArea ?area .
+      ?house foaf:hasYear ?year .
+    }
+    ORDER BY ?<span class="hljs-keyword">value</span>
+    LIMIT <span class="hljs-number">1</span>
+  }
+}
+</code></pre><p><a href="#sparql-queries-index">Index</a></p>
+<hr>
+<h2 id="query-3">Query 3</h2>
+<h3 id="what-trends-are-there-in-housing-value-with-relation-to-the-amount-of-crime-in-ireland-">What trends are there in housing value with relation to the amount of crime in Ireland?</h3>
+<hr>
+<pre><code>PREFIX <span class="hljs-string">foaf:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//xmlns.com/foaf/0.1/&gt;</span>
+PREFIX <span class="hljs-string">rdf:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
+
+SELECT ?area ?year ?housingValue ?totalCrimes
+WHERE {
+  ?housing rdf:type <span class="hljs-string">foaf:</span>House .
+  ?housing foaf:hasYear ?year .
+  ?housing foaf:hasArea ?area .
+  ?housing foaf:hasStatistic <span class="hljs-string">"New House Prices"</span> .
+  ?housing foaf:hasValue ?housingValue .
+  FILTER (?area != "National")
+  FILTER (?area != "Other areas")
+  {
+    SELECT ?area (sum(?totalCrime) AS ?totalCrimes) ?year
+    WHERE {
+      ?gardaStation foaf:hasYear ?year .
+      ?gardaStation rdf:type <span class="hljs-string">foaf:</span>GardaStation .
+      ?gardaStation foaf:hasDivision ?area .
+      ?gardaStation foaf:hasStation ?station .
+      ?gardaStation foaf:hasMurderOffences ?numMurders .
+      ?gardaStation foaf:hasBurglaryOffences ?numBurglary .
+      ?gardaStation foaf:hasDrugOffences ?numDrugs .
+      ?gardaStation foaf:hasDamagedPropertyOffences ?numPropertyDamage .
+      ?gardaStation foaf:hasNeglectOffences ?numDangerousActs .
+      ?gardaStation foaf:hasFraudOffences ?numFraud .
+      ?gardaStation foaf:hasKidnappingOffences ?numKidnapping .
+      ?gardaStation foaf:hasOffencesAgainstGovernment ?numOffensesGov .
+      ?gardaStation foaf:hasPublicOrderOffences ?numPublicOrder .
+      ?gardaStation foaf:hasRobberyOffences ?numRobbery .
+      ?gardaStation foaf:hasTheftOffences ?numTheft .
+      ?gardaStation foaf:hasWeaponsOffences ?numWeapons .
+      BIND (?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons AS ?totalCrime)
+    }
+    GROUP BY ?area ?year
+  }
+}
+ORDER BY ?year
+</code></pre><p><a href="#sparql-queries-index">Index</a></p>
+<hr>
+<h2 id="query-4">Query 4</h2>
+<h3 id="does-more-attractions-mean-higher-house-prices-here-are-the-house-prices-and-number-of-attractions-">Does more attractions mean higher house prices? Here are the house prices and number of attractions.</h3>
+<hr>
+<pre><code>PREFIX foaf: &lt;http:<span class="hljs-comment">//xmlns.com/foaf/0.1/&gt;</span>
+PREFIX rdf: &lt;http:<span class="hljs-comment">//www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
+PREFIX xsd: &lt;http:<span class="hljs-comment">//www.w3.org/2001/XMLSchema#&gt;</span>
+
+<span class="hljs-keyword">SELECT</span> *
+<span class="hljs-keyword">WHERE</span> {
+  {
+    <span class="hljs-keyword">SELECT</span> ?county ?TotalAttractions ?value
+    <span class="hljs-keyword">WHERE</span> {
+      ?house rdf:<span class="hljs-keyword">type</span> foaf:House .
+      ?house foaf:hasArea ?county .
+      ?house foaf:hasValue ?value .
+      {
+        <span class="hljs-keyword">SELECT</span> ?county (COUNT(?Attractions) AS ?TotalAttractions)
+        <span class="hljs-keyword">WHERE</span> {
+          ?Attractions rdf:<span class="hljs-keyword">type</span> foaf:Attraction .
+          ?Attractions foaf:hasAddressRegion ?county .
+          FILTER (CONTAINS(?county, <span class="hljs-string">'Dublin'</span>))
+        }
+        <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?county
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?county ?TotalAttractions ?value
+    <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> DESC(?value)
+    LIMIT <span class="hljs-number">1</span>
+  }
+  UNION
+  {
+    <span class="hljs-keyword">SELECT</span> ?county ?TotalAttractions ?value
+    <span class="hljs-keyword">WHERE</span> {
+      ?house rdf:<span class="hljs-keyword">type</span> foaf:House .
+      ?house foaf:hasArea ?county .
+      ?house foaf:hasValue ?value .
+      {
+        <span class="hljs-keyword">SELECT</span> ?county (COUNT(?Attractions) AS ?TotalAttractions)
+        <span class="hljs-keyword">WHERE</span> {
+          ?Attractions rdf:<span class="hljs-keyword">type</span> foaf:Attraction .
+          ?Attractions foaf:hasAddressRegion ?county .
+          FILTER (CONTAINS(?county, <span class="hljs-string">'Galway'</span>))
+        }
+        <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?county
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?county ?TotalAttractions ?value
+    <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> DESC(?value)
+    LIMIT <span class="hljs-number">1</span>
+  }
+  UNION
+  {
+    <span class="hljs-keyword">SELECT</span> ?county ?TotalAttractions ?value
+    <span class="hljs-keyword">WHERE</span> {
+      ?house rdf:<span class="hljs-keyword">type</span> foaf:House .
+      ?house foaf:hasArea ?county .
+      ?house foaf:hasValue ?value .
+      {
+        <span class="hljs-keyword">SELECT</span> ?county (COUNT(?Attractions) AS ?TotalAttractions)
+        <span class="hljs-keyword">WHERE</span> {
+          ?Attractions rdf:<span class="hljs-keyword">type</span> foaf:Attraction .
+          ?Attractions foaf:hasAddressRegion ?county .
+          FILTER (CONTAINS(?county, <span class="hljs-string">'Cork'</span>))
+        }
+        <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?county
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?county ?TotalAttractions ?value
+    <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> DESC(?value)
+    LIMIT <span class="hljs-number">1</span>
+  }
+  UNION
+  {
+    <span class="hljs-keyword">SELECT</span> ?county ?TotalAttractions ?value
+    <span class="hljs-keyword">WHERE</span> {
+      ?house rdf:<span class="hljs-keyword">type</span> foaf:House .
+      ?house foaf:hasArea ?county .
+      ?house foaf:hasValue ?value .
+      {
+        <span class="hljs-keyword">SELECT</span> ?county (COUNT(?Attractions) AS ?TotalAttractions)
+        <span class="hljs-keyword">WHERE</span> {
+          ?Attractions rdf:<span class="hljs-keyword">type</span> foaf:Attraction .
+          ?Attractions foaf:hasAddressRegion ?county .
+          FILTER (CONTAINS(?county, <span class="hljs-string">'Limerick'</span>))
+        }
+        <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?county
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?county ?TotalAttractions ?value
+    <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> DESC(?value)
+    LIMIT <span class="hljs-number">1</span>
+  }
+  UNION
+  {
+    <span class="hljs-keyword">SELECT</span> ?county ?TotalAttractions ?value
+    <span class="hljs-keyword">WHERE</span> {
+      ?house rdf:<span class="hljs-keyword">type</span> foaf:House .
+      ?house foaf:hasArea ?county .
+      ?house foaf:hasValue ?value .
+      {
+        <span class="hljs-keyword">SELECT</span> ?county (COUNT(?Attractions) AS ?TotalAttractions)
+        <span class="hljs-keyword">WHERE</span> {
+          ?Attractions rdf:<span class="hljs-keyword">type</span> foaf:Attraction .
+          ?Attractions foaf:hasAddressRegion ?county .
+          FILTER (CONTAINS(?county, <span class="hljs-string">'Waterford'</span>))
+        }
+        <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?county
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?county ?TotalAttractions ?value
+    <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> DESC(?value)
+    LIMIT <span class="hljs-number">1</span>
+  }
+}
+<span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> DESC(?TotalAttractions)
+</code></pre><p><a href="#sparql-queries-index">Index</a></p>
+<hr>
+<h2 id="query-5">Query 5</h2>
+<h3 id="how-many-crimes-reported-per-station-sum-of-entire-dataset-">How many crimes reported per station (Sum of entire dataset)</h3>
+<hr>
+<pre><code>PREFIX <span class="hljs-string">foaf:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//xmlns.com/foaf/0.1/&gt;</span>
+PREFIX <span class="hljs-string">rdf:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
+
+SELECT ?station ?division (sum(?totalCrime) AS ?totalCrimes) ?lat ?long
+WHERE {
+  ?gardaStation rdf:type <span class="hljs-string">foaf:</span>GardaStation .
+  ?gardaStation foaf:hasKidnappingOffences ?kidnapping .
+  ?gardaStation foaf:hasNeglectOffences ?neglect .
+  ?gardaStation foaf:hasRobberyOffences ?robbery .
+  ?gardaStation foaf:hasBurglaryOffences ?burglary .
+  ?gardaStation foaf:hasTheftOffences ?theft .
+  ?gardaStation foaf:hasFraudOffences ?fraud .
+  ?gardaStation foaf:hasDrugOffences ?drugoffences .
+  ?gardaStation foaf:hasWeaponsOffences ?weaponsexplosives .
+  ?gardaStation foaf:hasDamagedPropertyOffences ?damageproperty .
+  ?gardaStation foaf:hasOffencesAgainstGovernment ?offensesagainstgovernment .
+  ?gardaStation foaf:hasPublicOrderOffences ?publicorder .
+  ?gardaStation foaf:hasYear ?year .
+  ?gardaStation foaf:hasDivision ?division .
+  ?gardaStation foaf:hasStation ?station .
+  ?gardaStation foaf:hasLatitude ?lat .
+  ?gardaStation foaf:hasLongitude ?long .
+  BIND (?kidnapping + ?neglect + ?robbery + ?burglary + ?theft + ?drugoffences + ?weaponsexplosives + ?damageproperty + ?offensesagainstgovernment + ?publicorder AS ?totalCrime)
+}
+GROUP BY ?division ?station ?lat ?long
+</code></pre><p><a href="#sparql-queries-index">Index</a></p>
+<hr>
+<h2 id="query-6">Query 6</h2>
+<h3 id="how-many-total-people-are-there-in-total-and-on-welfare-each-year-">How many total people are there in total and on welfare each year?</h3>
+<p>Needs <a href="https://stackoverflow.com/questions/64112724/how-to-increase-max-header-size-for-graphdb-standalone-server">https://stackoverflow.com/questions/64112724/how-to-increase-max-header-size-for-graphdb-standalone-server</a></p>
+<hr>
+<pre><code>PREFIX foaf: &lt;http:<span class="hljs-comment">//xmlns.com/foaf/0.1/&gt;</span>
+PREFIX rdf: &lt;http:<span class="hljs-comment">//www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
+PREFIX xsd: &lt;http:<span class="hljs-comment">//www.w3.org/2001/XMLSchema#&gt;</span>
+
+<span class="hljs-keyword">SELECT</span> *
+<span class="hljs-keyword">WHERE</span> {
+  {
+    <span class="hljs-keyword">SELECT</span> ?year (<span class="hljs-keyword">sum</span>(?people2008) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    <span class="hljs-keyword">WHERE</span> {
+      ?WelfareOffice foaf:hasPersons2008 ?people2008 .
+      {
+        <span class="hljs-keyword">SELECT</span> *
+        <span class="hljs-keyword">WHERE</span> {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = <span class="hljs-string">'All levels of education'</span>)
+          FILTER (year(?year) = <span class="hljs-number">2008</span>)
+        }
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?year ?amount
+  }
+  UNION
+  {
+    <span class="hljs-keyword">SELECT</span> ?year (<span class="hljs-keyword">sum</span>(?people2009) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    <span class="hljs-keyword">WHERE</span> {
+      ?WelfareOffice foaf:hasPersons2009 ?people2009 .
+      {
+        <span class="hljs-keyword">SELECT</span> *
+        <span class="hljs-keyword">WHERE</span> {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = <span class="hljs-string">'All levels of education'</span>)
+          FILTER (year(?year) = <span class="hljs-number">2009</span>)
+        }
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?year ?amount
+  }
+  UNION
+  {
+    <span class="hljs-keyword">SELECT</span> ?year (<span class="hljs-keyword">sum</span>(?people2010) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    <span class="hljs-keyword">WHERE</span> {
+      ?WelfareOffice foaf:hasPersons2010 ?people2010 .
+      {
+        <span class="hljs-keyword">SELECT</span> *
+        <span class="hljs-keyword">WHERE</span> {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = <span class="hljs-string">'All levels of education'</span>)
+          FILTER (year(?year) = <span class="hljs-number">2010</span>)
+        }
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?year ?amount
+  }
+  UNION
+  {
+    <span class="hljs-keyword">SELECT</span> ?year (<span class="hljs-keyword">sum</span>(?people2011) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    <span class="hljs-keyword">WHERE</span> {
+      ?WelfareOffice foaf:hasPersons2011 ?people2011 .
+      {
+        <span class="hljs-keyword">SELECT</span> *
+        <span class="hljs-keyword">WHERE</span> {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = <span class="hljs-string">'All levels of education'</span>)
+          FILTER (year(?year) = <span class="hljs-number">2011</span>)
+        }
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?year ?amount
+  }
+  UNION
+  {
+    <span class="hljs-keyword">SELECT</span> ?year (<span class="hljs-keyword">sum</span>(?people2012) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    <span class="hljs-keyword">WHERE</span> {
+      ?WelfareOffice foaf:hasPersons2012 ?people2012 .
+      {
+        <span class="hljs-keyword">SELECT</span> *
+        <span class="hljs-keyword">WHERE</span> {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = <span class="hljs-string">'All levels of education'</span>)
+          FILTER (year(?year) = <span class="hljs-number">2012</span>)
+        }
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?year ?amount
+  }
+  UNION
+  {
+    <span class="hljs-keyword">SELECT</span> ?year (<span class="hljs-keyword">sum</span>(?people2013) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    <span class="hljs-keyword">WHERE</span> {
+      ?WelfareOffice foaf:hasPersons2013 ?people2013 .
+      {
+        <span class="hljs-keyword">SELECT</span> *
+        <span class="hljs-keyword">WHERE</span> {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = <span class="hljs-string">'All levels of education'</span>)
+          FILTER (year(?year) = <span class="hljs-number">2013</span>)
+        }
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?year ?amount
+  }
+  UNION
+  {
+    <span class="hljs-keyword">SELECT</span> ?year (<span class="hljs-keyword">sum</span>(?people2014) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    <span class="hljs-keyword">WHERE</span> {
+      ?WelfareOffice foaf:hasPersons2014 ?people2014 .
+      {
+        <span class="hljs-keyword">SELECT</span> *
+        <span class="hljs-keyword">WHERE</span> {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = <span class="hljs-string">'All levels of education'</span>)
+          FILTER (year(?year) = <span class="hljs-number">2014</span>)
+        }
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?year ?amount
+  }
+  UNION
+  {
+    <span class="hljs-keyword">SELECT</span> ?year (<span class="hljs-keyword">sum</span>(?people2015) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    <span class="hljs-keyword">WHERE</span> {
+      ?WelfareOffice foaf:hasPersons2015 ?people2015 .
+      {
+        <span class="hljs-keyword">SELECT</span> *
+        <span class="hljs-keyword">WHERE</span> {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = <span class="hljs-string">'All levels of education'</span>)
+          FILTER (year(?year) = <span class="hljs-number">2015</span>)
+        }
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?year ?amount
+  }
+  UNION
+  {
+    <span class="hljs-keyword">SELECT</span> ?year (<span class="hljs-keyword">sum</span>(?people2016) AS ?TotalPeopleonWelfare) (?amount AS ?TotalPeopleInEducation)
+    <span class="hljs-keyword">WHERE</span> {
+      ?WelfareOffice foaf:hasPersons2016 ?people2016 .
+      {
+        <span class="hljs-keyword">SELECT</span> *
+        <span class="hljs-keyword">WHERE</span> {
+          ?StudentData foaf:hasLevelOfEducation ?level .
+          ?StudentData foaf:hasYear ?year .
+          ?StudentData foaf:hasValue ?amount .
+          FILTER (?level = <span class="hljs-string">'All levels of education'</span>)
+          FILTER (year(?year) = <span class="hljs-number">2016</span>)
+        }
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?year ?amount
+  }
+}
+</code></pre><p><a href="#sparql-queries-index">Index</a></p>
+<hr>
+<h2 id="query-7">Query 7</h2>
+<h3 id="does-the-least-expensive-region-have-more-b-b-s-than-the-most-expensive-region-">Does the least expensive region have more B&amp;B&#39;s than the most expensive region?</h3>
+<pre><code>PREFIX foaf: &lt;http:<span class="hljs-comment">//xmlns.com/foaf/0.1/&gt;</span>
+PREFIX rdf: &lt;http:<span class="hljs-comment">//www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
+
+<span class="hljs-keyword">SELECT</span> *
+<span class="hljs-keyword">WHERE</span> {
+  {
+    <span class="hljs-keyword">SELECT</span> (COUNT(?accom) AS ?TotalBandBs) ?region
+    <span class="hljs-keyword">WHERE</span> {
+      ?accom rdf:<span class="hljs-keyword">type</span> foaf:Accommodation .
+      ?accom foaf:hasType ?<span class="hljs-keyword">type</span> .
+      ?accom foaf:hasAddressRegion ?county .
+      FILTER (CONTAINS(?<span class="hljs-keyword">type</span>, <span class="hljs-string">"B&amp;B"</span>))
+      FILTER (?county = ?region)
+      {
+        <span class="hljs-keyword">SELECT</span> *
+        <span class="hljs-keyword">WHERE</span> {
+          {
+            ?housePrice foaf:hasValue ?value .
+            ?housePrice foaf:hasArea ?region .
+          }
+        }
+        <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> ?value
+        LIMIT <span class="hljs-number">1</span>
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?region
+  }
+  UNION
+  {
+    <span class="hljs-keyword">SELECT</span> (COUNT(?accom) AS ?TotalBandBs) ?region
+    <span class="hljs-keyword">WHERE</span> {
+      ?accom rdf:<span class="hljs-keyword">type</span> foaf:Accommodation .
+      ?accom foaf:hasType ?<span class="hljs-keyword">type</span> .
+      ?accom foaf:hasAddressRegion ?county .
+      FILTER (CONTAINS(?<span class="hljs-keyword">type</span>, <span class="hljs-string">"B&amp;B"</span>))
+      FILTER (?county = ?region)
+      {
+        <span class="hljs-keyword">SELECT</span> *
+        <span class="hljs-keyword">WHERE</span> {
+          {
+            ?housePrice foaf:hasValue ?value .
+            ?housePrice foaf:hasArea ?region .
+          }
+        }
+        <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> DESC(?value)
+        LIMIT <span class="hljs-number">1</span>
+      }
+    }
+    <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> ?region
+  }
+}
+</code></pre><p><a href="#sparql-queries-index">Index</a></p>
+<hr>
+<h2 id="query-8">Query 8</h2>
+<h3 id="do-people-go-camping-where-there-is-high-crime-">Do people go camping where there is high crime?</h3>
+<hr>
+<pre><code>PREFIX <span class="hljs-string">foaf:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//xmlns.com/foaf/0.1/&gt;</span>
+PREFIX <span class="hljs-string">rdf:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
+
+SELECT DISTINCT ?region (sum(?totalCrime) AS ?allCrime) (COUNT(?accom) AS ?numCamping)
+WHERE {
+  ?accom rdf:type <span class="hljs-string">foaf:</span>Accommodation .
+  ?accom foaf:hasType ?type .
+  ?accom foaf:hasName ?name .
+  ?accom foaf:hasAddressRegion ?region .
+  FILTER (CONTAINS(?type, "Camping"))
+  ?gardaStation foaf:hasYear ?year .
+  FILTER (year(?year) = 2016)
+  ?gardaStation rdf:type <span class="hljs-string">foaf:</span>GardaStation .
+  ?gardaStation foaf:hasDivision ?region .
+  ?gardaStation foaf:hasMurderOffences ?numMurders .
+  ?gardaStation foaf:hasBurglaryOffences ?numBurglary .
+  ?gardaStation foaf:hasDrugOffences ?numDrugs .
+  ?gardaStation foaf:hasDamagedPropertyOffences ?numPropertyDamage .
+  ?gardaStation foaf:hasNeglectOffences ?numDangerousActs .
+  ?gardaStation foaf:hasFraudOffences ?numFraud .
+  ?gardaStation foaf:hasKidnappingOffences ?numKidnapping .
+  ?gardaStation foaf:hasOffencesAgainstGovernment ?numOffensesGov .
+  ?gardaStation foaf:hasPublicOrderOffences ?numPublicOrder .
+  ?gardaStation foaf:hasRobberyOffences ?numRobbery .
+  ?gardaStation foaf:hasTheftOffences ?numTheft .
+  ?gardaStation foaf:hasWeaponsOffences ?numWeapons .
+  BIND (?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons AS ?totalCrime)
+}
+GROUP BY ?region
+</code></pre><p><a href="#sparql-queries-index">Index</a></p>
+<hr>
+<h2 id="query-9">Query 9</h2>
+<h3 id="in-low-crime-areas-are-new-houses-sold-for-more-than-old-houses-">In low crime areas, are new houses sold for more than old houses?</h3>
+<pre><code>PREFIX <span class="hljs-string">foaf:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//xmlns.com/foaf/0.1/&gt;</span>
+PREFIX <span class="hljs-string">rdf:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
+
+SELECT ?division ?totalCrimes ?newHouseValue ?secondHouseValue ?year
+WHERE {
+  {
+    SELECT ?division (sum(?totalCrime) AS ?totalCrimes) ?year
+    WHERE {
+      ?gardaStation foaf:hasYear ?year .
+      ?gardaStation rdf:type <span class="hljs-string">foaf:</span>GardaStation .
+      ?gardaStation foaf:hasDivision ?division .
+      ?gardaStation foaf:hasStation ?station .
+      ?gardaStation foaf:hasMurderOffences ?numMurders .
+      ?gardaStation foaf:hasBurglaryOffences ?numBurglary .
+      ?gardaStation foaf:hasDrugOffences ?numDrugs .
+      ?gardaStation foaf:hasDamagedPropertyOffences ?numPropertyDamage .
+      ?gardaStation foaf:hasNeglectOffences ?numDangerousActs .
+      ?gardaStation foaf:hasFraudOffences ?numFraud .
+      ?gardaStation foaf:hasKidnappingOffences ?numKidnapping .
+      ?gardaStation foaf:hasOffencesAgainstGovernment ?numOffensesGov .
+      ?gardaStation foaf:hasPublicOrderOffences ?numPublicOrder .
+      ?gardaStation foaf:hasRobberyOffences ?numRobbery .
+      ?gardaStation foaf:hasTheftOffences ?numTheft .
+      ?gardaStation foaf:hasWeaponsOffences ?numWeapons .
+      FILTER (?totalCrime = 0)
+      BIND (?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons AS ?totalCrime)
+    }
+    GROUP BY ?division ?year
+  }
+  OPTIONAL {
+    ?newHousing rdf:type <span class="hljs-string">foaf:</span>House .
+    ?newHousing foaf:hasYear ?year .
+    ?newHousing foaf:hasArea ?division .
+    ?newHousing foaf:hasStatistic <span class="hljs-string">"New House Prices"</span> .
+    ?newHousing foaf:hasValue ?newHouseValue .
+  }
+  OPTIONAL {
+    ?newHousing rdf:type <span class="hljs-string">foaf:</span>House .
+    ?newHousing foaf:hasYear ?year .
+    ?newHousing foaf:hasArea <span class="hljs-string">"National"</span> .
+    ?newHousing foaf:hasStatistic <span class="hljs-string">"New House Prices"</span> .
+    ?newHousing foaf:hasValue ?newHouseValue .
+  }
+  OPTIONAL {
+    ?secondHousing rdf:type <span class="hljs-string">foaf:</span>House .
+    ?secondHousing foaf:hasYear ?year .
+    ?secondHousing foaf:hasArea ?division .
+    ?secondHousing foaf:hasStatistic <span class="hljs-string">"Second Hand House Prices"</span> .
+    ?secondHousing foaf:hasValue ?secondHouseValue .
+  }
+  OPTIONAL {
+    ?secondHousing rdf:type <span class="hljs-string">foaf:</span>House .
+    ?secondHousing foaf:hasYear ?year .
+    ?secondHousing foaf:hasArea <span class="hljs-string">"National"</span> .
+    ?secondHousing foaf:hasStatistic <span class="hljs-string">"Second Hand House Prices"</span> .
+    ?secondHousing foaf:hasValue ?secondHouseValue .
+  }
+}
+</code></pre><p><a href="#sparql-queries-index">Index</a></p>
+<hr>
+<h2 id="query-10">Query 10</h2>
+<h3 id="look-at-trends-in-third-level-student-enrolment-crime-and-housing-prices-how-do-they-relate-does-a-more-educated-population-mean-higher-prices-">Look at trends in third level student enrolment, crime, and housing prices, how do they relate? Does a more educated population mean higher prices?</h3>
+<pre><code>PREFIX <span class="hljs-string">rdf:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span>
+PREFIX <span class="hljs-string">foaf:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//xmlns.com/foaf/0.1/&gt;</span>
+
+SELECT ?year ?numStudents (MAX(?value) AS ?highestHousePrice) (sum(?totalCrime) AS ?yearlyCrime)
+WHERE {
+  ?studentData rdf:type <span class="hljs-string">foaf:</span>StudentData .
+  ?studentData foaf:hasValue ?numStudents .
+  ?studentData foaf:hasYear ?year .
+  ?studentData foaf:hasLevelOfEducation <span class="hljs-string">"Third level"</span> .
+  ?housingData rdf:type <span class="hljs-string">foaf:</span>House .
+  ?housingData foaf:hasYear ?year .
+  ?housingData foaf:hasValue ?value .
+  ?gardaStation foaf:hasYear ?year .
+  ?gardaStation rdf:type <span class="hljs-string">foaf:</span>GardaStation .
+  ?gardaStation foaf:hasMurderOffences ?numMurders .
+  ?gardaStation foaf:hasBurglaryOffences ?numBurglary .
+  ?gardaStation foaf:hasDrugOffences ?numDrugs .
+  ?gardaStation foaf:hasDamagedPropertyOffences ?numPropertyDamage .
+  ?gardaStation foaf:hasNeglectOffences ?numDangerousActs .
+  ?gardaStation foaf:hasFraudOffences ?numFraud .
+  ?gardaStation foaf:hasKidnappingOffences ?numKidnapping .
+  ?gardaStation foaf:hasOffencesAgainstGovernment ?numOffensesGov .
+  ?gardaStation foaf:hasPublicOrderOffences ?numPublicOrder .
+  ?gardaStation foaf:hasRobberyOffences ?numRobbery .
+  ?gardaStation foaf:hasTheftOffences ?numTheft .
+  ?gardaStation foaf:hasWeaponsOffences ?numWeapons .
+  BIND (?numMurders + ?numBurglary + ?numDrugs + ?numPropertyDamage + ?numDangerousActs + ?numFraud + ?numKidnapping + ?numOffensesGov + ?numPublicOrder + ?numRobbery + ?numTheft + ?numWeapons AS ?totalCrime)
+}
+GROUP BY ?numStudents ?year
+ORDER BY ?year
+</code></pre><p><a href="#sparql-queries-index">Index</a></p>
+<hr>
+
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>
