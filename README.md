@@ -66,17 +66,17 @@ appropriate
 3. ✅ [Technical Report](https://www.overleaf.com/8328128127kjhgzxphsrrq)
     - ✅ Approach to Ontology Modelling 
         - ✅ Description of Competency Questions that ontology answers 
-        - ⏳ Description of datasets selected for application 
-        - ⏳ Assumptions made 
+        - ✅ Description of datasets selected for application 
+        - ✅ Assumptions made 
         - References to sources used/reused e.g. SIOC, FOAF for people 
-        - ⏳ Discussion of your data mapping process 
-        - ⏳ Explanation of use of inverse, symmetric and transitive properties 
-    - ⏳ Overview of Design 
-        - ⏳ Description of Application Query Interface 
-        - ⏳ Description of Queries 
-    - ⏳ Discussion of challenges faced while ontology modelling or creating queries and mappings 
-        - ⏳ Report how you organised your project (e.g. meetings, common google doc ...). 
-    - ⏳ Conclusions: Self reflection of group on Strengths/weakness of ontology model, queries & interface 
+        - ✅ Discussion of your data mapping process 
+        - ✅ Explanation of use of inverse, symmetric and transitive properties 
+    - ✅ Overview of Design 
+        - ✅ Description of Application Query Interface 
+        - ✅ Description of Queries 
+    - ✅ Discussion of challenges faced while ontology modelling or creating queries and mappings 
+        - ✅ Report how you organised your project (e.g. meetings, common google doc ...). 
+    - ✅ Conclusions: Self reflection of group on Strengths/weakness of ontology model, queries & interface 
 4. ⏳ Self Reflection Report
     - ⏳ What you contributed 
     - ⏳ Reflection strengths and weaknesses of own contribution and of group work 
