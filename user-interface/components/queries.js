@@ -69,6 +69,10 @@ WHERE {
     label:
       "What trends are there in housing value with relation to the amount of crime in Ireland?",
     mapLabelKeys: [],
+    xAxis: "year",
+    yAxis: ["housingValue", "totalCrimes"],
+    lineFilter: "area",
+    lineFilters: ["Limerick", "Cork", "Dublin", "Galway", "Waterford"],
     query: `PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
@@ -112,6 +116,7 @@ ORDER BY ?year`,
     label:
       "Does more attractions mean higher house prices? Here are the house prices and number of attractions.",
     mapLabelKeys: [],
+    scatter: ["TotalAttractions", "HouseValue"],
     query: `PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -119,11 +124,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT *
 WHERE {
   {
-    SELECT ?county ?TotalAttractions ?value
+    SELECT ?county ?TotalAttractions ?HouseValue
     WHERE {
       ?house rdf:type foaf:House .
       ?house foaf:hasArea ?county .
-      ?house foaf:hasValue ?value .
+      ?house foaf:hasValue ?HouseValue .
       {
         SELECT ?county (COUNT(?Attractions) AS ?TotalAttractions)
         WHERE {
@@ -134,17 +139,17 @@ WHERE {
         GROUP BY ?county
       }
     }
-    GROUP BY ?county ?TotalAttractions ?value
-    ORDER BY DESC(?value)
+    GROUP BY ?county ?TotalAttractions ?HouseValue
+    ORDER BY DESC(?HouseValue)
     LIMIT 1
   }
   UNION
   {
-    SELECT ?county ?TotalAttractions ?value
+    SELECT ?county ?TotalAttractions ?HouseValue
     WHERE {
       ?house rdf:type foaf:House .
       ?house foaf:hasArea ?county .
-      ?house foaf:hasValue ?value .
+      ?house foaf:hasValue ?HouseValue .
       {
         SELECT ?county (COUNT(?Attractions) AS ?TotalAttractions)
         WHERE {
@@ -155,17 +160,17 @@ WHERE {
         GROUP BY ?county
       }
     }
-    GROUP BY ?county ?TotalAttractions ?value
+    GROUP BY ?county ?TotalAttractions ?HouseValue
     ORDER BY DESC(?value)
     LIMIT 1
   }
   UNION
   {
-    SELECT ?county ?TotalAttractions ?value
+    SELECT ?county ?TotalAttractions ?HouseValue
     WHERE {
       ?house rdf:type foaf:House .
       ?house foaf:hasArea ?county .
-      ?house foaf:hasValue ?value .
+      ?house foaf:hasValue ?HouseValue .
       {
         SELECT ?county (COUNT(?Attractions) AS ?TotalAttractions)
         WHERE {
@@ -176,17 +181,17 @@ WHERE {
         GROUP BY ?county
       }
     }
-    GROUP BY ?county ?TotalAttractions ?value
-    ORDER BY DESC(?value)
+    GROUP BY ?county ?TotalAttractions ?HouseValue
+    ORDER BY DESC(?HouseValue)
     LIMIT 1
   }
   UNION
   {
-    SELECT ?county ?TotalAttractions ?value
+    SELECT ?county ?TotalAttractions ?HouseValue
     WHERE {
       ?house rdf:type foaf:House .
       ?house foaf:hasArea ?county .
-      ?house foaf:hasValue ?value .
+      ?house foaf:hasValue ?HouseValue .
       {
         SELECT ?county (COUNT(?Attractions) AS ?TotalAttractions)
         WHERE {
@@ -197,17 +202,17 @@ WHERE {
         GROUP BY ?county
       }
     }
-    GROUP BY ?county ?TotalAttractions ?value
-    ORDER BY DESC(?value)
+    GROUP BY ?county ?TotalAttractions ?HouseValue
+    ORDER BY DESC(?HouseValue)
     LIMIT 1
   }
   UNION
   {
-    SELECT ?county ?TotalAttractions ?value
+    SELECT ?county ?TotalAttractions ?HouseValue
     WHERE {
       ?house rdf:type foaf:House .
       ?house foaf:hasArea ?county .
-      ?house foaf:hasValue ?value .
+      ?house foaf:hasValue ?HouseValue .
       {
         SELECT ?county (COUNT(?Attractions) AS ?TotalAttractions)
         WHERE {
@@ -218,8 +223,8 @@ WHERE {
         GROUP BY ?county
       }
     }
-    GROUP BY ?county ?TotalAttractions ?value
-    ORDER BY DESC(?value)
+    GROUP BY ?county ?TotalAttractions ?HouseValue
+    ORDER BY DESC(?HouseValue)
     LIMIT 1
   }
 }
@@ -260,6 +265,11 @@ GROUP BY ?division ?station ?lat ?long`,
     label:
       "Gets amount of people in education and total number of people on welfare each year.",
     mapLabelKeys: [],
+    xAxis: "year",
+    yAxis: ["TotalPeopleonWelfare", "TotalPeopleInEducation"],
+    yAxisSingle: "People",
+    lineFilter: "",
+    lineFilters: [],
     query: `PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -490,6 +500,7 @@ WHERE {
     id: 8,
     label: "Do people go camping where there is high crime?",
     mapLabelKeys: [],
+    scatter: ["allCrime", "numCamping"],
     query: `PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
@@ -588,6 +599,11 @@ WHERE {
     label:
       "Look at trends in third level student enrolement, crime, and housing prices, how do they relate? Does a more educated population mean higher prices?",
     mapLabelKeys: [],
+    xAxis: "year",
+    yAxis: ["numStudents", "highestHousePrice", "yearlyCrime"],
+    yAxisSingle: "Count",
+    lineFilter: "",
+    lineFilters: [],
     query: `PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 

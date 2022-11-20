@@ -18,7 +18,7 @@ const Map = ({data, labelKeys}) => {
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      {data.map((marker, index) => 
+      {data?.map((marker, index) => 
           <Marker position={[marker.lat.value, marker.long.value]} icon={myIcon} key={index}>
             <Popup>
               {labelKeys.map((labelKey, index) => 

@@ -1,8 +1,5 @@
 import axios from "axios";
 
-var SparqlParser = require("sparqljs").Parser;
-var parser = new SparqlParser();
-
 export default async function handler(req, res) {
   const sparqlQuery = req.query.sparqlQuery;
 

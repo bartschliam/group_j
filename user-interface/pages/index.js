@@ -2,6 +2,7 @@ import * as React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import axios from "axios";
+import _ from "lodash";
 
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
@@ -27,6 +28,8 @@ import {
   BarChart,
   Bar,
   Cell,
+  Scatter,
+  ScatterChart,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -35,15 +38,96 @@ import {
   ResponsiveContainer,
   LineChart,
   Line,
+  Label,
 } from "recharts";
 
 import queries from "../components/queries";
+
+// Generated here: https://mokole.com/palette.html
+const colors = [
+  "#006400",
+  "#00008b",
+  "#b03060",
+  "#ff4500",
+  "#deb887",
+  "#00ff00",
+  "#00ffff",
+  "#ff00ff",
+  "#6495ed",
+];
+
+const CustomTooltip = ({ active, payload, label, selectedQuery }) => {
+  if (active && payload && payload.length) {
+    return (
+      <Paper>
+        <Box m={2}>
+          <Typography variant="h6" gutterBottom fontWeight={800}>
+            {label}
+          </Typography>
+          {selectedQuery.yAxis.map((yAxis, i) => {
+            let item = [];
+            if (selectedQuery.lineFilters.length == 0) {
+              item = payload.filter(
+                (line) => line.dataKey === `${yAxis}.value`
+              );
+            }
+            return (
+              <Box>
+                <Typography variant="body1" gutterBottom fontWeight={800}>
+                  {yAxis}
+                </Typography>
+                {selectedQuery.lineFilters.length == 0 && (
+                  <Typography variant="body1">{item[0].value}</Typography>
+                )}
+                {selectedQuery.lineFilters.map((filter, index) => {
+                  const item = payload.filter(
+                    (line) =>
+                      line.name === filter && line.dataKey === `${yAxis}.value`
+                  );
+                  return (
+                    <Typography variant="body1">
+                      {filter} : {item[0].value}
+                    </Typography>
+                  );
+                })}
+              </Box>
+            );
+          })}
+        </Box>
+      </Paper>
+    );
+  }
+
+  return null;
+};
+
+const CustomScatterTooltip = ({ active, payload, label, selectedQuery }) => {
+  if (active && payload && payload.length) {
+    return (
+      <Paper>
+        <Box m={2}>
+          {Object.keys(payload[0].payload).map((key, index) => (
+            <Typography variant="body1" gutterBottom fontWeight={800}>
+              {key} : {payload[0].payload[key].value}
+            </Typography>
+          ))}
+        </Box>
+      </Paper>
+    );
+  }
+
+  return null;
+};
 
 export default function Home() {
   const [selectedQuery, setSelectedQuery] = React.useState({
     id: 0,
     label: "",
     mapLabelKeys: [],
+    xAxis: "",
+    yAxis: [],
+    lineFilter: "",
+    lineFilters: [],
     query: "",
   });
   const [queryResult, setQueryResult] = React.useState([]);
@@ -52,6 +136,7 @@ export default function Home() {
     map: false,
     line: false,
     bar: false,
+    scatter: false,
     table: false,
   });
 
@@ -73,6 +158,7 @@ export default function Home() {
         params: { sparqlQuery: selectedQuery.query },
       })
       .then((result) => {
+        console.log(result.data);
         setQueryResult(result.data);
       })
       .catch((error) => {
@@ -85,7 +171,16 @@ export default function Home() {
 
   const clearQuery = () => {
     setQueryResult([]);
-    setSelectedQuery({ id: 0, label: "", mapLabelKeys: [], query: "" });
+    setSelectedQuery({
+      id: 0,
+      label: "",
+      mapLabelKeys: [],
+      xAxis: "",
+      yAxis: [],
+      lineFilter: "",
+      lineFilters: [],
+      query: "",
+    });
     clearCharts();
   };
 
@@ -106,6 +201,7 @@ export default function Home() {
   };
 
   const handleQueryChange = (event, newValue) => {
+    setQueryResult([]);
     setSelectedQuery(newValue);
     clearCharts();
   };
@@ -130,7 +226,7 @@ export default function Home() {
       </Head>
       <Box sx={{ width: "100%", maxWidth: 800, margin: "auto" }} m={2} pb={3}>
         <Typography variant="h4" gutterBottom fontWeight={800}>
-          Housing, Accommodation, and Crime
+          Irish Statistics
         </Typography>
         <Typography variant="subtitle1" gutterBottom>
           Use the following drop down to execute a query.
@@ -167,9 +263,86 @@ export default function Home() {
             <Map data={queryResult} labelKeys={selectedQuery.mapLabelKeys} />
           </Box>
         )}
-        {chartStatus.bar && (
-          <ResponsiveContainer width={"100%"} height={300}>
-            {/* TODO: LINE CHART HERE */}
+        {chartStatus.line && (
+          <ResponsiveContainer data={queryResult} width={"100%"} height={600}>
+            <LineChart margin={{ top: 25, right: 20, bottom: 5, left: 20 }}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis
+                dataKey={`${selectedQuery.xAxis}.value`}
+                allowDuplicatedCategory={false}
+              />
+              <Tooltip
+                content={<CustomTooltip selectedQuery={selectedQuery} />}
+              />
+              <Legend
+                payload={selectedQuery.lineFilters.map((item, index) => ({
+                  id: item.name,
+                  type: "line",
+                  value: `${item}`,
+                  color: colors[index],
+                }))}
+              />
+              {selectedQuery?.yAxisSingle && (
+                <YAxis tick={{ fontSize: 10 }} yAxisId={"single"}>
+                  <Label
+                    value={selectedQuery.yAxisSingle}
+                    angle={-90}
+                    position={"left"}
+                    fill="#676767"
+                    fontSize={14}
+                  />
+                </YAxis>
+              )}
+              {selectedQuery.yAxis.map((yAxis, i) => {
+                return (
+                  <>
+                    {!selectedQuery?.yAxisSingle && (
+                      <YAxis
+                        yAxisId={yAxis}
+                        orientation={i == 0 ? "left" : "right"}
+                        tick={{ fontSize: 10 }}
+                      >
+                        <Label
+                          value={yAxis}
+                          angle={-90}
+                          position={i == 0 ? "left" : "right"}
+                          fill="#676767"
+                          fontSize={14}
+                        />
+                      </YAxis>
+                    )}
+
+                    {selectedQuery.lineFilters.length > 0 &&
+                      selectedQuery.lineFilters.map((filtered, index) => (
+                        <Line
+                          data={queryResult.filter(
+                            (result) =>
+                              result[selectedQuery.lineFilter].value ===
+                              filtered
+                          )}
+                          name={filtered}
+                          type="monotone"
+                          dataKey={`${yAxis}.value`}
+                          stroke={colors[index]}
+                          activeDot={{ r: 8 }}
+                          yAxisId={yAxis}
+                        />
+                      ))}
+                    {selectedQuery.lineFilters.length == 0 && (
+                      <Line
+                        data={queryResult}
+                        name={yAxis}
+                        type="monotone"
+                        dataKey={`${yAxis}.value`}
+                        stroke={colors[i]}
+                        activeDot={{ r: 8 }}
+                        yAxisId={selectedQuery?.yAxisSingle ? "single" : yAxis}
+                      />
+                    )}
+                  </>
+                );
+              })}
+            </LineChart>
           </ResponsiveContainer>
         )}
         {chartStatus.bar && (
@@ -178,7 +351,9 @@ export default function Home() {
               data={queryResult}
               margin={{ top: 25, right: 20, bottom: 5, left: 20 }}
             >
-              <Tooltip />
+              <Tooltip
+                content={<CustomScatterTooltip selectedQuery={selectedQuery} />}
+              />
               <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
 
               <YAxis />
@@ -195,10 +370,66 @@ export default function Home() {
                   <XAxis dataKey="count" label="Count" />
                 </>
               )}
+              {queryResult[0]?.TotalBandBs && (
+                <>
+                  <Bar dataKey="TotalBandBs.value" fill="#8884d8" />
+                  <XAxis dataKey="region.value" label="Region" />
+                </>
+              )}
+              {queryResult[0]?.totalCrimes && (
+                <>
+                  <Bar dataKey="newHouseValue.value" fill={colors[0]} />
+                  <Bar dataKey="secondHouseValue.value" fill={colors[1]} />
+                  <XAxis dataKey="division.value" />
+                  <Legend />
+                </>
+              )}
             </BarChart>
           </ResponsiveContainer>
         )}
-        {chartStatus.table && (
+        {chartStatus.scatter && selectedQuery?.scatter.length > 0 && (
+          <ResponsiveContainer width={"100%"} height={600}>
+            <ScatterChart
+              data={queryResult}
+              margin={{ top: 25, right: 20, bottom: 20, left: 20 }}
+            >
+              <CartesianGrid />
+              <XAxis
+                type="number"
+                dataKey={`${selectedQuery.scatter[0]}.value`}
+                name="Crime in the Region"
+                tick={{ fontSize: 10 }}
+              >
+                <Label
+                  value={selectedQuery.scatter[0]}
+                  position={"bottom"}
+                  fill="#676767"
+                  fontSize={14}
+                />
+              </XAxis>
+              <YAxis
+                type="number"
+                dataKey={`${selectedQuery.scatter[1]}.value`}
+                name="Number of Camping"
+                tick={{ fontSize: 10 }}
+              >
+                <Label
+                  value={selectedQuery.scatter[1]}
+                  angle={-90}
+                  position={"left"}
+                  fill="#676767"
+                  fontSize={14}
+                />
+              </YAxis>
+              <Tooltip
+                cursor={{ strokeDasharray: "3 3" }}
+                content={<CustomScatterTooltip selectedQuery={selectedQuery} />}
+              />
+              <Scatter name="Crime Camping" data={queryResult} fill="#8884d8" />
+            </ScatterChart>
+          </ResponsiveContainer>
+        )}
+        {chartStatus.table && queryResult.length > 0 && (
           <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
@@ -234,7 +465,7 @@ export default function Home() {
             }}
             onChange={handleCustomQuery}
             value={selectedQuery.query}
-            spellcheck="false"
+            spellCheck="false"
           />
         </Box>
         <Snackbar
