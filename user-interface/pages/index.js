@@ -65,7 +65,7 @@ const CustomTooltip = ({ active, payload, label, selectedQuery }) => {
           </Typography>
           {selectedQuery.yAxis.map((yAxis, i) => {
             let item = [];
-            if (selectedQuery.lineFilters.length == 0) {
+            if (!selectedQuery?.lineFilters) {
               item = payload.filter(
                 (line) => line.dataKey === `${yAxis}.value`
               );
@@ -75,20 +75,22 @@ const CustomTooltip = ({ active, payload, label, selectedQuery }) => {
                 <Typography variant="body1" gutterBottom fontWeight={800}>
                   {yAxis}
                 </Typography>
-                {selectedQuery.lineFilters.length == 0 && (
+                {!selectedQuery?.lineFilters && (
                   <Typography variant="body1">{item[0].value}</Typography>
                 )}
-                {selectedQuery.lineFilters.map((filter, index) => {
-                  const item = payload.filter(
-                    (line) =>
-                      line.name === filter && line.dataKey === `${yAxis}.value`
-                  );
-                  return (
-                    <Typography variant="body1">
-                      {filter} : {item[0].value}
-                    </Typography>
-                  );
-                })}
+                {selectedQuery?.lineFilters &&
+                  selectedQuery.lineFilters.map((filter, index) => {
+                    const item = payload.filter(
+                      (line) =>
+                        line.name === filter &&
+                        line.dataKey === `${yAxis}.value`
+                    );
+                    return (
+                      <Typography variant="body1">
+                        {filter} : {item[0].value}
+                      </Typography>
+                    );
+                  })}
               </Box>
             );
           })}
